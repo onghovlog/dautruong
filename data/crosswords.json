@@ -1,0 +1,497 @@
+[
+  {
+    "id": "cw_datnuoctoi",
+    "title": "Đất Nước Tôi",
+    "keyword": "ĐẤT NƯỚC TÔI",
+    "normalizedKeyword": "DATNUOCTOI",
+    "isApproved": true,
+    "rows": [
+      {
+        "rowIndex": 0,
+        "questionId": "CK-001",
+        "difficulty": "de",
+        "horizontalAnswer": "ĐỒNG DAO",
+        "normalizedAnswer": "DONGDAO",
+        "targetChar": "D",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 1,
+        "questionId": "CK-011",
+        "difficulty": "vua",
+        "horizontalAnswer": "THI CA",
+        "normalizedAnswer": "THICA",
+        "targetChar": "A",
+        "charIndex": 4
+      },
+      {
+        "rowIndex": 2,
+        "questionId": "CK-012",
+        "difficulty": "vua",
+        "horizontalAnswer": "TỤC NGỮ",
+        "normalizedAnswer": "TUCNGU",
+        "targetChar": "T",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 3,
+        "questionId": "CK-014",
+        "difficulty": "vua",
+        "horizontalAnswer": "QUAN HỌ",
+        "normalizedAnswer": "QUANHO",
+        "targetChar": "N",
+        "charIndex": 3
+      },
+      {
+        "rowIndex": 4,
+        "questionId": "CK-041",
+        "difficulty": "kho",
+        "horizontalAnswer": "ẨN DỤ",
+        "normalizedAnswer": "ANDU",
+        "targetChar": "U",
+        "charIndex": 3
+      },
+      {
+        "rowIndex": 5,
+        "questionId": "CK-042",
+        "difficulty": "kho",
+        "horizontalAnswer": "HOÁN DỤ",
+        "normalizedAnswer": "HOANDU",
+        "targetChar": "O",
+        "charIndex": 1
+      },
+      {
+        "rowIndex": 6,
+        "questionId": "CK-043",
+        "difficulty": "kho",
+        "horizontalAnswer": "CHIẾU THƯ",
+        "normalizedAnswer": "CHIEUTHU",
+        "targetChar": "C",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 7,
+        "questionId": "CK-045",
+        "difficulty": "kho",
+        "horizontalAnswer": "VĂN TẾ",
+        "normalizedAnswer": "VANTE",
+        "targetChar": "T",
+        "charIndex": 3
+      },
+      {
+        "rowIndex": 8,
+        "questionId": "CK-044",
+        "difficulty": "kho",
+        "horizontalAnswer": "ĐẠI CÁO",
+        "normalizedAnswer": "DAICAO",
+        "targetChar": "O",
+        "charIndex": 5
+      },
+      {
+        "rowIndex": 9,
+        "questionId": "CK-048",
+        "difficulty": "kho",
+        "horizontalAnswer": "BIA ĐÁ",
+        "normalizedAnswer": "BIADA",
+        "targetChar": "I",
+        "charIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "cw_vanhoaviet",
+    "title": "Văn Hóa Việt",
+    "keyword": "VĂN HÓA VIỆT",
+    "normalizedKeyword": "VANHOAVIET",
+    "isApproved": true,
+    "rows": [
+      {
+        "rowIndex": 0,
+        "questionId": "CK-008",
+        "difficulty": "de",
+        "horizontalAnswer": "VĂN HÓA",
+        "normalizedAnswer": "VANHOA",
+        "targetChar": "V",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 1,
+        "questionId": "CK-011",
+        "difficulty": "vua",
+        "horizontalAnswer": "THI CA",
+        "normalizedAnswer": "THICA",
+        "targetChar": "A",
+        "charIndex": 4
+      },
+      {
+        "rowIndex": 2,
+        "questionId": "CK-012",
+        "difficulty": "vua",
+        "horizontalAnswer": "TỤC NGỮ",
+        "normalizedAnswer": "TUCNGU",
+        "targetChar": "N",
+        "charIndex": 3
+      },
+      {
+        "rowIndex": 3,
+        "questionId": "CK-013",
+        "difficulty": "vua",
+        "horizontalAnswer": "HỌC GIẢ",
+        "normalizedAnswer": "HOCGIA",
+        "targetChar": "H",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 4,
+        "questionId": "CK-042",
+        "difficulty": "kho",
+        "horizontalAnswer": "HOÁN DỤ",
+        "normalizedAnswer": "HOANDU",
+        "targetChar": "O",
+        "charIndex": 1
+      },
+      {
+        "rowIndex": 5,
+        "questionId": "CK-041",
+        "difficulty": "kho",
+        "horizontalAnswer": "ẨN DỤ",
+        "normalizedAnswer": "ANDU",
+        "targetChar": "A",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 6,
+        "questionId": "CK-045",
+        "difficulty": "kho",
+        "horizontalAnswer": "VĂN TẾ",
+        "normalizedAnswer": "VANTE",
+        "targetChar": "V",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 7,
+        "questionId": "CK-043",
+        "difficulty": "kho",
+        "horizontalAnswer": "CHIẾU THƯ",
+        "normalizedAnswer": "CHIEUTHU",
+        "targetChar": "I",
+        "charIndex": 2
+      },
+      {
+        "rowIndex": 8,
+        "questionId": "CK-047",
+        "difficulty": "kho",
+        "horizontalAnswer": "UYÊN THÂM",
+        "normalizedAnswer": "UYENTHAM",
+        "targetChar": "E",
+        "charIndex": 2
+      },
+      {
+        "rowIndex": 9,
+        "questionId": "CK-049",
+        "difficulty": "kho",
+        "horizontalAnswer": "NHẠC TÍNH",
+        "normalizedAnswer": "NHACTINH",
+        "targetChar": "T",
+        "charIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "cw_tritueviet",
+    "title": "Trí Tuệ Việt",
+    "keyword": "TRÍ TUỆ VIỆT",
+    "normalizedKeyword": "TRITUEVIET",
+    "isApproved": true,
+    "rows": [
+      {
+        "rowIndex": 0,
+        "questionId": "CK-002",
+        "difficulty": "de",
+        "horizontalAnswer": "CHÍNH TẢ",
+        "normalizedAnswer": "CHINHTA",
+        "targetChar": "T",
+        "charIndex": 5
+      },
+      {
+        "rowIndex": 1,
+        "questionId": "CK-054",
+        "difficulty": "kho",
+        "horizontalAnswer": "BẰNG TRẮC",
+        "normalizedAnswer": "BANGTRAC",
+        "targetChar": "R",
+        "charIndex": 5
+      },
+      {
+        "rowIndex": 2,
+        "questionId": "CK-011",
+        "difficulty": "vua",
+        "horizontalAnswer": "THI CA",
+        "normalizedAnswer": "THICA",
+        "targetChar": "I",
+        "charIndex": 2
+      },
+      {
+        "rowIndex": 3,
+        "questionId": "CK-012",
+        "difficulty": "vua",
+        "horizontalAnswer": "TỤC NGỮ",
+        "normalizedAnswer": "TUCNGU",
+        "targetChar": "T",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 4,
+        "questionId": "CK-014",
+        "difficulty": "vua",
+        "horizontalAnswer": "QUAN HỌ",
+        "normalizedAnswer": "QUANHO",
+        "targetChar": "U",
+        "charIndex": 1
+      },
+      {
+        "rowIndex": 5,
+        "questionId": "CK-043",
+        "difficulty": "kho",
+        "horizontalAnswer": "CHIẾU THƯ",
+        "normalizedAnswer": "CHIEUTHU",
+        "targetChar": "E",
+        "charIndex": 3
+      },
+      {
+        "rowIndex": 6,
+        "questionId": "CK-045",
+        "difficulty": "kho",
+        "horizontalAnswer": "VĂN TẾ",
+        "normalizedAnswer": "VANTE",
+        "targetChar": "V",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 7,
+        "questionId": "CK-044",
+        "difficulty": "kho",
+        "horizontalAnswer": "ĐẠI CÁO",
+        "normalizedAnswer": "DAICAO",
+        "targetChar": "I",
+        "charIndex": 2
+      },
+      {
+        "rowIndex": 8,
+        "questionId": "CK-047",
+        "difficulty": "kho",
+        "horizontalAnswer": "UYÊN THÂM",
+        "normalizedAnswer": "UYENTHAM",
+        "targetChar": "E",
+        "charIndex": 2
+      },
+      {
+        "rowIndex": 9,
+        "questionId": "CK-049",
+        "difficulty": "kho",
+        "horizontalAnswer": "NHẠC TÍNH",
+        "normalizedAnswer": "NHACTINH",
+        "targetChar": "T",
+        "charIndex": 4
+      }
+    ]
+  },
+  {
+    "id": "cw_ngonngutoi",
+    "title": "Ngôn Ngữ Tôi",
+    "keyword": "NGÔN NGỮ TÔI",
+    "normalizedKeyword": "NGONNGUTOI",
+    "isApproved": true,
+    "rows": [
+      {
+        "rowIndex": 0,
+        "questionId": "CK-001",
+        "difficulty": "de",
+        "horizontalAnswer": "ĐỒNG DAO",
+        "normalizedAnswer": "DONGDAO",
+        "targetChar": "N",
+        "charIndex": 2
+      },
+      {
+        "rowIndex": 1,
+        "questionId": "CK-012",
+        "difficulty": "vua",
+        "horizontalAnswer": "TỤC NGỮ",
+        "normalizedAnswer": "TUCNGU",
+        "targetChar": "G",
+        "charIndex": 4
+      },
+      {
+        "rowIndex": 2,
+        "questionId": "CK-013",
+        "difficulty": "vua",
+        "horizontalAnswer": "HỌC GIẢ",
+        "normalizedAnswer": "HOCGIA",
+        "targetChar": "O",
+        "charIndex": 1
+      },
+      {
+        "rowIndex": 3,
+        "questionId": "CK-014",
+        "difficulty": "vua",
+        "horizontalAnswer": "QUAN HỌ",
+        "normalizedAnswer": "QUANHO",
+        "targetChar": "N",
+        "charIndex": 3
+      },
+      {
+        "rowIndex": 4,
+        "questionId": "CK-041",
+        "difficulty": "kho",
+        "horizontalAnswer": "ẨN DỤ",
+        "normalizedAnswer": "ANDU",
+        "targetChar": "N",
+        "charIndex": 1
+      },
+      {
+        "rowIndex": 5,
+        "questionId": "CK-046",
+        "difficulty": "kho",
+        "horizontalAnswer": "NGÂM KHÚC",
+        "normalizedAnswer": "NGAMKHUC",
+        "targetChar": "G",
+        "charIndex": 1
+      },
+      {
+        "rowIndex": 6,
+        "questionId": "CK-042",
+        "difficulty": "kho",
+        "horizontalAnswer": "HOÁN DỤ",
+        "normalizedAnswer": "HOANDU",
+        "targetChar": "U",
+        "charIndex": 5
+      },
+      {
+        "rowIndex": 7,
+        "questionId": "CK-043",
+        "difficulty": "kho",
+        "horizontalAnswer": "CHIẾU THƯ",
+        "normalizedAnswer": "CHIEUTHU",
+        "targetChar": "T",
+        "charIndex": 5
+      },
+      {
+        "rowIndex": 8,
+        "questionId": "CK-044",
+        "difficulty": "kho",
+        "horizontalAnswer": "ĐẠI CÁO",
+        "normalizedAnswer": "DAICAO",
+        "targetChar": "O",
+        "charIndex": 5
+      },
+      {
+        "rowIndex": 9,
+        "questionId": "CK-048",
+        "difficulty": "kho",
+        "horizontalAnswer": "BIA ĐÁ",
+        "normalizedAnswer": "BIADA",
+        "targetChar": "I",
+        "charIndex": 1
+      }
+    ]
+  },
+  {
+    "id": "cw_bansacviet",
+    "title": "Bản Sắc Việt",
+    "keyword": "BẢN SẮC VIỆT",
+    "normalizedKeyword": "BANSACVIET",
+    "isApproved": true,
+    "rows": [
+      {
+        "rowIndex": 0,
+        "questionId": "CK-004",
+        "difficulty": "de",
+        "horizontalAnswer": "LỤC BÁT",
+        "normalizedAnswer": "LUCBAT",
+        "targetChar": "B",
+        "charIndex": 3
+      },
+      {
+        "rowIndex": 1,
+        "questionId": "CK-011",
+        "difficulty": "vua",
+        "horizontalAnswer": "THI CA",
+        "normalizedAnswer": "THICA",
+        "targetChar": "A",
+        "charIndex": 4
+      },
+      {
+        "rowIndex": 2,
+        "questionId": "CK-012",
+        "difficulty": "vua",
+        "horizontalAnswer": "TỤC NGỮ",
+        "normalizedAnswer": "TUCNGU",
+        "targetChar": "N",
+        "charIndex": 3
+      },
+      {
+        "rowIndex": 3,
+        "questionId": "CK-020",
+        "difficulty": "vua",
+        "horizontalAnswer": "KÝ SỰ",
+        "normalizedAnswer": "KYSU",
+        "targetChar": "S",
+        "charIndex": 2
+      },
+      {
+        "rowIndex": 4,
+        "questionId": "CK-041",
+        "difficulty": "kho",
+        "horizontalAnswer": "ẨN DỤ",
+        "normalizedAnswer": "ANDU",
+        "targetChar": "A",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 5,
+        "questionId": "CK-043",
+        "difficulty": "kho",
+        "horizontalAnswer": "CHIẾU THƯ",
+        "normalizedAnswer": "CHIEUTHU",
+        "targetChar": "C",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 6,
+        "questionId": "CK-045",
+        "difficulty": "kho",
+        "horizontalAnswer": "VĂN TẾ",
+        "normalizedAnswer": "VANTE",
+        "targetChar": "V",
+        "charIndex": 0
+      },
+      {
+        "rowIndex": 7,
+        "questionId": "CK-044",
+        "difficulty": "kho",
+        "horizontalAnswer": "ĐẠI CÁO",
+        "normalizedAnswer": "DAICAO",
+        "targetChar": "I",
+        "charIndex": 2
+      },
+      {
+        "rowIndex": 8,
+        "questionId": "CK-047",
+        "difficulty": "kho",
+        "horizontalAnswer": "UYÊN THÂM",
+        "normalizedAnswer": "UYENTHAM",
+        "targetChar": "E",
+        "charIndex": 2
+      },
+      {
+        "rowIndex": 9,
+        "questionId": "CK-049",
+        "difficulty": "kho",
+        "horizontalAnswer": "NHẠC TÍNH",
+        "normalizedAnswer": "NHACTINH",
+        "targetChar": "T",
+        "charIndex": 4
+      }
+    ]
+  }
+]

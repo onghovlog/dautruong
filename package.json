@@ -1,0 +1,32 @@
+{
+  "name": "dau-truong-ngon-ngu",
+  "version": "1.0.0",
+  "description": "Website minigame Đấu Trường Ngôn Ngữ - FPT Polytechnic",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test --test-concurrency=1 tests/*.test.js",
+    "seed": "node scripts/seed_data.js",
+    "validate": "node scripts/validate_questions.js",
+    "setup-admin": "node scripts/setup_admin.js",
+    "seed-demo": "node scripts/seed_demo.js",
+    "backup": "node scripts/backup.js"
+  },
+  "keywords": [
+    "fpt-polytechnic",
+    "tieng-viet",
+    "quiz",
+    "minigame"
+  ],
+  "author": "Bộ môn CNTT • FPT Polytechnic",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^9.11.4"
+  }
+}

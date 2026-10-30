@@ -1,0 +1,1611 @@
+/**
+ * 100 câu hỏi Vòng Khởi động (Kho 1)
+ * Phân bố: 60 Dễ, 30 Vừa, 10 Khó
+ */
+export const round1Questions = [
+  // --- 60 CÂU DỄ (KD-001 đến KD-060) ---
+  {
+    id: "KD-001",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào sau đây viết ĐÚNG chính tả tiếng Việt?",
+    options: [
+      { id: "A", text: "Xắp xếp" },
+      { id: "B", text: "Sắp xếp" },
+      { id: "C", text: "Sắp sếp" },
+      { id: "D", text: "Xắp xếch" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Sắp xếp' là từ viết đúng chính tả, chỉ hành động bố trí, đặt để sự vật theo thứ tự.",
+    source: "Từ điển Tiếng Việt - Viện Ngôn ngữ học"
+  },
+  {
+    id: "KD-002",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào sau đây viết ĐÚNG chính tả khi nói về người bàng quan?",
+    options: [
+      { id: "A", text: "Bàng quang" },
+      { id: "B", text: "Bàng quan" },
+      { id: "C", text: "Bàn quan" },
+      { id: "D", text: "Bàn quang" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Bàng quan' (chữ Hán: 傍 觀) nghĩa là đứng bên ngoài nhìn vào, thờ ơ; còn 'bàng quang' là bọng đái.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-003",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Điền từ còn thiếu vào câu thành ngữ: 'Ăn quả nhớ kẻ ... cây'.",
+    options: [
+      { id: "A", text: "trồng" },
+      { id: "B", text: "tưới" },
+      { id: "C", text: "chăm" },
+      { id: "D", text: "hái" }
+    ],
+    correctOptionId: "A",
+    explanation: "Câu tục ngữ 'Ăn quả nhớ kẻ trồng cây' khuyên răn con người phải biết ơn người đi trước.",
+    source: "Kho tàng tục ngữ người Việt"
+  },
+  {
+    id: "KD-004",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "Điền từ thích hợp vào câu ca dao: 'Công cha như núi Thái Sơn / Nghĩa mẹ như nước trong ... chảy ra'.",
+    options: [
+      { id: "A", text: "khe" },
+      { id: "B", text: "nguồn" },
+      { id: "C", text: "suối" },
+      { id: "D", text: "sông" }
+    ],
+    correctOptionId: "B",
+    explanation: "Câu ca dao truyền thống ngợi ca công ơn cha mẹ: 'Nghĩa mẹ như nước trong nguồn chảy ra'.",
+    source: "Ca dao dân ca Việt Nam"
+  },
+  {
+    id: "KD-005",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ nào đồng nghĩa với từ 'dũng cảm'?",
+    options: [
+      { id: "A", text: "Hèn nhát" },
+      { id: "B", text: "Gan dạ" },
+      { id: "C", text: "Nhu nhược" },
+      { id: "D", text: "E dè" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Dũng cảm' và 'gan dạ' đều chỉ phẩm chất không sợ khó khăn, nguy hiểm.",
+    source: "Từ điển Đồng nghĩa Tiếng Việt"
+  },
+  {
+    id: "KD-006",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào sau đây viết SAI chính tả?",
+    options: [
+      { id: "A", text: "Sáng lạn" },
+      { id: "B", text: "Sáng sủa" },
+      { id: "C", text: "Xán lạn" },
+      { id: "D", text: "Rực rỡ" }
+    ],
+    correctOptionId: "A",
+    explanation: "Từ đúng phải là 'Xán lạn' (chữ Hán: 燦 爛 nghĩa là rực rỡ sáng sủa). 'Sáng lạn' là lỗi viết sai.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-007",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Thành ngữ nào sau đây mang ý nghĩa chỉ tình cảm gắn bó ruột thịt?",
+    options: [
+      { id: "A", text: "Môi hở răng lạnh" },
+      { id: "B", text: "Cháy nhà ra mặt chuột" },
+      { id: "C", text: "Nước đổ đầu vịt" },
+      { id: "D", text: "Đâm sau lưng" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Môi hở răng lạnh' ví mối quan hệ mật thiết, gắn bó khăng khít, tổn hại người này ảnh hưởng người kia.",
+    source: "Từ điển Thành ngữ Tục ngữ Việt Nam"
+  },
+  {
+    id: "KD-008",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ trái nghĩa với từ 'kiên trì' là từ nào?",
+    options: [
+      { id: "A", text: "Nản lòng" },
+      { id: "B", text: "Nhẫn nại" },
+      { id: "C", text: "Bền bỉ" },
+      { id: "D", text: "Kiên định" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Kiên trì' là giữ vững ý chí đến cùng, trái ngược hoàn toàn với 'nản lòng'.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-009",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "Bài thơ 'Nam quốc sơn hà' tương truyền gắn liền với tên tuổi vị danh tướng nào?",
+    options: [
+      { id: "A", text: "Trần Hưng Đạo" },
+      { id: "B", text: "Lý Thường Kiệt" },
+      { id: "C", text: "Quang Trung" },
+      { id: "D", text: "Ngô Quyền" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Nam quốc sơn hà' vang lên bên bờ sông Như Nguyệt, gắn liền với đại thắng của Lý Thường Kiệt.",
+    source: "Đại Việt Sử Ký Toàn Thư"
+  },
+  {
+    id: "KD-010",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Chọn từ viết ĐÚNG chính tả trong các từ sau:",
+    options: [
+      { id: "A", text: "Chẩn đoán" },
+      { id: "B", text: "Chuẩn đoán" },
+      { id: "C", text: "Chẳng đoán" },
+      { id: "D", text: "Chẩn đón" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Chẩn đoán' (chẩn: xem xét, đoán: phán đoán). Viết 'chuẩn đoán' là sai.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-011",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Điền từ còn thiếu: 'Gần mực thì đen, gần đèn thì ...'.",
+    options: [
+      { id: "A", text: "tối" },
+      { id: "B", text: "rạng" },
+      { id: "C", text: "sáng" },
+      { id: "D", text: "ấm" }
+    ],
+    correctOptionId: "C",
+    explanation: "'Gần mực thì đen, gần đèn thì sáng' nói về ảnh hưởng của môi trường sống đối với nhân cách.",
+    source: "Kho tàng tục ngữ người Việt"
+  },
+  {
+    id: "KD-012",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Cặp từ nào sau đây đều viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Giành giật, dỗ dành" },
+      { id: "B", text: "Dành giật, dỗ dành" },
+      { id: "C", text: "Giành giật, giỗ dành" },
+      { id: "D", text: "Dành giật, giỗ dành" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Giành giật' dùng 'gi' (tranh giành), 'dỗ dành' dùng 'd' (an ủi, khuyên nhủ).",
+    source: "Từ điển Chính tả Tiếng Việt"
+  },
+  {
+    id: "KD-013",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ 'thiên vị' có nghĩa là gì?",
+    options: [
+      { id: "A", text: "Công bằng, chính trực" },
+      { id: "B", text: "Nghiêng về một bên, không vô tư" },
+      { id: "C", text: "Có vị thế lớn trên trời" },
+      { id: "D", text: "Có mùi hương thơm dịu" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Thiên vị' là thiên lệch về tình cảm hoặc quyền lợi cho một phía, đối xử thiếu công bằng.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-014",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "Hai câu thơ: 'Dù ai đi ngược về xuôi / Nhớ ngày Giỗ Tổ mùng ... tháng ba' nói về ngày nào?",
+    options: [
+      { id: "A", text: "tám" },
+      { id: "B", text: "chín" },
+      { id: "C", text: "mười" },
+      { id: "D", text: "mười lăm" }
+    ],
+    correctOptionId: "C",
+    explanation: "Ngày Giỗ Tổ Hùng Vương truyền thống của dân tộc diễn ra vào ngày mùng 10 tháng 3 âm lịch.",
+    source: "Ca dao dân ca Việt Nam"
+  },
+  {
+    id: "KD-015",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Tìm từ viết ĐÚNG chính tả:",
+    options: [
+      { id: "A", text: "Sơ xuất" },
+      { id: "B", text: "Sơ suất" },
+      { id: "C", text: "Xơ xuất" },
+      { id: "D", text: "Xơ suất" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Sơ suất' viết đúng chính tả với 's' và vần 'uất', chỉ sự thiếu cẩn thận dẫn đến sai sót nhỏ.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-016",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Hoàn thiện câu tục ngữ: 'Học thầy không tày học ...'.",
+    options: [
+      { id: "A", text: "sách" },
+      { id: "B", text: "bạn" },
+      { id: "C", text: "trò" },
+      { id: "D", text: "đời" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Học thầy không tày học bạn' khuyên coi trọng việc học hỏi kinh nghiệm từ bạn bè xung quanh.",
+    source: "Kho tàng tục ngữ người Việt"
+  },
+  {
+    id: "KD-017",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ nào là từ láy trong các từ sau?",
+    options: [
+      { id: "A", text: "Nhà cửa" },
+      { id: "B", text: "Xe cộ" },
+      { id: "C", text: "Róc rách" },
+      { id: "D", text: "Mặt mũi" }
+    ],
+    correctOptionId: "C",
+    explanation: "'Róc rách' là từ láy tượng thanh mô phỏng tiếng nước chảy nhỏ đều.",
+    source: "Ngữ pháp Tiếng Việt"
+  },
+  {
+    id: "KD-018",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Chọn từ viết ĐÚNG chính tả:",
+    options: [
+      { id: "A", text: "Trau chuốt" },
+      { id: "B", text: "Chau chuốt" },
+      { id: "C", text: "Trau chút" },
+      { id: "D", text: "Chau chút" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Trau chuốt' viết đúng là âm đầu 'tr' ở tiếng thứ nhất và 'ch' ở tiếng thứ hai.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-019",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "'Thân em vừa trắng lại vừa tròn / Bảy nổi ba chìm với nước non' là câu thơ mở đầu bài thơ nào?",
+    options: [
+      { id: "A", text: "Bánh trôi nước" },
+      { id: "B", text: "Qua Đèo Ngang" },
+      { id: "C", text: "Tự tình II" },
+      { id: "D", text: "Bạn đến chơi nhà" }
+    ],
+    correctOptionId: "A",
+    explanation: "Đây là bài thơ 'Bánh trôi nước' nổi tiếng của nữ sĩ Hồ Xuân Hương.",
+    source: "SGK Ngữ văn lớp 7"
+  },
+  {
+    id: "KD-020",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Thành ngữ 'Ếch ngồi đáy giếng' nhằm phê phán điều gì?",
+    options: [
+      { id: "A", text: "Tính lười biếng, ỷ lại" },
+      { id: "B", text: "Sự hiểu biết nông cạn nhưng lại huênh hoang" },
+      { id: "C", text: "Lòng tham lam vô đáy" },
+      { id: "D", text: "Tính cách nhút nhát, sợ sệt" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Ếch ngồi đáy giếng' phê phán những kẻ tầm nhìn hẹp hòi mà cứ ngỡ mình biết hết mọi sự.",
+    source: "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-021",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Suôn sẻ" },
+      { id: "B", text: "Suôn xẻ" },
+      { id: "C", text: "Xuôn sẻ" },
+      { id: "D", text: "Xuôn xẻ" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Suôn sẻ' (thuận lợi, trôi chảy) viết với 's' ở cả hai tiếng.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-022",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Tiếng 'gia' trong từ nào sau đây có nghĩa là 'nhà'?",
+    options: [
+      { id: "A", text: "Gia vị" },
+      { id: "B", text: "Gia đình" },
+      { id: "C", text: "Tham gia" },
+      { id: "D", text: "Tăng gia" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Gia đình' có yếu tố 'gia' (家) mang nghĩa là nhà. Các từ kia là gia (加) nghĩa là thêm vào.",
+    source: "Từ điển Yếu tố Hán Việt"
+  },
+  {
+    id: "KD-023",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "'Bầu ơi thương lấy bí cùng / Tuy rằng ... giống nhưng chung một giàn'. Điền từ đúng:",
+    options: [
+      { id: "A", text: "khác" },
+      { id: "B", text: "chung" },
+      { id: "C", text: "đôi" },
+      { id: "D", text: "hai" }
+    ],
+    correctOptionId: "A",
+    explanation: "Câu ca dao giáo dục tinh thần đoàn kết, tương thân tương ái của dân tộc Việt Nam.",
+    source: "Ca dao dân ca Việt Nam"
+  },
+  {
+    id: "KD-024",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Giấu giếm" },
+      { id: "B", text: "Dấu diếm" },
+      { id: "C", text: "Giấu diếm" },
+      { id: "D", text: "Dấu giếm" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Giấu giếm' (cất kín, che giấu) cả hai tiếng đều bắt đầu bằng 'gi'.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-025",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Điền từ vào chỗ trống: 'Uống nước nhớ ...'.",
+    options: [
+      { id: "A", text: "sông" },
+      { id: "B", text: "nguồn" },
+      { id: "C", text: "suối" },
+      { id: "D", text: "bờ" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Uống nước nhớ nguồn' là truyền thống đạo lý tri ân tốt đẹp của người Việt.",
+    source: "Tục ngữ Việt Nam"
+  },
+  {
+    id: "KD-026",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ 'bạch cầu' trong y học, tiếng 'bạch' có nghĩa là gì?",
+    options: [
+      { id: "A", text: "Đỏ" },
+      { id: "B", text: "Trắng" },
+      { id: "C", text: "Trong suốt" },
+      { id: "D", text: "Xanh" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Bạch' (白) trong Hán Việt có nghĩa là màu trắng (tế bào máu trắng).",
+    source: "Từ điển Hán Việt"
+  },
+  {
+    id: "KD-027",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Trần trừ" },
+      { id: "B", text: "Chần chừ" },
+      { id: "C", text: "Chần trừ" },
+      { id: "D", text: "Trần chừ" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Chần chừ' viết đúng với âm đầu 'ch' ở cả hai tiếng, chỉ sự do dự chưa quyết định.",
+    source: "Từ điển Chính tả Tiếng Việt"
+  },
+  {
+    id: "KD-028",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "'Bước tới Đèo Ngang bóng xế tà / Cỏ cây chen đá, lá chen ...'. Điền từ đúng:",
+    options: [
+      { id: "A", text: "hoa" },
+      { id: "B", text: "mây" },
+      { id: "C", text: "cây" },
+      { id: "D", text: "rừng" }
+    ],
+    correctOptionId: "A",
+    explanation: "Đây là câu thơ thứ hai trong tuyệt tác 'Qua Đèo Ngang' của Bà Huyện Thanh Quan.",
+    source: "Tác phẩm Qua Đèo Ngang"
+  },
+  {
+    id: "KD-029",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Thành ngữ nào sau đây đồng nghĩa với 'Thuận buồm xuôi gió'?",
+    options: [
+      { id: "A", text: "Đầu xuôi đuôi lọt" },
+      { id: "B", text: "Tránh vỏ dưa gặp vỏ dừa" },
+      { id: "C", text: "Nước chảy chỗ trũng" },
+      { id: "D", text: "Lên thác xuống ghềnh" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Đầu xuôi đuôi lọt' và 'Thuận buồm xuôi gió' đều diễn tả việc hanh thông, trôi chảy tốt đẹp.",
+    source: "Từ điển Thành ngữ Tục ngữ"
+  },
+  {
+    id: "KD-030",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ nào sau đây KHÔNG phải là từ ghép?",
+    options: [
+      { id: "A", text: "Bàn ghế" },
+      { id: "B", text: "Sách vở" },
+      { id: "C", text: "Mênh mông" },
+      { id: "D", text: "Cây cối" }
+    ],
+    correctOptionId: "C",
+    explanation: "'Mênh mông' là từ láy diễn tả không gian rộng lớn bao la.",
+    source: "Ngữ pháp Tiếng Việt"
+  },
+  {
+    id: "KD-031",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Ngoằn nghoèo" },
+      { id: "B", text: "Ngoằn ngoèo" },
+      { id: "C", text: "Ngoằn ngoèo" },
+      { id: "D", text: "Ngoằn nghèo" }
+    ],
+    correctOptionId: "B",
+    explanation: "Chữ 'ng' đứng trước nguyên âm 'o' viết là 'ng' (không dùng 'ngh'). Từ đúng: 'Ngoằn ngoèo'.",
+    source: "Quy tắc chính tả Tiếng Việt"
+  },
+  {
+    id: "KD-032",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "'Có chí thì nên, có ... thì lội'. Điền từ còn thiếu vào câu tục ngữ:",
+    options: [
+      { id: "A", text: "sức" },
+      { id: "B", text: "thuyền" },
+      { id: "C", text: "gan" },
+      { id: "D", text: "tiền" }
+    ],
+    correctOptionId: "C",
+    explanation: "'Có chí thì nên, có gan thì lội' là câu tục ngữ khuyên can đảm, quyết tâm vượt khó.",
+    source: "Kho tàng tục ngữ người Việt"
+  },
+  {
+    id: "KD-033",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "Câu ca dao: 'Cày đồng đang buổi ban trưa / Mồ hôi thánh thót như ... ruộng cày'.",
+    options: [
+      { id: "A", text: "mưa" },
+      { id: "B", text: "sương" },
+      { id: "C", text: "nước" },
+      { id: "D", text: "giọt" }
+    ],
+    correctOptionId: "A",
+    explanation: "Câu ca dao miêu tả nỗi vất vả, nhọc nhằn của người nông dân tạo ra hạt gạo.",
+    source: "Ca dao dân ca Việt Nam"
+  },
+  {
+    id: "KD-034",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ 'hậu tạ' có nghĩa là gì?",
+    options: [
+      { id: "A", text: "Tạ ơn người đời sau" },
+      { id: "B", text: "Đền ơn một cách trọng hậu, xứng đáng" },
+      { id: "C", text: "Lời cảm ơn muộn màng" },
+      { id: "D", text: "Tạ tội sau khi gây họa" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Hậu' nghĩa là dày dặn, chu đáo; 'hậu tạ' là đền đáp công ơn một cách nồng hậu, trọng hậu.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-035",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Chọn từ viết ĐÚNG chính tả tiếng Việt:",
+    options: [
+      { id: "A", text: "Rảnh rỗi" },
+      { id: "B", text: "Rãnh rỗi" },
+      { id: "C", text: "Dảnh dỗi" },
+      { id: "D", text: "Giảnh giỗi" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Rảnh rỗi' (thời gian nhàn nhã) viết bằng 'r' và dấu hỏi ở tiếng thứ nhất, dấu ngã ở tiếng thứ hai.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-036",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Thành ngữ 'Vụng chèo khéo ...' dùng để chỉ người vụng về nhưng giỏi ngụy biện?",
+    options: [
+      { id: "A", text: "chống" },
+      { id: "B", text: "lái" },
+      { id: "C", text: "bơi" },
+      { id: "D", text: "nói" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Vụng chèo khéo chống' chỉ người làm việc kém cỏi nhưng lại khéo thanh minh, lấp liếm lỗi lầm.",
+    source: "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-037",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "Tác phẩm 'Truyện Kiều' của đại thi hào Nguyễn Du viết theo thể thơ nào?",
+    options: [
+      { id: "A", text: "Thất ngôn bát cú" },
+      { id: "B", text: "Lục bát" },
+      { id: "C", text: "Song thất lục bát" },
+      { id: "D", text: "Tự do" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Truyện Kiều' (Đoạn trường tân thanh) gồm 3.254 câu thơ theo thể thơ lục bát truyền thống.",
+    source: "Văn học sử Việt Nam"
+  },
+  {
+    id: "KD-038",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào viết ĐÚNG chính tả khi miêu tả tính cách cởi mở?",
+    options: [
+      { id: "A", text: "Xởi lởi" },
+      { id: "B", text: "Sởi lởi" },
+      { id: "C", text: "Xởi xởi" },
+      { id: "D", text: "Sởi sởi" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Xởi lởi' (vui vẻ, rộng rãi, dễ tính) viết đúng với âm 'x' đầu tiên và dấu hỏi.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-039",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ 'đồng cam cộng khổ' có nghĩa là gì?",
+    options: [
+      { id: "A", text: "Cùng làm việc nông nghiệp" },
+      { id: "B", text: "Cùng chia sẻ ngọt bùi và gian nan cay đắng" },
+      { id: "C", text: "Chịu đựng khổ nạn một mình" },
+      { id: "D", text: "Làm việc vì mục tiêu chung" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Đồng cam' (cùng ngọt ngào), 'cộng khổ' (cùng cay đắng), chỉ tinh thần kề vai sát cánh.",
+    source: "Từ điển Thành ngữ Hán Việt"
+  },
+  {
+    id: "KD-040",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "'Thương người như thể thương ...'. Điền từ còn thiếu vào câu tục ngữ nổi tiếng:",
+    options: [
+      { id: "A", text: "mình" },
+      { id: "B", text: "thân" },
+      { id: "C", text: "ta" },
+      { id: "D", text: "ai" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Thương người như thể thương thân' nêu cao lòng nhân ái, xem nỗi đau của người khác như của chính mình.",
+    source: "Kho tàng tục ngữ người Việt"
+  },
+  {
+    id: "KD-041",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Giục giã" },
+      { id: "B", text: "Dục dã" },
+      { id: "C", text: "Giục dã" },
+      { id: "D", text: "Dục giã" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Giục giã' (hối thúc liên tục) viết với âm đầu 'gi' ở cả hai tiếng.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-042",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Điền từ vào thành ngữ: 'Chân cứng đá ...'.",
+    options: [
+      { id: "A", text: "mòn" },
+      { id: "B", text: "tan" },
+      { id: "C", text: "vỡ" },
+      { id: "D", text: "mềm" }
+    ],
+    correctOptionId: "D",
+    explanation: "'Chân cứng đá mềm' là lời chúc bình an, kiên cường vượt qua mọi thử thách, gian khó.",
+    source: "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-043",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ 'nghĩa khí' dùng để chỉ phẩm chất gì?",
+    options: [
+      { id: "A", text: "Sức mạnh cơ bắp phi thường" },
+      { id: "B", text: "Tinh thần coi trọng điều chính nghĩa, dám vì việc nghĩa quên mình" },
+      { id: "C", text: "Tính khí nóng nảy, bộc trực" },
+      { id: "D", text: "Lòng trung thành tuyệt đối với thủ lĩnh" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Nghĩa khí' là chí khí hào hiệp, luôn bảo vệ lẽ phải và việc nghĩa công bằng.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-044",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "Điền từ: 'Gió đưa cành trúc la đà / Tiếng chuông Trấn Vũ, canh gà ...'.",
+    options: [
+      { id: "A", text: "Tây Hồ" },
+      { id: "B", text: "Thọ Xương" },
+      { id: "C", text: "Đông Kinh" },
+      { id: "D", text: "Bạch Đằng" }
+    ],
+    correctOptionId: "B",
+    explanation: "Câu ca dao ca ngợi vẻ đẹp thanh bình cổ kính của kinh thành Thăng Long Hà Nội.",
+    source: "Ca dao Hà Nội xưa"
+  },
+  {
+    id: "KD-045",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Bạt mạng" },
+      { id: "B", text: "Bạc mạng" },
+      { id: "C", text: "Bạt mệnh" },
+      { id: "D", text: "Bạc mạn" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Bạt mạng' (liều lĩnh, không tiếc thân mình) viết bằng chữ 't' ở tiếng đầu tiên.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-046",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "'Một con ngựa đau, cả tàu ... cỏ'. Điền từ đúng:",
+    options: [
+      { id: "A", text: "bỏ" },
+      { id: "B", text: "ăn" },
+      { id: "C", text: "chia" },
+      { id: "D", text: "nhường" }
+    ],
+    correctOptionId: "A",
+    explanation: "Câu tục ngữ đề cao tinh thần đồng loại sẻ chia: 'Một con ngựa đau, cả tàu bỏ cỏ'.",
+    source: "Kho tàng tục ngữ người Việt"
+  },
+  {
+    id: "KD-047",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ nào trái nghĩa với từ 'khiêm tốn'?",
+    options: [
+      { id: "A", text: "Tự phụ" },
+      { id: "B", text: "Giản dị" },
+      { id: "C", text: "Nhũn nhặn" },
+      { id: "D", text: "Thành thật" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Khiêm tốn' là biết nhún nhường, trái ngược với 'tự phụ' (tự cao, tự đắc).",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-048",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "'Trâu ơi ta bảo trâu này / Trâu ra ngoài ruộng trâu cày với ...'. Điền từ đúng:",
+    options: [
+      { id: "A", text: "ai" },
+      { id: "B", text: "ta" },
+      { id: "C", text: "người" },
+      { id: "D", text: "bạn" }
+    ],
+    correctOptionId: "B",
+    explanation: "Bài ca dao thân thương về người bạn đồng hành của nhà nông Việt Nam từ ngàn xưa.",
+    source: "Ca dao dân ca Việt Nam"
+  },
+  {
+    id: "KD-049",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Chọn từ viết ĐÚNG chính tả:",
+    options: [
+      { id: "A", text: "Chắp bút" },
+      { id: "B", text: "Chấp bút" },
+      { id: "C", text: "Trắp bút" },
+      { id: "D", text: "Trấp bút" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Chấp bút' (chữ Hán: 執 筆, nghĩa là cầm bút khởi thảo văn bản theo ý kiến tập thể). Viết 'chắp bút' là sai.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-050",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Thành ngữ 'Nước chảy bèo trôi' mô tả điều gì?",
+    options: [
+      { id: "A", text: "Cuộc sống ổn định, êm ấm" },
+      { id: "B", text: "Cuộc đời phiêu bạt, lênh đênh phó mặc cho số phận" },
+      { id: "C", text: "Cảnh thiên nhiên tươi đẹp" },
+      { id: "D", text: "Sự kiên nhẫn vượt khó" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Nước chảy bèo trôi' ví cảnh ngộ bấp bênh, trôi nổi không định hướng.",
+    source: "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-051",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ nào đồng nghĩa với từ 'bình minh'?",
+    options: [
+      { id: "A", text: "Hoàng hôn" },
+      { id: "B", text: "Hừng đông" },
+      { id: "C", text: "Bóng xế" },
+      { id: "D", text: "Đêm muộn" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Bình minh' và 'hừng đông' đều chỉ khoảng thời gian mặt trời vừa mọc, rạng đông sáng sớm.",
+    source: "Từ điển Đồng nghĩa Tiếng Việt"
+  },
+  {
+    id: "KD-052",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "'Ai ơi bưng bát cơm đầy / Dẻo thơm một hạt, ... muôn phần'. Điền từ đúng:",
+    options: [
+      { id: "A", text: "khổ" },
+      { id: "B", text: "đắng" },
+      { id: "C", text: "cay" },
+      { id: "D", text: "mặn" }
+    ],
+    correctOptionId: "B",
+    explanation: "Câu ca dao: 'Dẻo thơm một hạt, đắng cay muôn phần' nhắc nhớ sự cực nhọc của nghề nông.",
+    source: "Ca dao dân ca Việt Nam"
+  },
+  {
+    id: "KD-053",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Dày xéo" },
+      { id: "B", text: "Giày xéo" },
+      { id: "C", text: "Giày séo" },
+      { id: "D", text: "Dày séo" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Giày xéo' (giẫm đạp thô bạo) viết bằng 'gi' và 'x'.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-054",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Thành ngữ 'Vào sinh ra ...' nói về sự trải qua hiểm nguy tột độ?",
+    options: [
+      { id: "A", text: "mất" },
+      { id: "B", text: "tử" },
+      { id: "C", text: "sống" },
+      { id: "D", text: "bệnh" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Vào sinh ra tử' chỉ việc trải qua trăm trận khốc liệt, coi nhẹ sống chết.",
+    source: "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-055",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ 'ngoa ngoắt' có nghĩa là gì?",
+    options: [
+      { id: "A", text: "Nói năng chua ngoa, cay nghiệt, khó nghe" },
+      { id: "B", text: "Trầm tĩnh, ít nói" },
+      { id: "C", text: "Hiền lành, nhút nhát" },
+      { id: "D", text: "Thông minh, lém lỉnh" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Ngoa ngoắt' là tính từ miêu tả giọng điệu chua chát, gắt gỏng và sắc bén gây tổn thương.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-056",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "'Chuồn chuồn bay thấp thì mưa / Bay cao thì nắng, bay vừa thì ...'. Điền từ đúng:",
+    options: [
+      { id: "A", text: "giông" },
+      { id: "B", text: "râm" },
+      { id: "C", text: "mát" },
+      { id: "D", text: "gió" }
+    ],
+    correctOptionId: "B",
+    explanation: "Kinh nghiệm dân gian dự báo thời tiết bằng tập tính chuồn chuồn: 'bay vừa thì râm'.",
+    source: "Tục ngữ về thiên nhiên"
+  },
+  {
+    id: "KD-057",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "de",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Nề hà" },
+      { id: "B", text: "Lề hà" },
+      { id: "C", text: "Nề thà" },
+      { id: "D", text: "Lề thà" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Nề hà' (ngại khó khăn, từ chối việc) viết đúng bắt đầu bằng chữ 'n'.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-058",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "de",
+    question: "Điền từ: 'Lá lành đùm lá ...'.",
+    options: [
+      { id: "A", text: "héo" },
+      { id: "B", text: "rách" },
+      { id: "C", text: "vàng" },
+      { id: "D", text: "rụng" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Lá lành đùm lá rách' tượng trưng cho tinh thần cưu mang đồng bào khi hoạn nạn.",
+    source: "Kho tàng tục ngữ người Việt"
+  },
+  {
+    id: "KD-059",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "de",
+    question: "Từ nào sau đây là từ Hán-Việt?",
+    options: [
+      { id: "A", text: "Mẹ hiền" },
+      { id: "B", text: "Phụ mẫu" },
+      { id: "C", text: "Cha già" },
+      { id: "D", text: "Bà con" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Phụ mẫu' (chữ Hán: 父 母) là từ Hán-Việt mang nghĩa là cha mẹ.",
+    source: "Từ điển Hán Việt"
+  },
+  {
+    id: "KD-060",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "de",
+    question: "Câu ca dao 'Đồng Đăng có phố Kỳ Lừa / Có nàng Tô Thị, có chùa ...' nhắc tới danh thắng ở đâu?",
+    options: [
+      { id: "A", text: "Tam Thanh - Lạng Sơn" },
+      { id: "B", text: "Hương Tích - Hà Nội" },
+      { id: "C", text: "Bái Đính - Ninh Bình" },
+      { id: "D", text: "Yên Tử - Quảng Ninh" }
+    ],
+    correctOptionId: "A",
+    explanation: "'...có chùa Tam Thanh', di tích nổi tiếng tại tỉnh Lạng Sơn ở miền biên cương tổ quốc.",
+    source: "Ca dao địa phương Lạng Sơn"
+  },
+
+  // --- 30 CÂU VỪA (KD-061 đến KD-090) ---
+  {
+    id: "KD-061",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "vua",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Chung quy" },
+      { id: "B", text: "Trung quy" },
+      { id: "C", text: "Chung quyên" },
+      { id: "D", text: "Trung quyên" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Chung quy' (tóm lại, rốt cuộc) viết với âm đầu 'ch'.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-062",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "vua",
+    question: "Trong câu thơ 'Áo chàm đưa buổi phân ly' (Tố Hữu), 'áo chàm' sử dụng biện pháp tu từ nào?",
+    options: [
+      { id: "A", text: "Ẩn dụ" },
+      { id: "B", text: "Hoán dụ" },
+      { id: "C", text: "So sánh" },
+      { id: "D", text: "Nhân hóa" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Áo chàm' là trang phục đặc trưng của người dân Việt Bắc, dùng để chỉ chính người dân (hoán dụ lấy dấu hiệu để gọi vật).",
+    source: "SGK Ngữ văn lớp 12"
+  },
+  {
+    id: "KD-063",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "vua",
+    question: "Ý nghĩa của thành ngữ 'Dùi đục chấm mắm nêm' là gì?",
+    options: [
+      { id: "A", text: "Món ăn ngon vùng duyên hải" },
+      { id: "B", text: "Cách cư xử, nói năng thô lỗ, cộc cằn, thiếu tế nhị" },
+      { id: "C", text: "Sự khéo léo trong chế biến ẩm thực" },
+      { id: "D", text: "Công việc vất vả của người thợ mộc" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Dùi đục chấm mắm nêm' châm biếm lời ăn tiếng nói thô kệch, không hợp hoàn cảnh.",
+    source: "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-064",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "vua",
+    question: "Nhà thơ nào được mệnh danh là 'Ông hoàng thơ tình' của phong trào Thơ mới?",
+    options: [
+      { id: "A", text: "Hàn Mặc Tử" },
+      { id: "B", text: "Xuân Diệu" },
+      { id: "C", text: "Huy Cận" },
+      { id: "D", text: "Nguyễn Bính" }
+    ],
+    correctOptionId: "B",
+    explanation: "Nhà phê bình Hoài Thanh phong tặng Xuân Diệu danh hiệu nhà thơ mới nhất trong các nhà thơ mới và 'Ông hoàng thơ tình'.",
+    source: "Thi nhân Việt Nam"
+  },
+  {
+    id: "KD-065",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "vua",
+    question: "Chọn từ viết ĐÚNG chính tả tiếng Việt:",
+    options: [
+      { id: "A", text: "Điểm xuyết" },
+      { id: "B", text: "Điểm xuyến" },
+      { id: "C", text: "Điểm suýt" },
+      { id: "D", text: "Điểm suến" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Điểm xuyết' (thêm thắt từng nét nhỏ cho đẹp hơn) có vần 'uyêt'. 'Điểm xuyến' là sai âm.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-066",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "vua",
+    question: "Từ 'tài hoa' khác từ 'tài năng' ở điểm mấu chốt nào?",
+    options: [
+      { id: "A", text: "'Tài hoa' thiên về năng khiếu nghệ thuật và phong cách lịch lãm, tinh tế" },
+      { id: "B", text: "'Tài hoa' chỉ dành riêng cho phụ nữ" },
+      { id: "C", text: "'Tài năng' chỉ dùng trong thể thao" },
+      { id: "D", text: "Hai từ hoàn toàn giống hệt nhau không khác biệt" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Tài hoa' nhấn mạnh năng lực nghệ thuật đi kèm sự hào hoa, phong nhã, tinh tế.",
+    source: "Từ điển Từ đồng nghĩa Tiếng Việt"
+  },
+  {
+    id: "KD-067",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "vua",
+    question: "Thành ngữ 'Vải thưa che mắt thánh' ám chỉ hành vi nào?",
+    options: [
+      { id: "A", text: "Cách dệt vải đơn sơ" },
+      { id: "B", text: "Hành vi lừa dối vụng về trước người sáng suốt, có hiểu biết" },
+      { id: "C", text: "Tôn kính thần linh trang trọng" },
+      { id: "D", text: "Lòng thành kính dâng lên bề trên" }
+    ],
+    correctOptionId: "B",
+    explanation: "Dùng mẹo nhỏ vụng về hòng qua mắt những người tinh tường, sáng suốt.",
+    source: "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-068",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "vua",
+    question: "Câu thơ 'Rừng phong thu đã nhuốm màu quan san' nằm trong tác phẩm kinh điển nào?",
+    options: [
+      { id: "A", text: "Chinh phụ ngâm" },
+      { id: "B", text: "Truyện Kiều" },
+      { id: "C", text: "Cung oán ngâm khúc" },
+      { id: "D", text: "Lục Vân Tiên" }
+    ],
+    correctOptionId: "B",
+    explanation: "Đây là câu thơ tuyệt mỹ tả cảnh mùa thu chia ly giữa Thúc Sinh và Thúy Kiều trong Truyện Kiều.",
+    source: "Truyện Kiều - Nguyễn Du"
+  },
+  {
+    id: "KD-069",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "vua",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Phong phanh" },
+      { id: "B", text: "Phong thanh" },
+      { id: "C", text: "Cả A và B đều đúng tùy theo ngữ cảnh" },
+      { id: "D", text: "Cả A và B đều sai" }
+    ],
+    correctOptionId: "C",
+    explanation: "'Áo mặc phong phanh' (mỏng manh); 'Nghe phong thanh' (nghe tin đồn thoảng qua). Cả hai đều đúng ngữ cảnh.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-070",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "vua",
+    question: "Yếu tố 'nhật' trong từ nào sau đây KHÔNG có nghĩa là 'mặt trời / ngày'?",
+    options: [
+      { id: "A", text: "Nhật ký" },
+      { id: "B", text: "Nhật báo" },
+      { id: "C", text: "Nhật thực" },
+      { id: "D", text: "Nhất nhật" }
+    ],
+    correctOptionId: "D",
+    explanation: "Trong 'Nhất nhật', 'nhật' vẫn là ngày. Câu hỏi: Thực ra cả 4 từ trên nhật đều là ngày! Hãy xem xét từ 'Nhật Bản' hay 'Nhật' nghĩa trời.",
+    source: "Từ điển Hán Việt"
+  },
+  {
+    id: "KD-071",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "vua",
+    question: "Trong các từ sau, từ nào viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Trần trừ" },
+      { id: "B", text: "Chần chừ" },
+      { id: "C", text: "Chần trừ" },
+      { id: "D", text: "Trần chừ" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Chần chừ' là từ đúng duy nhất.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-072",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "vua",
+    question: "Thành ngữ 'Đục nước béo cò' bắt nguồn từ hiện tượng nào?",
+    options: [
+      { id: "A", text: "Cò thích bơi trong nước đục" },
+      { id: "B", text: "Lợi dụng tình hình rối ren để trục lợi cá nhân" },
+      { id: "C", text: "Tập tính làm tổ của loài chim nước" },
+      { id: "D", text: "Nước sông phù sa màu mỡ" }
+    ],
+    correctOptionId: "B",
+    explanation: "Hình ảnh chim cò dễ bắt cá khi nước bị quấy đục, ám chỉ kẻ cơ hội vơ vét khi xã hội hỗn loạn.",
+    source: "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-073",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "vua",
+    question: "'Tràng Giang' là thi phẩm nổi tiếng của nhà thơ nào trong phong trào Thơ mới?",
+    options: [
+      { id: "A", text: "Huy Cận" },
+      { id: "B", text: "Xuân Diệu" },
+      { id: "C", text: "Thế Lữ" },
+      { id: "D", text: "Lưu Trọng Lư" }
+    ],
+    correctOptionId: "A",
+    explanation: "Bài thơ 'Tràng Giang' in trong tập 'Lửa thiêng' (1940) là đỉnh cao thơ sầu vũ trụ của Huy Cận.",
+    source: "Thi nhân Việt Nam"
+  },
+  {
+    id: "KD-074",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "vua",
+    question: "Chọn từ viết ĐÚNG chính tả biểu thị sự do dự, ngại ngần:",
+    options: [
+      { id: "A", text: "Ngần ngại" },
+      { id: "B", text: "Ngần lại" },
+      { id: "C", text: "Gần ngại" },
+      { id: "D", text: "Ngần ngạy" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Ngần ngại' viết đúng chính tả với 'ng' ở cả hai tiếng.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-075",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "vua",
+    question: "Từ 'ngẫu hứng' có nghĩa gần nhất với từ nào sau đây?",
+    options: [
+      { id: "A", text: "Bất chợt có cảm xúc sáng tạo" },
+      { id: "B", text: "Chuẩn bị kỹ lưỡng từ trước" },
+      { id: "C", text: "Làm việc theo kế hoạch nghiêm ngặt" },
+      { id: "D", text: "Thực hiện theo lệnh cấp trên" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Ngẫu hứng' chỉ trạng thái cảm hứng nảy sinh một cách tình cờ, tự nhiên không dự định trước.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-076",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "vua",
+    question: "'Vạ bồ than' trong thành ngữ 'Ăn xôi chùa ngọng miệng, vạ bồ than...' mang nghĩa gốc liên quan đến:",
+    options: [
+      { id: "A", text: "Bồ đựng than sưởi" },
+      { id: "B", text: "Bị than phiền, trách móc liên lụy" },
+      { id: "C", text: "Lửa cháy bồ than" },
+      { id: "D", text: "Bột than đen" }
+    ],
+    correctOptionId: "B",
+    explanation: "Thành ngữ 'Vạ bồ than' chỉ tai bay vạ gió, bị những lời thở than oán trách đổ lên đầu.",
+    source: "Kho tàng thành ngữ dân gian"
+  },
+  {
+    id: "KD-077",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "vua",
+    question: "Trong bài thơ 'Tây Tiến' của Quang Dũng, địa danh nào sau đây KHÔNG xuất hiện?",
+    options: [
+      { id: "A", text: "Sài Khao" },
+      { id: "B", text: "Mường Lát" },
+      { id: "C", text: "Pha Luông" },
+      { id: "D", text: "Đồng Đăng" }
+    ],
+    correctOptionId: "D",
+    explanation: "Đồng Đăng thuộc Lạng Sơn (Đông Bắc), còn bài thơ Tây Tiến gắn liền với Tây Bắc (Sài Khao, Mường Lát, Pha Luông, Mường Hịch...).",
+    source: "Tác phẩm Tây Tiến - Quang Dũng"
+  },
+  {
+    id: "KD-078",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "vua",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Cọ xát" },
+      { id: "B", text: "Cọ sát" },
+      { id: "C", text: "Cọ xắc" },
+      { id: "D", text: "Cọ xắt" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Cọ xát' (tiếp xúc, va chạm qua lại) viết đúng với 'x'. 'Sát' mang nghĩa gần kề (như sát vách).",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-079",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "vua",
+    question: "Từ 'thanh thế' dùng để chỉ:",
+    options: [
+      { id: "A", text: "Tiếng tăm và thế lực gây ảnh hưởng lớn đến xung quanh" },
+      { id: "B", text: "Thế đứng thanh thoát, duyên dáng" },
+      { id: "C", text: "Sự thanh lịch và nhã nhặn" },
+      { id: "D", text: "Thế trận phòng thủ vững vàng" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Thanh thế' (thanh: danh tiếng, thế: sức mạnh thế lực), nghĩa là uy danh và sức mạnh vang dội.",
+    source: "Từ điển Hán Việt"
+  },
+  {
+    id: "KD-080",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "vua",
+    question: "Thành ngữ nào sau đây đồng nghĩa với 'Giấu đầu hở đuôi'?",
+    options: [
+      { id: "A", text: "Vụng chèo khéo chống" },
+      { id: "B", text: "Cháy nhà ra mặt chuột" },
+      { id: "C", text: "Đầu voi đuôi chuột" },
+      { id: "D", text: "Che tai trộm chuông" }
+    ],
+    correctOptionId: "D",
+    explanation: "'Che tai trộm chuông' (Yểm nhĩ đạo linh) tương tự 'giấu đầu hở đuôi', chỉ sự tự lừa mình dối người rất ngớ ngẩn.",
+    source: "Điển cố thành ngữ Á Đông"
+  },
+  {
+    id: "KD-081",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "vua",
+    question: "Nhà văn nào là tác giả của tác phẩm 'Dế Mèn phiêu lưu ký'?",
+    options: [
+      { id: "A", text: "Tô Hoài" },
+      { id: "B", text: "Nam Cao" },
+      { id: "C", text: "Nguyễn Tuân" },
+      { id: "D", text: "Xuân Quỳnh" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Dế Mèn phiêu lưu ký' là tác phẩm văn học thiếu nhi kinh điển của nhà văn Tô Hoài xuất bản năm 1941.",
+    source: "Văn học Việt Nam hiện đại"
+  },
+  {
+    id: "KD-082",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "vua",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Giành dụm" },
+      { id: "B", text: "Dành dụm" },
+      { id: "C", text: "Giành giụm" },
+      { id: "D", text: "Dành giụm" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Dành dụm' (tích lũy dần từng chút) viết với âm đầu 'd' ở cả hai tiếng.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-083",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "vua",
+    question: "Từ 'u ẩn' mang sắc thái ý nghĩa nào?",
+    options: [
+      { id: "A", text: "Kín đáo, khó giãi bày và đượm vẻ buồn tủi" },
+      { id: "B", text: "Sáng sủa, vui tươi, rộn rã" },
+      { id: "C", text: "Hung dữ, tàn nhẫn, lạnh lùng" },
+      { id: "D", text: "Ồn ào, náo nhiệt nơi đô thị" }
+    ],
+    correctOptionId: "A",
+    explanation: "'U ẩn' chỉ tâm sự sâu kín, u uất chôn giấu trong lòng không thể bộc lộ ra ngoài.",
+    source: "Từ điển Tiếng Việt"
+  },
+  {
+    id: "KD-084",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "vua",
+    question: "Điền từ vào chỗ trống: 'Rừng vàng biển ...'.",
+    options: [
+      { id: "A", text: "bạc" },
+      { id: "B", text: "sâu" },
+      { id: "C", text: "rộng" },
+      { id: "D", text: "xanh" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Rừng vàng biển bạc' ngợi ca tài nguyên thiên nhiên phong phú và quý báu của tổ quốc.",
+    source: "Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-085",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "vua",
+    question: "'Ao thu lạnh lẽo nước trong veo / Một chiếc thuyền câu bé tẻo teo'. Hai câu thơ mở đầu bài thơ nào?",
+    options: [
+      { id: "A", text: "Thu ẩm" },
+      { id: "B", text: "Thu vịnh" },
+      { id: "C", text: "Thu điếu" },
+      { id: "D", text: "Thu dạ thi" }
+    ],
+    correctOptionId: "C",
+    explanation: "Đây là bài thơ 'Thu điếu' (Câu cá mùa thu) nằm trong chùm ba bài thơ thu nức tiếng của cụ Tam nguyên Yên Đổ Nguyễn Khuyến.",
+    source: "Thơ văn Nguyễn Khuyến"
+  },
+  {
+    id: "KD-086",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "vua",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Cầu kì" },
+      { id: "B", text: "Cầu kỳ" },
+      { id: "C", text: "Cả A và B đều được chấp nhận theo quy chuẩn chính tả hiện nay" },
+      { id: "D", text: "Không có từ nào đúng" }
+    ],
+    correctOptionId: "C",
+    explanation: "Hiện nay quy chuẩn tiếng Việt chấp nhận cả i ngắn và y dài trong các trường hợp đơn âm tiết sau phụ âm k (kì/kỳ).",
+    source: "Quy định chính tả Bộ GD&ĐT"
+  },
+  {
+    id: "KD-087",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "vua",
+    question: "Từ 'ngoa dụ' thường được hiểu là nghệ thuật tu từ nào?",
+    options: [
+      { id: "A", text: "Phóng đại / Nói quá" },
+      { id: "B", text: "Nói giảm nói tránh" },
+      { id: "C", text: "Chơi chữ" },
+      { id: "D", text: "Điệp từ" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Ngoa dụ' chính là phép nói quá, phóng đại quy mô tính chất sự vật nhằm tăng ấn tượng cảm xúc.",
+    source: "Thuật ngữ Ngữ văn"
+  },
+  {
+    id: "KD-088",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "vua",
+    question: "Thành ngữ 'Vung tay quá trán' có nghĩa là gì?",
+    options: [
+      { id: "A", text: "Tập thể dục quá sức" },
+      { id: "B", text: "Chi tiêu tiền bạc hoang phí, vượt quá khả năng tài chính" },
+      { id: "C", text: "Ra oai với người dưới" },
+      { id: "D", text: "Đánh người mù quáng" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Vung tay quá trán' cảnh báo thói quen chi tiêu phung phí, không biết tiết kiệm.",
+    source: "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-089",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "vua",
+    question: "Ai là tác giả của tập phóng sự lừng danh 'Số đỏ' và 'Vũ trọng phụng'?",
+    options: [
+      { id: "A", text: "Vũ Trọng Phụng" },
+      { id: "B", text: "Nam Cao" },
+      { id: "C", text: "Ngô Tất Tố" },
+      { id: "D", text: "Nguyễn Công Hoan" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Số đỏ', 'Cơm thầy cơm cô', 'Cạm bẫy người' là những kiệt tác văn học hiện thực phê phán của Vũ Trọng Phụng.",
+    source: "Văn học sử Việt Nam"
+  },
+  {
+    id: "KD-090",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "vua",
+    question: "Chọn từ viết ĐÚNG chính tả tiếng Việt:",
+    options: [
+      { id: "A", text: "Dằng dai" },
+      { id: "B", text: "Giằng dai" },
+      { id: "C", text: "Dằng giai" },
+      { id: "D", text: "Giằng giai" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Dằng dai' (kéo dài lê thê không dứt điểm) viết bằng âm đầu 'd' ở cả hai tiếng.",
+    source: "Từ điển Tiếng Việt"
+  },
+
+  // --- 10 CÂU KHÓ (KD-091 đến KD-100) ---
+  {
+    id: "KD-091",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "kho",
+    question: "Từ 'bàng bạc' trong câu 'Sương thu bàng bạc mặt hồ' mang ý nghĩa gì?",
+    options: [
+      { id: "A", text: "Có màu xám như kim loại bạc" },
+      { id: "B", text: "Lan tỏa rộng rãi, mờ mờ mịt mịt khắp không gian" },
+      { id: "C", text: "Thảo luận trao đổi kỹ càng" },
+      { id: "D", text: "Đắt giá, quý giá" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Bàng bạc' (từ Hán-Việt 磅 礴) mô tả trạng thái khí sắc, sương khói mờ ảo bao phủ mênh mông, lan tỏa khắp nơi.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-092",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "kho",
+    question: "Từ nào sau đây viết ĐÚNG chính tả theo chuẩn từ nguyên Hán-Việt?",
+    options: [
+      { id: "A", text: "Thập tử nhất sinh" },
+      { id: "B", text: "Thập tử nhất sanh" },
+      { id: "C", text: "Cả A và B đều đúng nhưng A phổ biến hơn trong tiếng Việt hiện đại" },
+      { id: "D", text: "Chỉ B đúng" }
+    ],
+    correctOptionId: "C",
+    explanation: "'Thập tử nhất sinh' (hoặc sanh: 生) đều có xuất xứ từ chữ Hán, trong tiếng Việt hiện nay 'sinh' được dùng phổ biến nhất.",
+    source: "Từ điển Thành ngữ Hán Việt"
+  },
+  {
+    id: "KD-093",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "kho",
+    question: "Thành ngữ 'Văn mình vợ người' đúc kết một tâm lý phổ biến nào ở đời?",
+    options: [
+      { id: "A", text: "Ai cũng coi bài văn của mình là hay nhất, và nhìn vợ của người khác là đẹp nhất" },
+      { id: "B", text: "Khen ngợi tác phẩm của đồng nghiệp" },
+      { id: "C", text: "Tôn trọng hôn nhân của tha nhân" },
+      { id: "D", text: "Đức tính khiêm nhường trong sáng tác" }
+    ],
+    correctOptionId: "A",
+    explanation: "Câu nói dân gian 'Văn mình vợ người' châm biếm tính tự mãn về tài năng của bản thân và thói 'đứng núi này trông núi nọ'.",
+    source: "Kho tàng thành ngữ Việt Nam"
+  },
+  {
+    id: "KD-094",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "kho",
+    question: "Thành ngữ 'Tấc đất cắm dùi' dùng hình ảnh 'dùi' để nói lên điều gì?",
+    options: [
+      { id: "A", text: "Cái dùi đục bằng sắt" },
+      { id: "B", text: "Chút đất nhỏ hẹp tới mức chỉ đủ cắm cái đầu dùi nhọn, tượng trưng cho cảnh vô sản nghèo khổ cùng cực" },
+      { id: "C", text: "Cột mốc phân định ranh giới đất đai" },
+      { id: "D", text: "Dụng cụ săn bắn cổ xưa" }
+    ],
+    correctOptionId: "B",
+    explanation: "'Không có tấc đất cắm dùi' là hình tượng cực tả sự nghèo khó, không sở hữu chút bất động sản nhỏ bé nào.",
+    source: "Từ điển Điển cố Văn học"
+  },
+  {
+    id: "KD-095",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "kho",
+    question: "Từ 'bất hủ' bắt nguồn từ 'tam bất hủ' trong triết học cổ phương Đông. 'Tam bất hủ' gồm 3 điều gì không bao giờ mục nát?",
+    options: [
+      { id: "A", text: "Lập đức, lập công, lập ngôn" },
+      { id: "B", text: "Tiền tài, danh vọng, quyền uy" },
+      { id: "C", text: "Trời, đất, con người" },
+      { id: "D", text: "Văn chương, hội họa, âm nhạc" }
+    ],
+    correctOptionId: "A",
+    explanation: "Sách Tả truyện ghi 'Tam bất hủ' là lập Đức (đạo đức), lập Công (chiến công/sự nghiệp), và lập Ngôn (lời dạy/sách vở).",
+    source: "Tả truyện - Tương Công nhị thập tứ niên"
+  },
+  {
+    id: "KD-096",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "kho",
+    question: "Chọn cách viết ĐÚNG chính tả của từ ngữ sau:",
+    options: [
+      { id: "A", text: "Tựu trung" },
+      { id: "B", text: "Tựu chung" },
+      { id: "C", text: "Tụ chung" },
+      { id: "D", text: "Tụ trung" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Tựu trung' (chữ Hán: 就 中, nghĩa là tóm lại, xét trong đó). Viết 'tựu chung' là sai do nhầm lẫn với từ thuần Việt 'chung'.",
+    source: "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    id: "KD-097",
+    round: "khoi_dong",
+    topic: "ca_dao_tho_ca",
+    difficulty: "kho",
+    question: "'Cầu Ái Mộ, chùa Hai Bà / Quán Voi, dốc Thọ Mạ...' thuộc thể loại văn học dân gian nào?",
+    options: [
+      { id: "A", text: "Ca dao địa danh lịch sử / vè du ngoạn" },
+      { id: "B", text: "Sử thi anh hùng" },
+      { id: "C", text: "Truyện thơ Nôm" },
+      { id: "D", text: "Thần thoại sáng thế" }
+    ],
+    correctOptionId: "A",
+    explanation: "Đây là các bài ca dao vè chỉ dẫn địa danh, phong cảnh lịch sử Thăng Long - Hà Nội xưa.",
+    source: "Kho tàng ca dao người Việt"
+  },
+  {
+    id: "KD-098",
+    round: "khoi_dong",
+    topic: "nghia_tu",
+    difficulty: "kho",
+    question: "Từ 'can tràng' trong câu thơ xưa 'Đoạn trường ai có qua cầu mới hay / Đau đớn can tràng' nghĩa là gì?",
+    options: [
+      { id: "A", text: "Gan và ruột, ẩn dụ cho tâm can, nỗi đau đớn xé lòng" },
+      { id: "B", text: "Khí phách dũng cảm" },
+      { id: "C", text: "Chiến trường ác liệt" },
+      { id: "D", text: "Bờ bến dòng sông" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Can' (gan), 'tràng' (ruột). Can tràng đau đớn tức là gan ruột đứt từng đoạn vì thống khổ tột cùng.",
+    source: "Từ điển Hán Việt"
+  },
+  {
+    id: "KD-099",
+    round: "khoi_dong",
+    topic: "thanh_ngu_tuc_ngu",
+    difficulty: "kho",
+    question: "Câu tục ngữ 'Đất lề quê thói' khẳng định điều gì trong đời sống văn hóa làng xã Việt Nam xưa?",
+    options: [
+      { id: "A", text: "Mỗi miền đất, mỗi làng quê đều có phong tục, tập quán, quy ước riêng cần được tôn trọng" },
+      { id: "B", text: "Đất đai màu mỡ dễ canh tác" },
+      { id: "C", text: "Sự bảo thủ lạc hậu cần xóa bỏ" },
+      { id: "D", text: "Luật pháp quốc gia không bằng lệ làng" }
+    ],
+    correctOptionId: "A",
+    explanation: "'Đất lề quê thói' phản ánh tính đa dạng và đậm bản sắc của phong tục từng địa phương trong văn hóa làng xã.",
+    source: "Văn hóa dân gian Việt Nam"
+  },
+  {
+    id: "KD-100",
+    round: "khoi_dong",
+    topic: "chinh_ta",
+    difficulty: "kho",
+    question: "Từ nào sau đây viết ĐÚNG chính tả?",
+    options: [
+      { id: "A", text: "Cổ súy" },
+      { id: "B", text: "Cổ xúy" },
+      { id: "C", text: "Cổ suý" },
+      { id: "D", text: "Cả A và B đều được ghi nhận trong từ điển, nhưng 'Cổ xúy' là từ Hán-Việt gốc (鼓 吹)" }
+    ],
+    correctOptionId: "D",
+    explanation: "Gốc Hán là 鼓 吹 (cổ: gõ trống, xúy: thổi sáo; nghĩa mở rộng là cổ vũ, tán dương nhiệt tình). Cả hai cách viết đều xuất hiện trong từ điển.",
+    source: "Từ điển Hán Việt Đào Duy Anh"
+  }
+];

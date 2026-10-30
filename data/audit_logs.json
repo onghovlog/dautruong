@@ -1,0 +1,122 @@
+[
+  {
+    "id": "log_525a29f1-486a-4515-85f0-96b491c659d0",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 10,
+      "keywordGuessTimeSeconds": 10
+    },
+    "timestamp": "2026-10-30T11:51:46.259Z"
+  },
+  {
+    "id": "log_bd9896fd-5241-4856-921f-908076e9d133",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 15,
+      "keywordGuessTimeSeconds": 20
+    },
+    "timestamp": "2026-10-30T11:51:46.047Z"
+  },
+  {
+    "id": "log_7cc2a2c0-52a8-452b-8bf7-70b6f719d963",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 10,
+      "keywordGuessTimeSeconds": 10
+    },
+    "timestamp": "2026-10-30T11:44:07.324Z"
+  },
+  {
+    "id": "log_670f10dc-6a3e-426b-b575-3877dca96250",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 15,
+      "keywordGuessTimeSeconds": 20
+    },
+    "timestamp": "2026-10-30T11:44:06.488Z"
+  },
+  {
+    "id": "log_9547d4b9-d516-4038-bc5e-73d0d22ec1f4",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 10,
+      "keywordGuessTimeSeconds": 10
+    },
+    "timestamp": "2026-10-30T11:39:25.200Z"
+  },
+  {
+    "id": "log_ec3841db-5927-40d3-b04a-e2328790de82",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 15,
+      "keywordGuessTimeSeconds": 20
+    },
+    "timestamp": "2026-10-30T11:39:24.957Z"
+  },
+  {
+    "id": "log_fb0cf908-6607-4a12-acd2-60a8371423bf",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 10,
+      "keywordGuessTimeSeconds": 10
+    },
+    "timestamp": "2026-10-30T10:52:47.406Z"
+  },
+  {
+    "id": "log_57856917-0385-4c62-ad9d-4888396e826b",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 15,
+      "keywordGuessTimeSeconds": 20
+    },
+    "timestamp": "2026-10-30T10:52:47.370Z"
+  },
+  {
+    "id": "log_5c943fe0-43ca-4660-ba63-eecf06bf1edd",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 10,
+      "keywordGuessTimeSeconds": 10
+    },
+    "timestamp": "2026-10-30T10:51:28.237Z"
+  },
+  {
+    "id": "log_525cd340-956e-49c2-963a-d89ef4dc9932",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 15,
+      "keywordGuessTimeSeconds": 20
+    },
+    "timestamp": "2026-10-30T10:51:28.145Z"
+  }
+]

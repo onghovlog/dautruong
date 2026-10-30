@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "BK-001",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "de",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trì hoãn"
+      },
+      {
+        "id": "B",
+        "text": "Chì hoãn"
+      },
+      {
+        "id": "C",
+        "text": "Trì hoảng"
+      },
+      {
+        "id": "D",
+        "text": "Chì hoảng"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Trì hoãn' (làm chậm trễ lại) viết đúng với âm đầu 'tr' và vần 'oan' kèm dấu ngã.",
+    "source": "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    "id": "BK-002",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "de",
+    "question": "Điền từ vào câu thành ngữ: 'Chớ thấy sóng cả mà ... tay chèo'.",
+    "options": [
+      {
+        "id": "A",
+        "text": "ngã"
+      },
+      {
+        "id": "B",
+        "text": "buông"
+      },
+      {
+        "id": "C",
+        "text": "bỏ"
+      },
+      {
+        "id": "D",
+        "text": "mỏi"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Chớ thấy sóng cả mà ngã tay chèo' khuyên không được nản chí, chùn bước trước sóng gió hiểm nguy.",
+    "source": "Tục ngữ Việt Nam"
+  },
+  {
+    "id": "BK-003",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "de",
+    "question": "Từ 'nguy nga' thường dùng để miêu tả đối tượng nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Công trình kiến trúc, lâu đài tráng lệ, đồ sộ"
+      },
+      {
+        "id": "B",
+        "text": "Tâm trạng hoang mang sợ hãi"
+      },
+      {
+        "id": "C",
+        "text": "Dòng suối nhỏ chảy róc rách"
+      },
+      {
+        "id": "D",
+        "text": "Đoạn đường gập ghềnh khúc khuỷu"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Nguy nga' (chữ Hán: 巍 峨) gợi tả vẻ cao lớn, bề thế và lộng lẫy của các tòa cung điện, lâu đài.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-004",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "de",
+    "question": "Bài thơ 'Đoàn thuyền đánh cá' ('Mặt trời xuống biển như hòn lửa...') là sáng tác của ai?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Huy Cận"
+      },
+      {
+        "id": "B",
+        "text": "Xuân Diệu"
+      },
+      {
+        "id": "C",
+        "text": "Chế Lan Viên"
+      },
+      {
+        "id": "D",
+        "text": "Bằng Việt"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Huy Cận viết bài thơ này năm 1958 trong chuyến đi thực tế dài ngày tại vùng biển Hòn Gai (Quảng Ninh).",
+    "source": "SGK Ngữ văn lớp 9"
+  },
+  {
+    "id": "BK-005",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "de",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sáng lạn"
+      },
+      {
+        "id": "B",
+        "text": "Xán lạn"
+      },
+      {
+        "id": "C",
+        "text": "Sán lạn"
+      },
+      {
+        "id": "D",
+        "text": "Xáng lạn"
+      }
+    ],
+    "correctOptionId": "B",
+    "explanation": "'Xán lạn' (chữ Hán: 燦 爛, có nghĩa là rực rỡ, xán lạn tiền đồ). Rất nhiều người viết sai thành 'sáng lạn'.",
+    "source": "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    "id": "BK-006",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "de",
+    "question": "'Đi đêm lắm có ngày gặp ...'. Điền từ còn thiếu vào câu tục ngữ:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ma"
+      },
+      {
+        "id": "B",
+        "text": "trộm"
+      },
+      {
+        "id": "C",
+        "text": "cướp"
+      },
+      {
+        "id": "D",
+        "text": "họa"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Đi đêm lắm có ngày gặp ma' răn đe người hay làm điều lén lút, mờ ám sớm muộn cũng sẽ bị phát giác.",
+    "source": "Kho tàng tục ngữ người Việt"
+  },
+  {
+    "id": "BK-007",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "de",
+    "question": "Từ 'ngẫu nhiên' trái nghĩa với từ nào sau đây?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tất nhiên"
+      },
+      {
+        "id": "B",
+        "text": "Bất ngờ"
+      },
+      {
+        "id": "C",
+        "text": "Tình cờ"
+      },
+      {
+        "id": "D",
+        "text": "Bất chợt"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Trong triết học và ngôn ngữ, cặp phạm trù 'tất nhiên' và 'ngẫu nhiên' là hai khái niệm đối lập nhau.",
+    "source": "Từ điển Triết học"
+  },
+  {
+    "id": "BK-008",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "de",
+    "question": "Tác phẩm văn xuôi tự sự nào mở đầu với hình ảnh: 'Hồi đó ở quê tôi, người ta đồn...'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đất rừng phương Nam - Đoàn Giỏi"
+      },
+      {
+        "id": "B",
+        "text": "Vợ nhặt - Kim Lân"
+      },
+      {
+        "id": "C",
+        "text": "Lão Hạc - Nam Cao"
+      },
+      {
+        "id": "D",
+        "text": "Chí Phèo - Nam Cao"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Tiểu thuyết 'Đất rừng phương Nam' của Đoàn Giỏi khắc họa bức tranh thiên nhiên và con người miền Tây hào sảng.",
+    "source": "Văn học thiếu nhi Việt Nam"
+  },
+  {
+    "id": "BK-009",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "de",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giành giật"
+      },
+      {
+        "id": "B",
+        "text": "Dành dật"
+      },
+      {
+        "id": "C",
+        "text": "Giành dật"
+      },
+      {
+        "id": "D",
+        "text": "Dành giật"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Giành giật' mang ý tranh đoạt quyết liệt, cả hai tiếng đều viết bằng 'gi'.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-010",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "de",
+    "question": "Thành ngữ 'Vạn sự như ý' thường được dùng trong dịp nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lời chúc tụng may mắn trong dịp Tết Nguyên Đán hoặc hỷ sự"
+      },
+      {
+        "id": "B",
+        "text": "Lời chia buồn tang lễ"
+      },
+      {
+        "id": "C",
+        "text": "Văn bản hành chính nhà nước"
+      },
+      {
+        "id": "D",
+        "text": "Đơn khiếu nại tố cáo"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Vạn sự như ý' chúc cho mọi dự định, mong ước của gia chủ đều thành tựu viên mãn.",
+    "source": "Phong tục Tết Việt"
+  },
+  {
+    "id": "BK-011",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "de",
+    "question": "Từ 'nghĩa khí' mang hàm nghĩa gần nhất với từ nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hào hiệp"
+      },
+      {
+        "id": "B",
+        "text": "Ích kỷ"
+      },
+      {
+        "id": "C",
+        "text": "Nhu nhược"
+      },
+      {
+        "id": "D",
+        "text": "Rụt rè"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Hào hiệp' và 'nghĩa khí' đều chỉ tinh thần xả thân vì đại nghĩa và bảo vệ kẻ yếu.",
+    "source": "Từ điển Từ đồng nghĩa"
+  },
+  {
+    "id": "BK-012",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "de",
+    "question": "Câu thơ: 'Ôi Tổ quốc ta, ta yêu như máu thịt / Như mẹ cha ta, như vợ như chồng' của ai?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chế Lan Viên"
+      },
+      {
+        "id": "B",
+        "text": "Tố Hữu"
+      },
+      {
+        "id": "C",
+        "text": "Xuân Diệu"
+      },
+      {
+        "id": "D",
+        "text": "Nguyễn Đình Thi"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Đoạn thơ trích từ bài 'Sao chiến thắng' tuyệt đẹp của nhà thơ Chế Lan Viên.",
+    "source": "Thơ Chế Lan Viên"
+  },
+  {
+    "id": "BK-013",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "de",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trau chuốt"
+      },
+      {
+        "id": "B",
+        "text": "Chau chuốt"
+      },
+      {
+        "id": "C",
+        "text": "Trau chút"
+      },
+      {
+        "id": "D",
+        "text": "Chau chút"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Trau chuốt' viết đúng là 'tr' và 'ch', có nghĩa sửa sang gọt giũa tỉ mỉ.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-014",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "de",
+    "question": "Điền từ: 'Thuận vợ thuận chồng, tát ... Đông cũng cạn'.",
+    "options": [
+      {
+        "id": "A",
+        "text": "biển"
+      },
+      {
+        "id": "B",
+        "text": "sông"
+      },
+      {
+        "id": "C",
+        "text": "suối"
+      },
+      {
+        "id": "D",
+        "text": "hồ"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Thuận vợ thuận chồng, tát biển Đông cũng cạn' khẳng định sức mạnh vô địch của sự đồng lòng gia đình.",
+    "source": "Tục ngữ Việt Nam"
+  },
+  {
+    "id": "BK-015",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "de",
+    "question": "Từ 'ngao du' có thể kết hợp tự nhiên nhất với từ nào sau đây?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sơn thủy"
+      },
+      {
+        "id": "B",
+        "text": "Văn phòng"
+      },
+      {
+        "id": "C",
+        "text": "Bệnh tật"
+      },
+      {
+        "id": "D",
+        "text": "Lực lượng"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ngao du sơn thủy' (du ngoạn ngắm sông núi hữu tình) là cụm từ diễn đạt quen thuộc và tao nhã.",
+    "source": "Từ điển Cụm từ Tiếng Việt"
+  },
+  {
+    "id": "BK-016",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "de",
+    "question": "'Người lái đò Sông Đà' là tập tùy bút xuất sắc của bậc thầy ngôn từ nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nguyễn Tuân"
+      },
+      {
+        "id": "B",
+        "text": "Thạch Lam"
+      },
+      {
+        "id": "C",
+        "text": "Vũ Bằng"
+      },
+      {
+        "id": "D",
+        "text": "Nguyễn Khải"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Nhà văn Nguyễn Tuân với phong cách tài hoa, uyên bác đã dựng nên bức tượng đài hùng tráng về thiên nhiên và con người Tây Bắc.",
+    "source": "SGK Ngữ văn lớp 12"
+  },
+  {
+    "id": "BK-017",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "de",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giấu giếm"
+      },
+      {
+        "id": "B",
+        "text": "Dấu diếm"
+      },
+      {
+        "id": "C",
+        "text": "Giấu diếm"
+      },
+      {
+        "id": "D",
+        "text": "Dấu giếm"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Giấu giếm' viết bằng 'gi' ở cả hai tiếng.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-018",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "de",
+    "question": "Thành ngữ 'Vô thưởng vô phạt' chỉ tính chất của sự việc thế nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không đem lại lợi ích mà cũng chẳng gây ra tác hại gì đáng kể"
+      },
+      {
+        "id": "B",
+        "text": "Quy chế khen thưởng nghiêm minh"
+      },
+      {
+        "id": "C",
+        "text": "Hành động phạm pháp bị bỏ qua"
+      },
+      {
+        "id": "D",
+        "text": "Sự bất công trong thi đấu"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Vô thưởng vô phạt' chỉ việc làm trung tính, nhạt nhẽo, không ảnh hưởng xấu tốt rõ rệt.",
+    "source": "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    "id": "BK-019",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "de",
+    "question": "Từ 'ngẫu hứng' thường xuất hiện nhiều nhất trong lĩnh vực nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nghệ thuật, âm nhạc, thơ ca"
+      },
+      {
+        "id": "B",
+        "text": "Kế toán kiểm toán"
+      },
+      {
+        "id": "C",
+        "text": "Phẫu thuật y khoa"
+      },
+      {
+        "id": "D",
+        "text": "Điều khiển hàng không"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ngẫu hứng' (improvisation) là trạng thái sáng tạo bất chợt, xuất thần của người nghệ sĩ.",
+    "source": "Từ điển Nghệ thuật"
+  },
+  {
+    "id": "BK-020",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "de",
+    "question": "Ai là tác giả của truyện ngắn trứ danh 'Lão Hạc'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nam Cao"
+      },
+      {
+        "id": "B",
+        "text": "Ngô Tất Tố"
+      },
+      {
+        "id": "C",
+        "text": "Nguyên Hồng"
+      },
+      {
+        "id": "D",
+        "text": "Thạch Lam"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Nam Cao (Trần Hữu Tri) viết 'Lão Hạc' năm 1943 với giá trị nhân đạo sâu sắc lay động hàng triệu trái tim.",
+    "source": "Văn học hiện thực 1930-1945"
+  },
+  {
+    "id": "BK-021",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chắp bút"
+      },
+      {
+        "id": "B",
+        "text": "Chấp bút"
+      },
+      {
+        "id": "C",
+        "text": "Trắp bút"
+      },
+      {
+        "id": "D",
+        "text": "Trấp bút"
+      }
+    ],
+    "correctOptionId": "B",
+    "explanation": "'Chấp bút' (chữ Hán: 執 筆, nghĩa là cầm bút ghi chép, soạn thảo văn kiện).",
+    "source": "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    "id": "BK-022",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'u hoài' khác từ 'u sầu' ở nét nghĩa nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "'U hoài' luôn gắn liền với nỗi nhớ nhung, hoài niệm về quá khứ"
+      },
+      {
+        "id": "B",
+        "text": "'U sầu' chỉ dùng cho thời tiết"
+      },
+      {
+        "id": "C",
+        "text": "'U hoài' mang niềm vui hân hoan"
+      },
+      {
+        "id": "D",
+        "text": "Hai từ hoàn toàn giống nhau không có dị biệt"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Tiếng 'hoài' nghĩa là nhớ nhung, mong mỏi. 'U hoài' là nỗi buồn mang nặng tâm tư hoài cổ.",
+    "source": "Từ điển Từ đồng nghĩa Tiếng Việt"
+  },
+  {
+    "id": "BK-023",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "Thành ngữ 'Vạn mã tề bôn' miêu tả cảnh tượng gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Muôn con ngựa cùng phi nước đại, khí thế ngút trời"
+      },
+      {
+        "id": "B",
+        "text": "Một đàn ngựa đang gặm cỏ thanh bình"
+      },
+      {
+        "id": "C",
+        "text": "Cuộc săn bắn của nhà vua"
+      },
+      {
+        "id": "D",
+        "text": "Cảnh chợ ngựa phiên cuối năm"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Vạn' (muôn), 'mã' (ngựa), 'tề' (cùng nhau), 'bôn' (chạy nhanh). Miêu tả thanh thế dũng mãnh ầm ầm.",
+    "source": "Từ điển Thành ngữ Hán Việt"
+  },
+  {
+    "id": "BK-024",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "'Trời xanh quen thói má hồng đánh ghen' là câu thơ trong tác phẩm nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Truyện Kiều - Nguyễn Du"
+      },
+      {
+        "id": "B",
+        "text": "Cung oán ngâm khúc - Nguyễn Gia Thiều"
+      },
+      {
+        "id": "C",
+        "text": "Chinh phụ ngâm - Đoàn Thị Điểm"
+      },
+      {
+        "id": "D",
+        "text": "Lục Vân Tiên - Nguyễn Đình Chiểu"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Nguyễn Du mở đầu Truyện Kiều bằng triết lý 'Tài mệnh tương đố': 'Trời xanh quen thói má hồng đánh ghen'.",
+    "source": "Truyện Kiều"
+  },
+  {
+    "id": "BK-025",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ngoằn ngoèo"
+      },
+      {
+        "id": "B",
+        "text": "Ngoằn nghoèo"
+      },
+      {
+        "id": "C",
+        "text": "Ngoằng ngoèo"
+      },
+      {
+        "id": "D",
+        "text": "Ngoằng nghoèo"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Quy tắc chính tả tiếng Việt: phụ âm 'ng' đứng trước nguyên âm 'o' không thêm 'h'.",
+    "source": "Quy tắc chính tả Tiếng Việt"
+  },
+  {
+    "id": "BK-026",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'nghĩa cử' mang sắc thái ý nghĩa gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hành động cao đẹp, nghĩa hiệp và mang tính nhân văn sâu sắc"
+      },
+      {
+        "id": "B",
+        "text": "Cử chỉ bắt buộc theo quy định"
+      },
+      {
+        "id": "C",
+        "text": "Thủ tục ngoại giao thông thường"
+      },
+      {
+        "id": "D",
+        "text": "Hành vi tư lợi cá nhân"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Nghĩa cử' là việc làm vì tình nghĩa, xuất phát từ tấm lòng vị tha cao quý.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-027",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "Thành ngữ 'Vô sở bất vi' trong văn liệu cổ ám chỉ hạng người nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không có chuyện xấu xa bỉ ổi nào mà không dám làm"
+      },
+      {
+        "id": "B",
+        "text": "Người đa tài đa nghệ làm được mọi nghề"
+      },
+      {
+        "id": "C",
+        "text": "Kẻ nhút nhát không dám làm gì"
+      },
+      {
+        "id": "D",
+        "text": "Vị anh hùng xông pha không lùi bước"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Vô sở bất vi' (không chỗ nào không làm), nghĩa là táng tận lương tâm, tội ác nào cũng dám phạm.",
+    "source": "Từ điển Thành ngữ Hán Việt"
+  },
+  {
+    "id": "BK-028",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "Tập ký sự chữ Hán 'Thượng kinh ký sự' (Ký sự lên kinh đô) là tác phẩm của danh y nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lê Hữu Trác (Hải Thượng Lãn Ông)"
+      },
+      {
+        "id": "B",
+        "text": "Tuệ Tĩnh"
+      },
+      {
+        "id": "C",
+        "text": "Nguyễn Bá Tĩnh"
+      },
+      {
+        "id": "D",
+        "text": "Phan Huy Chú"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Đại danh y Hải Thượng Lãn Ông Lê Hữu Trác ghi lại chân thực cuộc sống xa hoa mục ruỗng của phủ chúa Trịnh năm 1782.",
+    "source": "Văn học sử Việt Nam"
+  },
+  {
+    "id": "BK-029",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bẽ bàng"
+      },
+      {
+        "id": "B",
+        "text": "Bẻ bàng"
+      },
+      {
+        "id": "C",
+        "text": "Bẽ bàn"
+      },
+      {
+        "id": "D",
+        "text": "Bẻ bàn"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Bẽ bàng' viết với dấu ngã ở tiếng đầu.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-030",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'ngẫu tượng' trong nghiên cứu văn hóa đương đại thường mang nghĩa chuyển là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thần tượng giải trí, ngôi sao được đại chúng hâm mộ cuồng nhiệt"
+      },
+      {
+        "id": "B",
+        "text": "Tượng sáp trong bảo tàng"
+      },
+      {
+        "id": "C",
+        "text": "Mô hình đồ chơi trẻ em"
+      },
+      {
+        "id": "D",
+        "text": "Bức tranh sơn mài cổ"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Từ 'ngẫu tượng' ngày nay đồng nghĩa với 'idol' - hình mẫu nghệ sĩ được giới trẻ sùng bái.",
+    "source": "Văn hóa học Đại chúng"
+  },
+  {
+    "id": "BK-031",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "Thành ngữ 'Vong ân bội nghĩa' có nghĩa tương đương với câu tục ngữ dân gian nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ăn cháo đá bát"
+      },
+      {
+        "id": "B",
+        "text": "Uống nước nhớ nguồn"
+      },
+      {
+        "id": "C",
+        "text": "Ăn quả nhớ kẻ trồng cây"
+      },
+      {
+        "id": "D",
+        "text": "Lá lành đùm lá rách"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ăn cháo đá bát' phê phán gay gắt hành vi phản bội, quay lưng chà đạp lên ân nghĩa người khác.",
+    "source": "Từ điển Thành ngữ Việt Nam"
+  },
+  {
+    "id": "BK-032",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "Bài thơ 'Tiếng hát con tàu' của Chế Lan Viên có câu đúc kết triết lý: 'Khi ta ở, chỉ là nơi đất ở / Khi ta đi, đất đã hóa ...'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "tâm hồn"
+      },
+      {
+        "id": "B",
+        "text": "quê hương"
+      },
+      {
+        "id": "C",
+        "text": "tình yêu"
+      },
+      {
+        "id": "D",
+        "text": "nỗi nhớ"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Khi ta ở, chỉ là nơi đất ở / Khi ta đi, đất đã hóa tâm hồn' là hai câu thơ triết lý sâu xa của Chế Lan Viên.",
+    "source": "Tập thơ Ánh sáng và phù sa"
+  },
+  {
+    "id": "BK-033",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bàng bạc"
+      },
+      {
+        "id": "B",
+        "text": "Bàn bạc"
+      },
+      {
+        "id": "C",
+        "text": "Cả A và B đều đúng tùy ngữ cảnh"
+      },
+      {
+        "id": "D",
+        "text": "Cả A và B đều sai"
+      }
+    ],
+    "correctOptionId": "C",
+    "explanation": "'Sương khói bàng bạc' (lan tỏa mờ mịt); 'Bàn bạc công việc' (thảo luận trao đổi). Cả hai đều đúng ngữ cảnh.",
+    "source": "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    "id": "BK-034",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'ngoa truyền' làm nảy sinh hiện tượng gì trong xã hội?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tin giả, dư luận sai lệch và sự hoang mang trong cộng đồng"
+      },
+      {
+        "id": "B",
+        "text": "Sự hiểu biết khoa học chính xác"
+      },
+      {
+        "id": "C",
+        "text": "Lòng tin cậy lẫn nhau"
+      },
+      {
+        "id": "D",
+        "text": "Phát triển kinh tế bền vững"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ngoa truyền' là sự lan truyền tin giả, thổi phồng bóp méo sự thật.",
+    "source": "Xã hội học Thông tin"
+  },
+  {
+    "id": "BK-035",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "Thành ngữ 'Vô thủy vô chung' chỉ điều gì trong nhận thức nhân sinh?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không có bắt đầu và không có kết thúc (vô tận của vũ trụ)"
+      },
+      {
+        "id": "B",
+        "text": "Người sống vô ơn, thiếu thủy chung"
+      },
+      {
+        "id": "C",
+        "text": "Bữa tiệc không có người phục vụ"
+      },
+      {
+        "id": "D",
+        "text": "Con đường cụt không lối thoát"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Thủy' (bắt đầu), 'chung' (kết thúc). Khái niệm triết học chỉ tính vô cùng, tuần hoàn bất tận.",
+    "source": "Từ điển Triết học Phương Đông"
+  },
+  {
+    "id": "BK-036",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "Trong bài 'Bếp lửa', Bằng Việt nhớ lại kỷ niệm tuổi thơ với người bà: 'Năm ấy là năm đói mòn đói mỏi / Bố đi đánh xe khô rạc ...'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ngựa gầy"
+      },
+      {
+        "id": "B",
+        "text": "đường dài"
+      },
+      {
+        "id": "C",
+        "text": "thân mình"
+      },
+      {
+        "id": "D",
+        "text": "đôi tay"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Câu thơ tái hiện nạn đói khủng khiếp năm 1945 qua ký ức xót xa của cậu bé bên người bà tần tảo.",
+    "source": "Thơ Bằng Việt"
+  },
+  {
+    "id": "BK-037",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nề hà"
+      },
+      {
+        "id": "B",
+        "text": "Lề hà"
+      },
+      {
+        "id": "C",
+        "text": "Nề thà"
+      },
+      {
+        "id": "D",
+        "text": "Lề thà"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Nề hà' viết bằng âm đầu 'n'.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-038",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'nghịch cảnh' chỉ hoàn cảnh sống thế nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hoàn cảnh trớ trêu, éo le, nhiều trở ngại bất lợi cho con người"
+      },
+      {
+        "id": "B",
+        "text": "Khung cảnh thiên nhiên vui vẻ rộn ràng"
+      },
+      {
+        "id": "C",
+        "text": "Cảnh tượng thanh bình yên ả nơi đồng quê"
+      },
+      {
+        "id": "D",
+        "text": "Sân chơi thể thao vui nhộn"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Nghịch cảnh' là tình thế trắc trở, gian truân đòi hỏi nghị lực kiên cường để vượt lên.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-039",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "Thành ngữ 'Vạn tiễn xuyên tâm' (Muôn mũi tên bắn xuyên qua tim) là hình ảnh ước lệ tả nỗi đau gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nỗi đau đớn dữ dội tột cùng về mặt tinh thần hoặc thể xác"
+      },
+      {
+        "id": "B",
+        "text": "Kỹ thuật phòng thủ bắn cung trong quân sự cổ"
+      },
+      {
+        "id": "C",
+        "text": "Sự thất bại của một chiến dịch"
+      },
+      {
+        "id": "D",
+        "text": "Nỗi hờn giận vu vơ"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Ước lệ kịch tính miêu tả sự thống khổ tột đỉnh như ngàn mũi tên đâm vào lồng ngực.",
+    "source": "Từ điển Điển cố Văn học"
+  },
+  {
+    "id": "BK-040",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "Nhà văn nào viết truyện ký 'Ai đã đặt tên cho dòng sông?' khắc họa vẻ đẹp biến ảo của sông Hương?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hoàng Phủ Ngọc Tường"
+      },
+      {
+        "id": "B",
+        "text": "Nguyễn Tuân"
+      },
+      {
+        "id": "C",
+        "text": "Sơn Nam"
+      },
+      {
+        "id": "D",
+        "text": "Vũ Bằng"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Hoàng Phủ Ngọc Tường với ngòi bút tài hoa và tình yêu đắm đuối dành cho xứ Huế đã viết nên tác phẩm bất hủ này.",
+    "source": "SGK Ngữ văn lớp 12"
+  },
+  {
+    "id": "BK-041",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trần trừ"
+      },
+      {
+        "id": "B",
+        "text": "Chần chừ"
+      },
+      {
+        "id": "C",
+        "text": "Chần trừ"
+      },
+      {
+        "id": "D",
+        "text": "Trần chừ"
+      }
+    ],
+    "correctOptionId": "B",
+    "explanation": "'Chần chừ' viết đúng là 'ch' ở cả hai tiếng.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-042",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'ngao ngán' thường đi kèm với trạng thái tâm lý nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thất vọng, bất lực và chán nản kéo dài"
+      },
+      {
+        "id": "B",
+        "text": "Khao khát chiến thắng mãnh liệt"
+      },
+      {
+        "id": "C",
+        "text": "Tâm trạng háo hức chờ mong"
+      },
+      {
+        "id": "D",
+        "text": "Sự bình thản an nhiên"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ngao ngán' phản ánh sự chán chường trước hoàn cảnh không thể thay đổi.",
+    "source": "Từ điển Tâm lý học & Ngôn ngữ"
+  },
+  {
+    "id": "BK-043",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "Thành ngữ 'Vong mạng' dùng để chỉ hành vi thế nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hành động liều lĩnh, mù quáng bất chấp cả tính mạng"
+      },
+      {
+        "id": "B",
+        "text": "Người mất trí nhớ tạm thời"
+      },
+      {
+        "id": "C",
+        "text": "Người sống lưu lạc nơi đất khách"
+      },
+      {
+        "id": "D",
+        "text": "Linh hồn không nơi nương tựa"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Vong mạng' (quên mạng sống), chỉ thói liều lĩnh điên rồ, coi thường sinh mệnh.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-044",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "Trong bài 'Mùa xuân nho nhỏ' của Thanh Hải, tác giả ước nguyện làm: 'Một cành hoa / Một nốt ...'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "nhạc trầm"
+      },
+      {
+        "id": "B",
+        "text": "nhạc reo"
+      },
+      {
+        "id": "C",
+        "text": "nhạc ngân"
+      },
+      {
+        "id": "D",
+        "text": "nhạc vui"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Một nốt nhạc trầm xao xuyến' - ước nguyện cống hiến thầm lặng và khiêm nhường cho cuộc đời chung.",
+    "source": "Thơ Thanh Hải"
+  },
+  {
+    "id": "BK-045",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giục giã"
+      },
+      {
+        "id": "B",
+        "text": "Dục dã"
+      },
+      {
+        "id": "C",
+        "text": "Giục dã"
+      },
+      {
+        "id": "D",
+        "text": "Dục giã"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Giục giã' viết với 'gi' ở cả hai tiếng.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-046",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'ngọa bệnh' trong ngữ cảnh cổ nghĩa là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ốm liệt giường phải nằm một chỗ"
+      },
+      {
+        "id": "B",
+        "text": "Bệnh giả vờ để trốn việc"
+      },
+      {
+        "id": "C",
+        "text": "Cơn đau nhẹ thoáng qua"
+      },
+      {
+        "id": "D",
+        "text": "Bệnh lây nhiễm đường hô hấp"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ngọa' (nằm), 'ngọa bệnh' là ngã bệnh nặng nằm liệt trên giường không dậy nổi.",
+    "source": "Từ điển Hán Việt"
+  },
+  {
+    "id": "BK-047",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "Thành ngữ 'Vô danh tiểu tốt' xuất phát từ ngữ cảnh nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Người lính quèn không tên tuổi, địa vị thấp hèn trong quân đội xưa"
+      },
+      {
+        "id": "B",
+        "text": "Cờ vua phương Tây"
+      },
+      {
+        "id": "C",
+        "text": "Trò chơi dân gian ném còn"
+      },
+      {
+        "id": "D",
+        "text": "Cách xưng hô khiêm tốn của văn nhân"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Tiểu tốt' là người lính cấp bậc thấp nhất trên chiến trường xưa, chỉ người không tên tuổi vị thế trong xã hội.",
+    "source": "Từ điển Thành ngữ Hán Việt"
+  },
+  {
+    "id": "BK-048",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "Tập thơ 'Máu và Hoa' (1977) của nhà thơ nào tổng kết chặng đường thơ chống Mỹ hào hùng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tố Hữu"
+      },
+      {
+        "id": "B",
+        "text": "Phạm Tiến Duật"
+      },
+      {
+        "id": "C",
+        "text": "Chế Lan Viên"
+      },
+      {
+        "id": "D",
+        "text": "Huy Cận"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Máu và Hoa' là một trong những tập thơ đỉnh cao của nền thơ ca cách mạng Việt Nam thế kỷ XX của Tố Hữu.",
+    "source": "Văn học sử Việt Nam"
+  },
+  {
+    "id": "BK-049",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trau dồi"
+      },
+      {
+        "id": "B",
+        "text": "Chau dồi"
+      },
+      {
+        "id": "C",
+        "text": "Trau giồi"
+      },
+      {
+        "id": "D",
+        "text": "Chau giồi"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Trau dồi' (rèn luyện bồi đắp kiến thức đạo đức) là cách viết chuẩn mực hiện đại.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-050",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'nghĩa đệ' dùng để chỉ mối quan hệ nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Người em trai kết nghĩa kết bái huynh đệ"
+      },
+      {
+        "id": "B",
+        "text": "Em ruột cùng cha mẹ"
+      },
+      {
+        "id": "C",
+        "text": "Người học trò nhỏ tuổi"
+      },
+      {
+        "id": "D",
+        "text": "Người cháu trong họ nội"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Đệ' (em trai), 'nghĩa đệ' là em trai nuôi hoặc kết nghĩa thề nguyền sống chết có nhau.",
+    "source": "Từ điển Hán Việt"
+  },
+  {
+    "id": "BK-051",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "'Trống đánh xuôi, kèn thổi ...'. Điền từ đúng vào câu thành ngữ chỉ sự bất đồng:",
+    "options": [
+      {
+        "id": "A",
+        "text": "ngược"
+      },
+      {
+        "id": "B",
+        "text": "ngang"
+      },
+      {
+        "id": "C",
+        "text": "lệch"
+      },
+      {
+        "id": "D",
+        "text": "sai"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Trống đánh xuôi, kèn thổi ngược' châm biếm cảnh mỗi người làm một phách, không có sự phối hợp ăn ý.",
+    "source": "Kho tàng thành ngữ người Việt"
+  },
+  {
+    "id": "BK-052",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "Ai là tác giả của tác phẩm kịch thơ 'Hồn Trương Ba, da hàng thịt'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lưu Quang Vũ"
+      },
+      {
+        "id": "B",
+        "text": "Nguyễn Huy Tưởng"
+      },
+      {
+        "id": "C",
+        "text": "Tào Mạt"
+      },
+      {
+        "id": "D",
+        "text": "Xuân Trình"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Nhà viết kịch tài ba Lưu Quang Vũ đã sáng tác vở kịch triết lý sâu sắc này năm 1981, công diễn năm 1984.",
+    "source": "Sân khấu kịch hiện đại Việt Nam"
+  },
+  {
+    "id": "BK-053",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cọ xát"
+      },
+      {
+        "id": "B",
+        "text": "Cọ sát"
+      },
+      {
+        "id": "C",
+        "text": "Cả hai đều đúng tùy ý nghĩa"
+      },
+      {
+        "id": "D",
+        "text": "Cả hai đều sai"
+      }
+    ],
+    "correctOptionId": "C",
+    "explanation": "'Cọ xát' là tiếp xúc cọ vào nhau tạo ma sát; 'Cọ sát' là đứng kề cạnh sát nút nhau.",
+    "source": "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    "id": "BK-054",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'ngao ngán' và 'chán ngấy' có điểm gì tương đồng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đều diễn tả trạng thái tâm lý không còn chút hứng thú, muốn từ bỏ"
+      },
+      {
+        "id": "B",
+        "text": "Đều là từ tượng thanh mô tả âm thanh"
+      },
+      {
+        "id": "C",
+        "text": "Đều chỉ sự no nê sau khi ăn"
+      },
+      {
+        "id": "D",
+        "text": "Đều chỉ sự phấn khởi tột độ"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Cả hai từ đồng nghĩa biểu thị sự bội thực cảm xúc và chán chường sâu sắc.",
+    "source": "Từ điển Từ đồng nghĩa"
+  },
+  {
+    "id": "BK-055",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "Thành ngữ 'Vô tri bất mộ' nghĩa là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không hiểu biết rõ thì không thể đem lòng yêu mến, ngưỡng mộ"
+      },
+      {
+        "id": "B",
+        "text": "Kẻ không có trí tuệ thì không cần học hành"
+      },
+      {
+        "id": "C",
+        "text": "Không biết gì thì không phải chịu tội"
+      },
+      {
+        "id": "D",
+        "text": "Chết đi rồi thì không còn biết gì"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Tri' (hiểu biết), 'mộ' (hâm mộ, yêu quý). Phải am hiểu tường tận mới có thể nảy sinh tình cảm chân chính.",
+    "source": "Từ điển Triết học & Luân lý"
+  },
+  {
+    "id": "BK-056",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "'Trường ca Đẻ đất đẻ nước' là sử thi đồ sộ của đồng bào dân tộc nào ở Việt Nam?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dân tộc Mường"
+      },
+      {
+        "id": "B",
+        "text": "Dân tộc Thái"
+      },
+      {
+        "id": "C",
+        "text": "Dân tộc Ê-đê"
+      },
+      {
+        "id": "D",
+        "text": "Dân tộc Ba-na"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Đẻ đất đẻ nước' (Te tấc te đác) là pho sử thi dân gian hoành tráng của người Mường phản ánh nguồn gốc vũ trụ và xã hội.",
+    "source": "Kho tàng Văn học dân gian các dân tộc thiểu số"
+  },
+  {
+    "id": "BK-057",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "vua",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Rảnh rang"
+      },
+      {
+        "id": "B",
+        "text": "Rãnh rang"
+      },
+      {
+        "id": "C",
+        "text": "Dảnh dang"
+      },
+      {
+        "id": "D",
+        "text": "Giảnh giang"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Rảnh rang' (thảnh thơi, không bận việc) viết bằng 'r' và dấu hỏi ở tiếng thứ nhất.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-058",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "vua",
+    "question": "Từ 'ngẫu lực' tạo ra hiệu ứng chuyển động nào cho vật thể?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chuyển động quay quanh một trục"
+      },
+      {
+        "id": "B",
+        "text": "Chuyển động tịnh tiến thẳng đều"
+      },
+      {
+        "id": "C",
+        "text": "Dao động tắt dần"
+      },
+      {
+        "id": "D",
+        "text": "Làm vật thể biến dạng vĩnh viễn"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Tác dụng duy nhất của ngẫu lực là làm vật quay quanh một trục vuông góc với mặt phẳng chứa ngẫu lực.",
+    "source": "Vật lý đại cương"
+  },
+  {
+    "id": "BK-059",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "vua",
+    "question": "'Khẩu Phật tâm ...'. Điền từ còn thiếu vào câu thành ngữ vạch trần kẻ đạo đức giả:",
+    "options": [
+      {
+        "id": "A",
+        "text": "xà"
+      },
+      {
+        "id": "B",
+        "text": "quỷ"
+      },
+      {
+        "id": "C",
+        "text": "ác"
+      },
+      {
+        "id": "D",
+        "text": "lang"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Khẩu Phật tâm xà' (miệng nói lời Phật từ bi nhưng bụng dạ độc ác như rắn độc xà tinh).",
+    "source": "Từ điển Thành ngữ Hán Việt"
+  },
+  {
+    "id": "BK-060",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "vua",
+    "question": "Hai câu thơ: 'Mai cốt cách, tuyết tinh thần / Mỗi người một vẻ mười phân vẹn mười' là Nguyễn Du miêu tả ai?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chị em Thúy Kiều và Thúy Vân"
+      },
+      {
+        "id": "B",
+        "text": "Thúy Kiều và Kim Trọng"
+      },
+      {
+        "id": "C",
+        "text": "Thúy Vân và Hoạn Thư"
+      },
+      {
+        "id": "D",
+        "text": "Thúy Kiều và Đạm Tiên"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Đoạn trích 'Chị em Thúy Kiều' ca ngợi vẻ đẹp tuyệt mỹ, thanh cao của hai chị em họ Vương.",
+    "source": "Truyện Kiều - Nguyễn Du"
+  },
+  {
+    "id": "BK-061",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả từ nguyên Hán-Việt?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Điểm xuyết"
+      },
+      {
+        "id": "B",
+        "text": "Điểm xuyến"
+      },
+      {
+        "id": "C",
+        "text": "Điểm suýt"
+      },
+      {
+        "id": "D",
+        "text": "Điểm suến"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Điểm xuyết' (chữ Hán: 點 綴) nghĩa là sửa sang, tô điểm thêm từng chi tiết nhỏ cho bức tranh hoặc bài viết sinh động.",
+    "source": "Từ điển Hán Việt Từ nguyên"
+  },
+  {
+    "id": "BK-062",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'ngoa ngụ' trong lý luận phê bình văn học chỉ phong cách viết như thế nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lối viết ngụ ngôn châm biếm, sử dụng cường điệu và ẩn ý mỉa mai sâu cay"
+      },
+      {
+        "id": "B",
+        "text": "Lối viết tả thực trần trụi không thêm bớt"
+      },
+      {
+        "id": "C",
+        "text": "Lối văn cung đình trau chuốt sáo rỗng"
+      },
+      {
+        "id": "D",
+        "text": "Văn phong khoa học logic khô khan"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ngoa ngụ' kết hợp nói quá và ngụ ngôn, điển hình trong các tác phẩm trào phúng như Vũ Trọng Phụng, Nguyễn Công Hoan.",
+    "source": "Từ điển Thuật ngữ Văn học"
+  },
+  {
+    "id": "BK-063",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vạn biến bất ly kỳ tông' (Muôn ngàn biến đổi không rời gốc) có nghĩa là:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dù sự việc bề ngoài có biến hóa trăm hình vạn trạng thì bản chất và nguyên lý cốt lõi vẫn không đổi"
+      },
+      {
+        "id": "B",
+        "text": "Gia đình ly tán nhiều đời không tìm thấy nhau"
+      },
+      {
+        "id": "C",
+        "text": "Sự cố thủ lạc hậu không chịu đổi mới"
+      },
+      {
+        "id": "D",
+        "text": "Mọi tôn giáo đều có chung một giáo chủ"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Nguyên tắc xử thế: nắm chắc gốc rễ bản chất thì đối phó được vạn sự biến chuyển ngoài đời.",
+    "source": "Triết lý Á Đông"
+  },
+  {
+    "id": "BK-064",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Bài thơ 'Khóc Dương Khuê' của Nguyễn Khuyến có câu: 'Bác Dương thôi đã thôi rồi / Nước mây man mác ngậm ngùi lòng ta'. 'Thôi' ở đây là biện pháp tu từ gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nói giảm nói tránh (uyển ngữ) nhằm xoa dịu nỗi đau mất mát"
+      },
+      {
+        "id": "B",
+        "text": "Chơi chữ đồng âm"
+      },
+      {
+        "id": "C",
+        "text": "Nói quá phóng đại"
+      },
+      {
+        "id": "D",
+        "text": "Nhân hóa tự nhiên"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Từ 'thôi' thay cho từ 'chết', thể hiện nỗi xót thương nghẹn ngào, bàng hoàng không dám tin vào sự thật mất bạn.",
+    "source": "Thơ văn Nguyễn Khuyến"
+  },
+  {
+    "id": "BK-065",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả theo từ nguyên?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cổ xúy"
+      },
+      {
+        "id": "B",
+        "text": "Cổ súy"
+      },
+      {
+        "id": "C",
+        "text": "Cả A và B đều được công nhận trong từ điển tiếng Việt hiện đại"
+      },
+      {
+        "id": "D",
+        "text": "Chỉ có B đúng"
+      }
+    ],
+    "correctOptionId": "C",
+    "explanation": "Gốc Hán là 鼓 吹 (cổ xúy: gióng trống thổi sáo kêu gọi), hiện nay cả 'cổ xúy' và 'cổ súy' đều được các từ điển uy tín ghi nhận.",
+    "source": "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    "id": "BK-066",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'u trệ' có nghĩa là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tắc nghẽn, ngưng trệ và ứ đọng kéo dài không thông suốt được"
+      },
+      {
+        "id": "B",
+        "text": "Thời gian trôi đi quá nhanh"
+      },
+      {
+        "id": "C",
+        "text": "Sự phát triển vượt bậc"
+      },
+      {
+        "id": "D",
+        "text": "Trạng thái mệt mỏi sau khi tập luyện"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'U' (ứ đọng), 'trệ' (chậm chạp, tắc nghẽn). Dùng cho sự việc ứ đọng, không lưu thông được.",
+    "source": "Từ điển Hán Việt"
+  },
+  {
+    "id": "BK-067",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vọng ngoại' và 'Bài nội' ám chỉ căn bệnh tâm lý xã hội nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sùng bái mù quáng cái của người ngoài và bài trừ, khinh rẻ thành quả dân tộc mình"
+      },
+      {
+        "id": "B",
+        "text": "Khao khát mở rộng giao thương quốc tế"
+      },
+      {
+        "id": "C",
+        "text": "Tinh thần tự lực tự cường dân tộc"
+      },
+      {
+        "id": "D",
+        "text": "Nghiên cứu văn học so sánh quốc tế"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Vọng ngoại bài nội' là thái độ sùng bái thái quá những gì thuộc về phương xa mà rẻ rúng văn hóa cội nguồn.",
+    "source": "Xã hội học Văn hóa"
+  },
+  {
+    "id": "BK-068",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Trong 'Chinh phụ ngâm khúc' (bản dịch của Đoàn Thị Điểm), câu thơ nào tả tâm trạng bồn chồn của người chinh phụ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dạo hiên vắng thầm gieo từng bước / Ngồi rèm thưa rủ thác đòi phen"
+      },
+      {
+        "id": "B",
+        "text": "Trời xanh quen thói má hồng đánh ghen"
+      },
+      {
+        "id": "C",
+        "text": "Cùng trông lại mà cùng chẳng thấy"
+      },
+      {
+        "id": "D",
+        "text": "Cỏ cây chen đá, lá chen hoa"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Đoạn thơ thể hiện hành động lặp đi lặp lại vô nghĩa lý của người vợ trẻ chờ chồng trong mòn mỏi cô đơn.",
+    "source": "Chinh phụ ngâm - Bản dịch Đặng Trần Côn / Đoàn Thị Điểm"
+  },
+  {
+    "id": "BK-069",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sơ suất"
+      },
+      {
+        "id": "B",
+        "text": "Sơ xuất"
+      },
+      {
+        "id": "C",
+        "text": "Xơ suất"
+      },
+      {
+        "id": "D",
+        "text": "Xơ xuất"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Sơ suất' (thiếu sót vô ý) viết bằng 's' và 'uất'.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-070",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'ngoa ngữ' trong văn bản chữ Nôm cổ thường được dùng tương đương với từ gì ngày nay?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lời nói xảo quyệt, dối trá, lừa bịp thiên hạ"
+      },
+      {
+        "id": "B",
+        "text": "Ngôn ngữ ký hiệu câm điếc"
+      },
+      {
+        "id": "C",
+        "text": "Tiếng chim hót ríu rít"
+      },
+      {
+        "id": "D",
+        "text": "Chữ viết tượng hình"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ngoa' là điêu ngoa, dối trá; 'ngoa ngữ' trong văn học cổ là những lời bịa đặt dối trá nhằm hại người.",
+    "source": "Từ điển Văn Nôm"
+  },
+  {
+    "id": "BK-071",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vô sở bất chí' (Không nơi nào không đến) miêu tả mức độ nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sự thâm nhập, len lỏi khắp mọi ngóc ngách không từ chối một nơi nào"
+      },
+      {
+        "id": "B",
+        "text": "Cuộc hành hương của các nhà sư"
+      },
+      {
+        "id": "C",
+        "text": "Chuyến thám hiểm vòng quanh trái đất"
+      },
+      {
+        "id": "D",
+        "text": "Sự phân vân không biết đi đâu"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Bất chí' là không đến; 'vô sở bất chí' thường dùng để chỉ thủ đoạn tinh vi len lỏi đến từng kẽ hở.",
+    "source": "Từ điển Hán Việt"
+  },
+  {
+    "id": "BK-072",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Hình tượng 'Chiếc thuyền ngoài xa' trong tác phẩm cùng tên của Nguyễn Minh Châu mang ý nghĩa biểu tượng gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Khoảng cách giữa nghệ thuật thuần túy hoàn mỹ và hiện thực đời sống thô ráp, nhọc nhằn"
+      },
+      {
+        "id": "B",
+        "text": "Vẻ đẹp của nghề đánh cá truyền thống"
+      },
+      {
+        "id": "C",
+        "text": "Tài năng nhiếp ảnh tuyệt đỉnh của nghệ sĩ Phùng"
+      },
+      {
+        "id": "D",
+        "text": "Sự lạc hậu của kinh tế biển miền Trung"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Tác phẩm đặt ra vấn đề: Nghệ thuật không thể tách rời đời sống; người nghệ sĩ phải nhìn thấu bản chất cuộc đời sau vẻ đẹp huyền ảo.",
+    "source": "SGK Ngữ văn lớp 12"
+  },
+  {
+    "id": "BK-073",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trùng điệp"
+      },
+      {
+        "id": "B",
+        "text": "Chùng điệp"
+      },
+      {
+        "id": "C",
+        "text": "Trùng diệp"
+      },
+      {
+        "id": "D",
+        "text": "Chùng diệp"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Trùng điệp' (chữ Hán: 重 疊, lớp lớp nối tiếp nhau trùng trùng điệp điệp) viết với 'tr' và 'đ'.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-074",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'ngẫu tượng' và 'chân dung' khác biệt cơ bản nhất ở khía cạnh nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "'Ngẫu tượng' mang tính thần thánh hóa để thờ phụng; 'chân dung' là hình ảnh mô tả người thực việc thực"
+      },
+      {
+        "id": "B",
+        "text": "'Chân dung' chỉ vẽ bằng màu nước"
+      },
+      {
+        "id": "C",
+        "text": "'Ngẫu tượng' chỉ làm bằng đất sét"
+      },
+      {
+        "id": "D",
+        "text": "Hai khái niệm không có sự khác biệt nào"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ngẫu tượng' luôn gắn với yếu tố sùng bái tôn giáo hoặc tâm lý tôn thờ mang tính biểu tượng.",
+    "source": "Mỹ học và Ngôn ngữ học"
+  },
+  {
+    "id": "BK-075",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vạn tiễn tề phát' (Muôn mũi tên cùng bắn ra một lúc) trong quân sự cổ gọi là chiến thuật gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tập trung hỏa lực tầm xa bằng cung nỏ nhằm tiêu diệt sinh lực địch trên diện rộng"
+      },
+      {
+        "id": "B",
+        "text": "Bắn lén ban đêm"
+      },
+      {
+        "id": "C",
+        "text": "Dụ quân địch vào bãi lầy"
+      },
+      {
+        "id": "D",
+        "text": "Đánh cận chiến giáp lá cà"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Chiến thuật bắn bão tên nhằm áp chế sĩ khí và phá vỡ đội hình của kỵ binh đối phương.",
+    "source": "Binh pháp cổ phương Đông"
+  },
+  {
+    "id": "BK-076",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Hai câu thơ: 'Rút gươm chém xuống nước, nước càng chảy xiết / Nâng chén tiêu sầu, càng sầu thêm' là ý thơ dịch từ thi phẩm của ai?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lý Bạch (Tuyên Châu Tạ Diệu Lâu tiễn biệt Tiêu Thư Thúc Vân)"
+      },
+      {
+        "id": "B",
+        "text": "Đỗ Phủ"
+      },
+      {
+        "id": "C",
+        "text": "Bạch Cư Dị"
+      },
+      {
+        "id": "D",
+        "text": "Vương Duy"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Trừu đao đoạn thủy, thủy cánh lưu / Cử bôi tiêu sầu, sầu cánh sầu' là hai câu thơ nổi tiếng bậc nhất của thi tiên Lý Bạch.",
+    "source": "Đường thi tam bách thủ"
+  },
+  {
+    "id": "BK-077",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bạc bẽo"
+      },
+      {
+        "id": "B",
+        "text": "Bạc bẻo"
+      },
+      {
+        "id": "C",
+        "text": "Bạt bẽo"
+      },
+      {
+        "id": "D",
+        "text": "Bạt bẻo"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Bạc bẽo' (vô ơn, thiếu tình nghĩa thắm thiết) viết với 'c' và dấu ngã ở tiếng thứ hai.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-078",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'u minh' trong thế giới quan dân gian và tôn giáo hàm chỉ:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cõi tối tăm mờ mịt của thế giới bên kia (âm phủ) hoặc sự u mê tối dạ"
+      },
+      {
+        "id": "B",
+        "text": "Vùng rừng ngập mặn Cà Mau"
+      },
+      {
+        "id": "C",
+        "text": "Đêm trăng tròn sáng tỏ"
+      },
+      {
+        "id": "D",
+        "text": "Bầu trời quang đãng không mây"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'U' (tối), 'minh' (tối tăm), 'U minh' chỉ cõi âm ty ma quái không có ánh mặt trời hoặc tâm trí u muội.",
+    "source": "Từ điển Tôn giáo & Triết học"
+  },
+  {
+    "id": "BK-079",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vô tiền khoáng hậu' thường được so sánh tương đương với cụm từ nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Độc nhất vô nhị trong lịch sử"
+      },
+      {
+        "id": "B",
+        "text": "Bình thường không có gì đặc sắc"
+      },
+      {
+        "id": "C",
+        "text": "Trước sau như một"
+      },
+      {
+        "id": "D",
+        "text": "Có trước có sau vẹn toàn"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Vô tiền khoáng hậu' nhấn mạnh tính hiếm có, tiền vô cổ nhân hậu vô lai giả.",
+    "source": "Từ điển Hán Việt"
+  },
+  {
+    "id": "BK-080",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Trong bài 'Đất nước' của Nguyễn Đình Thi, câu thơ nào tả không khí Hà Nội những ngày đầu kháng chiến hào hùng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Người ra đi đầu không ngoảnh lại / Sau lưng thềm nắng lá rơi đầy"
+      },
+      {
+        "id": "B",
+        "text": "Đêm mơ Hà Nội dáng kiều thơm"
+      },
+      {
+        "id": "C",
+        "text": "Sông Mã xa rồi Tây Tiến ơi"
+      },
+      {
+        "id": "D",
+        "text": "Nhớ người mẹ nắng cháy lưng"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Bức tranh mùa thu Hà Nội năm 1946 với tâm thế dứt khoát lên đường bảo vệ nền độc lập dân tộc.",
+    "source": "Thơ Nguyễn Đình Thi"
+  },
+  {
+    "id": "BK-081",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chưng chuyên"
+      },
+      {
+        "id": "B",
+        "text": "Truân chuyên"
+      },
+      {
+        "id": "C",
+        "text": "Chân chuyên"
+      },
+      {
+        "id": "D",
+        "text": "Truân truân"
+      }
+    ],
+    "correctOptionId": "B",
+    "explanation": "'Truân chuyên' (cuộc đời ba chìm bảy nổi nhiều gian truân) viết đúng bằng âm đầu 'tr'.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-082",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'ngoa ngụ' có mối liên hệ mật thiết với thể loại văn học dân gian nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Truyện cười trào phúng dân gian (như truyện Trạng Quỳnh, Ba Giai Tú Xuất)"
+      },
+      {
+        "id": "B",
+        "text": "Ca dao ru con"
+      },
+      {
+        "id": "C",
+        "text": "Truyện cổ tích thần kỳ"
+      },
+      {
+        "id": "D",
+        "text": "Thần thoại khai thiên lập địa"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Nghệ thuật ngoa ngụ phóng đại và châm biếm là linh hồn của truyện cười trào lộng dân tộc.",
+    "source": "Kho tàng truyện cười người Việt"
+  },
+  {
+    "id": "BK-083",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vong mạng chỉ đồ' (Đồ liều mạng) phản ánh thái độ đánh giá nào của xã hội?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Coi khinh những kẻ bất hảo, liều lĩnh bất chấp luân thường đạo lý và luật pháp"
+      },
+      {
+        "id": "B",
+        "text": "Ca ngợi tấm lòng xả thân cứu người"
+      },
+      {
+        "id": "C",
+        "text": "Thương xót người yểu mệnh"
+      },
+      {
+        "id": "D",
+        "text": "Tôn vinh chiến sĩ dũng cảm nơi tiền tuyến"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Đồ vong mạng' là lời mắng nhiếc kẻ côn đồ hung hãn, coi rẻ sinh mệnh chính mình và người khác.",
+    "source": "Từ điển Tiếng Việt Hoàng Phê"
+  },
+  {
+    "id": "BK-084",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Nhà văn Nguyên Ngọc viết thiên truyện ngắn nổi tiếng 'Rừng xà nu' dưới bút danh nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nguyễn Trung Thành"
+      },
+      {
+        "id": "B",
+        "text": "Quang Dũng"
+      },
+      {
+        "id": "C",
+        "text": "Bùi Hiển"
+      },
+      {
+        "id": "D",
+        "text": "Kim Lân"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Nhà văn Nguyên Ngọc lấy bút danh Nguyễn Trung Thành khi hoạt động ở chiến trường Tây Nguyên ác liệt và viết nên tác phẩm bất hủ.",
+    "source": "SGK Ngữ văn lớp 12"
+  },
+  {
+    "id": "BK-085",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bàng hoàng"
+      },
+      {
+        "id": "B",
+        "text": "Bàng hoàn"
+      },
+      {
+        "id": "C",
+        "text": "Bàn hoàng"
+      },
+      {
+        "id": "D",
+        "text": "Bàn hoàn"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Bàng hoàng' (ngơ ngác, sững sờ vì xúc động hay kinh ngạc bất ngờ) viết với 'ng' ở cả hai tiếng.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-086",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'uất ức' bắt nguồn từ nguyên nhân tâm lý nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bị oan ức, chèn ép bất công mà không thể thanh minh hay phản kháng được"
+      },
+      {
+        "id": "B",
+        "text": "Vui mừng quá đỗi"
+      },
+      {
+        "id": "C",
+        "text": "Sợ sệt trước bóng tối"
+      },
+      {
+        "id": "D",
+        "text": "Mệt mỏi sau chuyến đi xa"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Uất' (nén giận trong lòng), 'ức' (bị ức hiếp oan trái). Nỗi căm phẫn dồn nén không giải tỏa được.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-087",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vô vi' trong triết thuyết Lão Trang hướng tới điều gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hành động thuận theo tự nhiên thuần khiết, không can thiệp áp đặt nhân vi gượng ép"
+      },
+      {
+        "id": "B",
+        "text": "Lười biếng trốn tránh mọi công việc xã hội"
+      },
+      {
+        "id": "C",
+        "text": "Không biết làm gì trước nghịch cảnh"
+      },
+      {
+        "id": "D",
+        "text": "Phá hủy mọi thành tựu của nhân loại"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Vô vi' (wu wei) không phải là thụ động buông xuôi mà là thuận theo Đạo tự nhiên của trời đất.",
+    "source": "Đạo Đức Kinh - Lão Tử"
+  },
+  {
+    "id": "BK-088",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Trong bài 'Chữ người tử tù', Huấn Cao tặng lại quản ngục lời khuyên gì trước khi ra pháp trường?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Khuyên quản ngục đổi nghề về quê, vì ở chốn ngục tù nhơ bẩn khó giữ được thiên lương trong sạch"
+      },
+      {
+        "id": "B",
+        "text": "Khuyên quản ngục nên tìm cách thăng tiến quan trường"
+      },
+      {
+        "id": "C",
+        "text": "Bảo quản ngục giấu bức châm chữ đi đừng cho ai thấy"
+      },
+      {
+        "id": "D",
+        "text": "Cảm ơn quản ngục đã cho ăn rượu thịt hàng ngày"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Thiên lương và cái đẹp có thể sinh ra nơi tối tăm nhưng không thể sống chung với cái xấu xa độc ác.",
+    "source": "Vang bóng một thời - Nguyễn Tuân"
+  },
+  {
+    "id": "BK-089",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Khúc khuỷu"
+      },
+      {
+        "id": "B",
+        "text": "Khúc khủy"
+      },
+      {
+        "id": "C",
+        "text": "Khúc khuỷ"
+      },
+      {
+        "id": "D",
+        "text": "Khúc khỉu"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Khúc khuỷu' có vần 'uyu' ở tiếng thứ hai và dấu hỏi.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-090",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'ngẫu nhiên luận' trong triết học đối lập trực tiếp với trường phái nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quyết định luận (Determinism)"
+      },
+      {
+        "id": "B",
+        "text": "Thuyết tương đối"
+      },
+      {
+        "id": "C",
+        "text": "Thuyết tiến hóa sinh học"
+      },
+      {
+        "id": "D",
+        "text": "Chủ nghĩa duy vật biện chứng"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Quyết định luận cho rằng mọi sự vật hiện tượng đều bị chi phối bởi quy luật nhân quả tất yếu, không có chỗ cho ngẫu nhiên thuần túy.",
+    "source": "Lịch sử Triết học"
+  },
+  {
+    "id": "BK-091",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vạn thọ vô cương' là lời chúc thọ xuất hiện sớm nhất trong tác phẩm cổ nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Kinh Thi (Thi Kinh)"
+      },
+      {
+        "id": "B",
+        "text": "Sử Ký Tư Mã Thiên"
+      },
+      {
+        "id": "C",
+        "text": "Hán Thư"
+      },
+      {
+        "id": "D",
+        "text": "Đại Việt Sử Ký Toàn Thư"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Trong thiên 'Bân phong' và 'Tiểu nhã' của Kinh Thi đã xuất hiện lời chúc 'Vạn thọ vô cương' (Sống lâu muôn tuổi không cùng).",
+    "source": "Kinh Thi khảo luận"
+  },
+  {
+    "id": "BK-092",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Đoạn trích 'Hạnh phúc của một tang gia' nằm trong chương thứ mấy của tiểu thuyết 'Số đỏ'?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chương XV"
+      },
+      {
+        "id": "B",
+        "text": "Chương X"
+      },
+      {
+        "id": "C",
+        "text": "Chương V"
+      },
+      {
+        "id": "D",
+        "text": "Chương XX"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Chương XV của tiểu thuyết Số đỏ phơi bày bản chất đạo đức giả, lố lăng của tầng lớp thượng lưu thành thị những năm 1930.",
+    "source": "Tác phẩm Số đỏ - Vũ Trọng Phụng"
+  },
+  {
+    "id": "BK-093",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Xộc xệch"
+      },
+      {
+        "id": "B",
+        "text": "Sộc sệch"
+      },
+      {
+        "id": "C",
+        "text": "Xộc sệch"
+      },
+      {
+        "id": "D",
+        "text": "Sộc xệch"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Xộc xệch' (không ngay ngắn, xiêu vẹo) viết với âm 'x' ở cả hai tiếng.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-094",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'ngoa ngữ' khi được dùng để phê bình một bài diễn văn mang hàm ý gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bài văn đầy những lời lẽ hoa mỹ rỗng tuếch, phóng đại quá sự thật để mị dân"
+      },
+      {
+        "id": "B",
+        "text": "Bài văn ngắn gọn súc tích"
+      },
+      {
+        "id": "C",
+        "text": "Bài văn giàu số liệu thống kê"
+      },
+      {
+        "id": "D",
+        "text": "Bài văn trình bày mộc mạc chân phương"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Ngoa ngữ' chỉ sự phô trương từ ngữ trống rỗng, sáo ngôn quá trớn.",
+    "source": "Từ điển Ngữ dụng học"
+  },
+  {
+    "id": "BK-095",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vô vương vô đế' chỉ tình trạng chính trị xã hội nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tình trạng vô chính phủ, loạn lạc không có kỷ cương trật tự nào kiểm soát"
+      },
+      {
+        "id": "B",
+        "text": "Nhà nước dân chủ phát triển"
+      },
+      {
+        "id": "C",
+        "text": "Triều đại thái bình thịnh trị"
+      },
+      {
+        "id": "D",
+        "text": "Chế độ cộng hòa lập hiến"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Vô vương vô đế' ví cảnh hỗn quân hỗn quan, xã hội đảo lộn không ai quản chế.",
+    "source": "Từ điển Lịch sử Xã hội"
+  },
+  {
+    "id": "BK-096",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Ai là tác giả của tác phẩm lý luận văn học 'Văn minh tân học sách' thời Duy Tân đầu thế kỷ XX?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đông Kinh Nghĩa Thục (nhóm Lương Văn Can, Nguyễn Quyền...)"
+      },
+      {
+        "id": "B",
+        "text": "Phan Bội Châu"
+      },
+      {
+        "id": "C",
+        "text": "Phan Chu Trinh"
+      },
+      {
+        "id": "D",
+        "text": "Huỳnh Thúc Kháng"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Văn minh tân học sách' (1907) là bản cương lĩnh cải cách văn hóa giáo dục tiến bộ của trường Đông Kinh Nghĩa Thục.",
+    "source": "Lịch sử tư tưởng Việt Nam"
+  },
+  {
+    "id": "BK-097",
+    "round": "ban_ket",
+    "topic": "chinh_ta",
+    "difficulty": "kho",
+    "question": "Từ nào sau đây viết ĐÚNG chính tả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gọn gàng"
+      },
+      {
+        "id": "B",
+        "text": "Gọn gàn"
+      },
+      {
+        "id": "C",
+        "text": "Cả hai đều đúng"
+      },
+      {
+        "id": "D",
+        "text": "Cả hai đều sai"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "'Gọn gàng' là từ láy chuẩn mực với âm đuôi 'ng'.",
+    "source": "Từ điển Tiếng Việt"
+  },
+  {
+    "id": "BK-098",
+    "round": "ban_ket",
+    "topic": "nghia_tu",
+    "difficulty": "kho",
+    "question": "Từ 'ngẫu tượng sùng bái' trong xã hội học hiện đại chỉ hiện tượng gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hội chứng tôn thờ thái quá một cá nhân hoặc hiện vật đến mức đánh mất năng lực tư duy phản biện"
+      },
+      {
+        "id": "B",
+        "text": "Tập quán đi chùa đầu năm"
+      },
+      {
+        "id": "C",
+        "text": "Thú chơi cây cảnh nghệ thuật"
+      },
+      {
+        "id": "D",
+        "text": "Tôn kính tổ tiên trong gia đình"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Sùng bái ngẫu tượng (fetishism/idolization) khiến con người trở nên mù quáng trước thực tế khách quan.",
+    "source": "Tâm lý học Xã hội"
+  },
+  {
+    "id": "BK-099",
+    "round": "ban_ket",
+    "topic": "thanh_ngu_tuc_ngu",
+    "difficulty": "kho",
+    "question": "Thành ngữ 'Vạn sự giai do mệnh, bán điểm bất do nhân' (Mọi sự đều do mệnh, nửa điểm chẳng do người) phản ánh tư tưởng nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tư tưởng định mệnh luận tiêu cực, thụ động phó mặc số phận"
+      },
+      {
+        "id": "B",
+        "text": "Ý chí vượt lên số phận kiên cường"
+      },
+      {
+        "id": "C",
+        "text": "Khát vọng tự do dân chủ"
+      },
+      {
+        "id": "D",
+        "text": "Niềm tin vào khoa học thực nghiệm"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Quan niệm duy tâm cổ coi con người chỉ là con rối trong tay tạo hóa, hoàn toàn bất lực trước định mệnh.",
+    "source": "Tư tưởng Triết học Cổ đại"
+  },
+  {
+    "id": "BK-100",
+    "round": "ban_ket",
+    "topic": "ca_dao_tho_ca",
+    "difficulty": "kho",
+    "question": "Trong bài 'Vợ chồng A Phủ', chi tiết Mị cắt dây trói cứu A Phủ rồi cùng trốn khỏi Hồng Ngài khẳng định chân lý gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sức sống tiềm tàng và khát vọng tự do mãnh liệt của người dân lao động vùng cao có thể chiến thắng sự bạo tàn áp bức"
+      },
+      {
+        "id": "B",
+        "text": "Tình yêu nam nữ đơn thuần lãng mạn"
+      },
+      {
+        "id": "C",
+        "text": "Sự sợ hãi cái chết của người phụ nữ Mông"
+      },
+      {
+        "id": "D",
+        "text": "Lòng thương xót nhất thời bồng bột"
+      }
+    ],
+    "correctOptionId": "A",
+    "explanation": "Tô Hoài đã khắc họa hành động mang tính bước ngoặt giải phóng số phận con người khỏi xiềng xích nô lệ phong kiến thần quyền.",
+    "source": "Tập Truyện Tây Bắc - Tô Hoài"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "season_2026_01",
+    "name": "Mùa Khởi Tranh 2026",
+    "description": "Mùa giải tranh tài tiếng Việt dành cho sinh viên FPT Polytechnic",
+    "status": "active",
+    "createdAt": "2026-10-30T11:36:32.642Z",
+    "startedAt": "2026-10-30T11:36:32.643Z",
+    "endedAt": null,
+    "rules": {
+      "pointsPerRound": {
+        "khoi_dong": 10,
+        "tranh_tai": 20,
+        "ban_ket": 30,
+        "chung_ket": 40
+      },
+      "keywordBonus": 100,
+      "timePerQuestionSeconds": 10,
+      "keywordGuessTimeSeconds": 10,
+      "difficultyRatio": {
+        "khoi_dong": {
+          "de": 6,
+          "vua": 3,
+          "kho": 1
+        },
+        "tranh_tai": {
+          "de": 3,
+          "vua": 5,
+          "kho": 2
+        },
+        "ban_ket": {
+          "de": 2,
+          "vua": 4,
+          "kho": 4
+        },
+        "chung_ket": {
+          "de": 1,
+          "vua": 3,
+          "kho": 6
+        }
+      }
+    }
+  }
+]
