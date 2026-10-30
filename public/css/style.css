@@ -425,64 +425,199 @@ html, body {
   font-style: italic;
 }
 
-/* Ô CHỮ VÒNG CHUNG KẾT */
-.crossword-container {
+/* ================= BÀN CỜ Ô CHỮ CHUNG KẾT (CHUẨN HÌNH ẢNH) ================= */
+.crossword-board-wrapper {
+  background: #FFFFFF;
+  border: 1.5px solid #D0D7DE;
+  border-radius: var(--radius-md);
+  padding: 24px 16px;
+  margin: 16px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding: 8px 0;
-  margin: 14px 0;
 }
 
-.crossword-grid {
+/* Lưới nền kẻ ô tập kẻ ly như hình ảnh */
+.crossword-paper-grid {
+  display: inline-block;
+  min-width: 100%;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 38px 38px;
+  background-position: -1px -1px;
+  padding: 12px 8px;
+}
+
+.cw-table-grid {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  min-width: 100%;
+  gap: 0px; /* Không cách nhau để các ô liền nhau chuẩn như bảng tính Excel */
+  align-items: flex-start;
+  margin: 0 auto;
 }
 
-.crossword-row {
+.cw-row {
   display: flex;
   align-items: center;
-  gap: 4px;
+  height: 38px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
 }
 
-.crossword-row-num {
-  width: 24px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--text-dim);
-  text-align: right;
-  margin-right: 4px;
+.cw-row:hover .cw-cell:not(.empty) {
+  filter: brightness(0.96);
 }
 
-.crossword-cell {
-  width: 32px;
-  height: 32px;
-  border-radius: 4px;
-  background: #0D131D;
-  border: 1px solid var(--border-color);
+.cw-cell {
+  width: 38px;
+  height: 38px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-main);
+  font-family: 'Segoe UI', Inter, -apple-system, sans-serif;
+  font-size: 17px;
+  font-weight: 800;
   text-transform: uppercase;
+  user-select: none;
 }
 
-.crossword-cell.unopened {
-  background: #111722;
-  color: transparent;
+/* Ô trống không có chữ (khoảng đệm căn chỉnh) */
+.cw-cell.empty {
+  border: none;
+  background: transparent;
 }
 
-/* Highlight cột dọc của từ khóa sau khi công bố */
-.crossword-cell.target-column {
-  background: linear-gradient(135deg, #FF7A18, #E05300) !important;
-  color: #FFF !important;
-  border-color: #FFA255 !important;
-  box-shadow: 0 0 10px rgba(255, 122, 24, 0.7);
-  transform: scale(1.08);
+/* Ô chữ cái chuẩn: nền trắng, viền đen sắc nét như hình */
+.cw-cell.letter {
+  background: #FFFFFF;
+  color: #111111;
+  border: 1.5px solid #111111;
+  margin-right: -1.5px; /* Ghép viền liền mạch như bảng tính */
+  margin-bottom: -1.5px;
+  transition: background-color 0.25s, transform 0.25s;
+}
+
+/* CỘT DỌC TỪ KHÓA MÀU VÀNG RỰC RỠ ĐẶC TRƯNG NHƯ HÌNH */
+.cw-cell.yellow-target {
+  background: #FFE600 !important; /* Màu vàng tươi nguyên bản như ảnh chụp */
+  color: #000000 !important;
+  font-weight: 900 !important;
+  border: 1.5px solid #111111 !important;
   z-index: 2;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.15);
+}
+
+/* Hiệu ứng bừng sáng khi đoán trúng từ khóa cột dọc */
+.cw-cell.yellow-target.pulse-glow {
+  animation: targetGoldPulse 1.2s infinite alternate ease-in-out;
+}
+
+@keyframes targetGoldPulse {
+  0% { transform: scale(1); box-shadow: 0 0 6px #FFE600; }
+  100% { transform: scale(1.08); box-shadow: 0 0 18px #FFB800; z-index: 10; }
+}
+
+/* Ô chưa mở trong chế độ thi đấu của người chơi */
+.cw-cell.unopened {
+  background: #F4F6F8;
+  color: #6E7781;
+  font-size: 13px;
+  border: 1px dashed #A0AAB4;
+}
+
+.cw-cell.unopened.yellow-target {
+  background: #FFF9C4 !important; /* Vàng nhạt hé lộ vị trí cột dọc */
+  border: 1.5px solid #E6B800 !important;
+  color: #8C6D00;
+}
+
+/* Hiệu ứng lật mở ô chữ */
+.cw-cell.flip-reveal {
+  animation: cellFlipAnim 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes cellFlipAnim {
+  0% { transform: rotateY(90deg); opacity: 0; }
+  100% { transform: rotateY(0deg); opacity: 1; }
+}
+
+/* ================= DANH SÁCH CÂU HỎI BÊN DƯỚI LƯỚI (NHƯ HÌNH) ================= */
+.crossword-questions-list {
+  background: #FFFFFF;
+  border-top: 2px solid #E1E4E8;
+  padding: 18px 16px;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  text-align: left;
+}
+
+.cw-question-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 9px 12px;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+  cursor: pointer;
+  border-bottom: 1px solid #F0F2F5;
+}
+
+.cw-question-item:last-child {
+  border-bottom: none;
+}
+
+.cw-question-item:hover {
+  background: #F6F8FA;
+}
+
+.cw-question-item.active {
+  background: #FFFBE6;
+  border-left: 3px solid #FAAD14;
+}
+
+.cw-q-num {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1F2328;
+  min-width: 22px;
+  line-height: 1.4;
+}
+
+.cw-q-text {
+  font-size: 14.5px;
+  color: #24292F;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.cw-q-status {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.cw-q-status.solved {
+  background: #DEF7EC;
+  color: #03543F;
+}
+
+.cw-q-status.open {
+  background: #E1EFFE;
+  color: #1E429F;
+}
+
+/* Hộp thoại / Khung thao tác trả lời hàng ngang */
+.cw-answer-modal-card {
+  background: #0E1520;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-top: 18px;
+  text-align: left;
+  animation: slideUp 0.3s ease;
 }
 
 /* BẢNG XẾP HẠNG (LEADERBOARD) */

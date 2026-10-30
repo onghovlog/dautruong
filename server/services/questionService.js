@@ -112,7 +112,28 @@ export async function generateFinalRoundQuestions(crosswordSet) {
   const qMap = new Map(round4Questions.map(q => [q.id, q]));
 
   return crosswordSet.rows.map((rowItem, index) => {
-    const rawQ = qMap.get(rowItem.questionId);
+    let rawQ = qMap.get(rowItem.questionId);
+    if (!rawQ && rowItem.question) {
+      rawQ = {
+        id: rowItem.questionId || `ROW_${index}`,
+        round: 'chung_ket',
+        topic: 'crossword',
+        difficulty: rowItem.difficulty || 'vua',
+        question: rowItem.question,
+        options: rowItem.options && rowItem.options.length > 0 ? rowItem.options : [
+          { id: 'A', text: rowItem.horizontalAnswer },
+          { id: 'B', text: 'Phương án gợi ý' },
+          { id: 'C', text: 'Tri thức tiếng Việt' },
+          { id: 'D', text: 'Thành ngữ ca dao' }
+        ],
+        correctOptionId: rowItem.correctOptionId || 'A',
+        explanation: rowItem.explanation || '',
+        source: rowItem.source || '',
+        horizontalAnswer: rowItem.horizontalAnswer,
+        normalizedAnswer: rowItem.normalizedAnswer
+      };
+    }
+
     if (!rawQ) {
       throw new Error(`Không tìm thấy câu hỏi ${rowItem.questionId} trong kho Chung kết!`);
     }

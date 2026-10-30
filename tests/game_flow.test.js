@@ -30,7 +30,10 @@ test('Kiểm tra luồng chơi hoàn chỉnh 4 vòng và đoán từ khóa Chung
     const rKey = roundKeys[rIdx];
     const point = expectedPoints[rIdx];
 
-    for (let qIdx = 0; qIdx < 10; qIdx++) {
+    const curAttempt = await getAttemptById(attempt.attemptId);
+    const numQ = curAttempt.rounds[rKey].questions.length;
+
+    for (let qIdx = 0; qIdx < numQ; qIdx++) {
       await startQuestion(attempt.attemptId, player.playerId, rKey, qIdx);
       const raw = await getAttemptById(attempt.attemptId);
       const correctOpt = raw.rounds[rKey].questions[qIdx].serverCorrectOptionId;
@@ -47,9 +50,10 @@ test('Kiểm tra luồng chơi hoàn chỉnh 4 vòng và đoán từ khóa Chung
     }
   }
 
-  // Điểm trắc nghiệm lúc này: 10*10 + 10*20 + 10*30 + 10*40 = 1000 điểm
   let raw = await getAttemptById(attempt.attemptId);
-  assert.strictEqual(raw.scores.total, 1000, 'Tổng điểm trắc nghiệm 40 câu đúng phải là 1.000 điểm');
+  const ckLength = raw.rounds.chung_ket.questions.length;
+  const expectedQuizTotal = 10 * 10 + 10 * 20 + 10 * 30 + ckLength * 40;
+  assert.strictEqual(raw.scores.total, expectedQuizTotal, `Tổng điểm trắc nghiệm phải đạt đúng ${expectedQuizTotal} điểm`);
 
   // Kiểm tra an toàn: khi chưa đoán từ khóa, sanitizeAttemptForClient KHÔNG được chứa targetChar hay charIndex
   const safeBefore = sanitizeAttemptForClient(raw);
@@ -67,11 +71,11 @@ test('Kiểm tra luồng chơi hoàn chỉnh 4 vòng và đoán từ khóa Chung
   const kgRes = await submitKeywordGuess(attempt.attemptId, player.playerId, targetKeyword);
   assert.strictEqual(kgRes.keywordGuess.isCorrect, true);
   assert.strictEqual(kgRes.keywordGuess.pointsAwarded, 100);
-  assert.strictEqual(kgRes.scores.total, 1100, 'Tổng điểm tối đa toàn game phải đạt đúng 1.100 điểm');
+  assert.strictEqual(kgRes.scores.total, expectedQuizTotal + 100, `Tổng điểm sau khi đoán đúng từ khóa phải đạt ${expectedQuizTotal + 100}`);
 
-  // Kiểm tra sau khi hoàn thành: đã công bố đầy đủ 10 hàng ô chữ với vị trí cột dọc
+  // Kiểm tra sau khi hoàn thành: đã công bố đầy đủ các hàng ô chữ với vị trí cột dọc
   assert.ok(Array.isArray(kgRes.crosswordSolution));
-  assert.strictEqual(kgRes.crosswordSolution.length, 10);
+  assert.strictEqual(kgRes.crosswordSolution.length, ckLength);
   for (const row of kgRes.crosswordSolution) {
     assert.ok(row.targetChar, 'Phải có targetChar sau khi hoàn thành');
     assert.ok(row.charIndex !== undefined, 'Phải có charIndex sau khi hoàn thành');

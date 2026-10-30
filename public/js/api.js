@@ -54,9 +54,9 @@ export const api = {
     method: 'POST',
     body: JSON.stringify({ attemptId, roundKey, questionIndex })
   }),
-  submitAnswer: (attemptId, roundKey, questionIndex, selectedOptionId) => request('/game/submit-answer', {
+  submitAnswer: (attemptId, roundKey, questionIndex, selectedOptionId, answerText) => request('/game/submit-answer', {
     method: 'POST',
-    body: JSON.stringify({ attemptId, roundKey, questionIndex, selectedOptionId })
+    body: JSON.stringify({ attemptId, roundKey, questionIndex, selectedOptionId, answerText })
   }),
   nextRound: (attemptId) => request('/game/next-round', { method: 'POST', body: JSON.stringify({ attemptId }) }),
   startKeyword: (attemptId) => request('/game/start-keyword', { method: 'POST', body: JSON.stringify({ attemptId }) }),

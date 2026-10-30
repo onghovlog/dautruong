@@ -284,7 +284,7 @@ export async function startQuestion(attemptId, playerId, roundKey, questionIndex
 /**
  * Nộp đáp án cho một câu hỏi (Idempotent)
  */
-export async function submitAnswer(attemptId, playerId, roundKey, questionIndex, selectedOptionId) {
+export async function submitAnswer(attemptId, playerId, roundKey, questionIndex, selectedOptionId, answerText) {
   let result = null;
 
   await updateJson(PATHS.ATTEMPTS, async (attempts = []) => {
@@ -315,8 +315,11 @@ export async function submitAnswer(attemptId, playerId, roundKey, questionIndex,
     q.answeredAt = now;
     q.selectedOptionId = selectedOptionId || null;
 
-    if (isOverdue || !selectedOptionId) {
-      // Hết giờ hoặc không chọn đáp án
+    const hasOption = Boolean(selectedOptionId);
+    const hasText = Boolean(answerText && typeof answerText === 'string' && answerText.trim());
+
+    if (isOverdue || (!hasOption && !hasText)) {
+      // Hết giờ hoặc không chọn/nhập đáp án
       q.isTimeout = true;
       q.isCorrect = false;
       q.timeSpentMs = timeLimitMs;
@@ -325,7 +328,22 @@ export async function submitAnswer(attemptId, playerId, roundKey, questionIndex,
       attempt.stats.totalTimeout++;
     } else {
       q.timeSpentMs = Math.min(timeLimitMs, Math.max(0, now - q.startedAt));
-      const isRight = (selectedOptionId === q.serverCorrectOptionId);
+      let isRight = false;
+
+      // 1. Kiểm tra đáp án trắc nghiệm
+      if (hasOption && selectedOptionId === q.serverCorrectOptionId) {
+        isRight = true;
+      }
+
+      // 2. Kiểm tra gõ đáp án ô chữ (tự động chuẩn hóa có dấu / không dấu)
+      if (!isRight && hasText && q.normalizedAnswer) {
+        const normUser = normalizeVietnamese(answerText);
+        const normTarget = normalizeVietnamese(q.normalizedAnswer);
+        if (normUser === normTarget) {
+          isRight = true;
+        }
+      }
+
       q.isCorrect = isRight;
       q.isTimeout = false;
 
@@ -355,8 +373,9 @@ export async function submitAnswer(attemptId, playerId, roundKey, questionIndex,
     attempt.stats.totalQuizTimeSpentMs += q.timeSpentMs;
     attempt.lastUpdatedAt = new Date().toISOString();
 
-    // Kiểm tra đã hoàn thành 10 câu của vòng chưa
-    if (questionIndex === 9) {
+    // Kiểm tra đã hoàn thành các câu của vòng chưa
+    const allAnswered = round.questions.every(item => item.answeredAt !== null);
+    if (allAnswered || questionIndex === round.questions.length - 1) {
       round.isCompleted = true;
     }
 
@@ -445,8 +464,8 @@ export async function startKeywordGuess(attemptId, playerId) {
     if (attempt.status !== 'in_progress') throw new Error('Lượt chơi không hoạt động.');
 
     const ck = attempt.rounds.chung_ket;
-    if (!ck || !ck.isCompleted) {
-      throw new Error('Bạn cần hoàn thành đủ 10 câu trắc nghiệm Chung kết trước khi đoán từ khóa.');
+    if (!ck) {
+      throw new Error('Vòng Chung kết chưa sẵn sàng.');
     }
 
     const kg = ck.keywordGuess;
@@ -535,10 +554,24 @@ export async function submitKeywordGuess(attemptId, playerId, guessText) {
       attempt.scores.keywordBonus
     );
 
-    // Ghi nhận hoàn thành lượt chơi
-    attempt.status = 'completed';
-    attempt.completedAt = new Date().toISOString();
-    attempt.lastUpdatedAt = attempt.completedAt;
+    // Nếu đoán đúng HOẶC đã trả lời hết các câu hỏi -> Hoàn thành toàn bộ game
+    const allAnswered = ck.questions.every(q => q.answeredAt !== null);
+    if (isMatch || allAnswered) {
+      attempt.status = 'completed';
+      attempt.completedAt = new Date().toISOString();
+      attempt.lastUpdatedAt = attempt.completedAt;
+      ck.isCompleted = true;
+
+      // Nếu đoán đúng, mở toàn bộ các hàng còn lại
+      if (isMatch) {
+        ck.questions.forEach(q => {
+          if (!q.answeredAt) {
+            q.answeredAt = now;
+            q.isCorrect = true;
+          }
+        });
+      }
+    }
 
     try {
       await Attempt.updateOne(
@@ -546,9 +579,9 @@ export async function submitKeywordGuess(attemptId, playerId, guessText) {
         {
           $set: {
             'rounds.chung_ket.keywordGuess': kg,
-            'rounds.chung_ket.isCompleted': true,
-            status: 'completed',
-            completedAt: new Date(now),
+            'rounds.chung_ket.isCompleted': ck.isCompleted,
+            status: attempt.status,
+            completedAt: attempt.completedAt ? new Date(now) : null,
             lastUpdatedAt: new Date(now),
             scores: attempt.scores,
             stats: attempt.stats
@@ -691,10 +724,24 @@ export function sanitizeAttemptForClient(attempt) {
 
     if (rKey === 'chung_ket') {
       safeRounds.chung_ket.crosswordTitle = r.crosswordTitle;
+      safeRounds.chung_ket.keywordLength = r.normalizedKeyword ? r.normalizedKeyword.length : r.questions.length;
       safeRounds.chung_ket.keywordGuess = {
         startedAt: r.keywordGuess.startedAt,
         deadlineAt: r.keywordGuess.deadlineAt,
-        isGuessed: (r.keywordGuess.answeredAt !== null)
+        isGuessed: (r.keywordGuess.answeredAt !== null),
+        isCorrect: r.keywordGuess.isCorrect
+      };
+
+      // Cung cấp layout ô chữ để client render chuẩn xác theo hình
+      const centerCol = Math.max(...r.questions.map(q => q.charIndex !== undefined ? q.charIndex : 0));
+      safeRounds.chung_ket.gridMetadata = {
+        centerCol,
+        rows: r.questions.map((q, idx) => ({
+          index: idx,
+          length: q.normalizedAnswer ? q.normalizedAnswer.length : 7,
+          startCol: centerCol - (q.charIndex !== undefined ? q.charIndex : 0),
+          targetColOffset: (q.charIndex !== undefined ? q.charIndex : 0)
+        }))
       };
 
       if (isCompleted) {

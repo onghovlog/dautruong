@@ -68,7 +68,7 @@ router.post('/start-question', playerAuthMiddleware, async (req, res) => {
  */
 router.post('/submit-answer', playerAuthMiddleware, async (req, res) => {
   try {
-    const { attemptId, roundKey, questionIndex, selectedOptionId } = req.body;
+    const { attemptId, roundKey, questionIndex, selectedOptionId, answerText } = req.body;
     if (!attemptId || !roundKey || questionIndex === undefined) {
       return res.status(400).json({ error: 'Thiếu thông số câu hỏi.' });
     }
@@ -78,7 +78,8 @@ router.post('/submit-answer', playerAuthMiddleware, async (req, res) => {
       req.player.playerId,
       roundKey,
       Number(questionIndex),
-      selectedOptionId
+      selectedOptionId,
+      answerText
     );
     res.json(result);
   } catch (err) {

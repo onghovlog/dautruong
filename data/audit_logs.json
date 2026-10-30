@@ -1,5 +1,77 @@
 [
   {
+    "id": "log_5f16df16-762b-408d-b8ff-52b26f52d439",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 10,
+      "keywordGuessTimeSeconds": 10
+    },
+    "timestamp": "2026-10-30T16:08:38.205Z"
+  },
+  {
+    "id": "log_dfd03ef1-b191-48b7-bb1f-6e43aac4af77",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 15,
+      "keywordGuessTimeSeconds": 20
+    },
+    "timestamp": "2026-10-30T16:08:37.135Z"
+  },
+  {
+    "id": "log_dd75e3a7-89cc-4fb3-8754-e4bbd45b91f1",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 10,
+      "keywordGuessTimeSeconds": 10
+    },
+    "timestamp": "2026-10-30T16:02:58.527Z"
+  },
+  {
+    "id": "log_f1e41954-891c-4b55-8a50-66c16d7e8495",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 15,
+      "keywordGuessTimeSeconds": 20
+    },
+    "timestamp": "2026-10-30T16:02:57.854Z"
+  },
+  {
+    "id": "log_ff589a55-8f9e-4608-a445-4cbcf4790bd0",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 10,
+      "keywordGuessTimeSeconds": 10
+    },
+    "timestamp": "2026-10-30T15:23:03.722Z"
+  },
+  {
+    "id": "log_6d64e906-5ca0-4010-8383-027465e396ba",
+    "adminUsername": "admin",
+    "action": "UPDATE_TIMER_SETTINGS",
+    "targetType": "SEASON",
+    "targetId": "season_2026_01",
+    "details": {
+      "timePerQuestionSeconds": 15,
+      "keywordGuessTimeSeconds": 20
+    },
+    "timestamp": "2026-10-30T15:23:02.625Z"
+  },
+  {
     "id": "log_525a29f1-486a-4515-85f0-96b491c659d0",
     "adminUsername": "admin",
     "action": "UPDATE_TIMER_SETTINGS",

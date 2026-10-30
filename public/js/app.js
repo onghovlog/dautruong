@@ -93,8 +93,9 @@ class App {
       case 'round_result':
         this.renderRoundResult(main, params);
         break;
+      case 'crossword_arena':
       case 'crossword_guess':
-        this.renderCrosswordGuess(main, params);
+        this.renderCrosswordArena(main, params);
         break;
       case 'game_summary':
         this.renderGameSummary(main, params);
@@ -590,10 +591,14 @@ class App {
 
     card.querySelector('#btn-start-quiz').onclick = async () => {
       sound.playClick();
-      // Tìm câu hỏi tiếp theo chưa trả lời
-      const currentQIdx = roundData.questions.findIndex(q => !q.isAnswered);
-      const qIdx = currentQIdx >= 0 ? currentQIdx : 0;
-      await this.loadQuestion(roundKey, qIdx);
+      if (roundKey === 'chung_ket') {
+        this.navigate('crossword_arena');
+      } else {
+        // Tìm câu hỏi tiếp theo chưa trả lời
+        const currentQIdx = roundData.questions.findIndex(q => !q.isAnswered);
+        const qIdx = currentQIdx >= 0 ? currentQIdx : 0;
+        await this.loadQuestion(roundKey, qIdx);
+      }
     };
   }
 
@@ -883,147 +888,458 @@ class App {
     };
   }
 
-  // 7. MÀN HÌNH Ô CHỮ CHUNG KẾT & ĐOÁN TỪ KHÓA
-  renderCrosswordGuess(container) {
+  // 7. MÀN HÌNH ĐẤU TRƯỜNG Ô CHỮ CHUNG KẾT & ĐOÁN TỪ KHÓA BÍ MẬT (VISUAL CHUẨN 100% THEO HÌNH)
+  renderCrosswordArena(container) {
+    this.clearIntervals();
     const ck = this.attempt.rounds.chung_ket;
-    const questions = ck.questions;
+    const questions = ck.questions || [];
+    const gridMeta = ck.gridMetadata || {
+      centerCol: 0,
+      rows: questions.map((q, idx) => ({ index: idx, length: 7, startCol: 0, targetColOffset: 0 }))
+    };
+    const centerCol = gridMeta.centerCol;
+    const rowsLayout = gridMeta.rows || [];
+
+    const isCompleted = (this.attempt.status === 'completed');
+    let isKeywordGuessed = Boolean(ck.keywordGuess?.isGuessed);
+    let isKeywordCorrect = Boolean(ck.keywordGuess?.isCorrect);
 
     const card = document.createElement('div');
     card.className = 'card';
-    card.innerHTML = `
-      <div style="text-align: center; margin-bottom: 16px;">
-        <span style="font-size: 13px; font-weight: 700; color: var(--primary-color);">CHẶNG VỀ ĐÍCH</span>
-        <h2 style="font-size: 20px; font-weight: 800; color: #FFF; margin: 4px 0 6px;">Ô CHỮ TỪ KHÓA BÍ MẬT</h2>
-        <p style="font-size: 13px; color: var(--text-muted);">
-          10 hàng ngang đã được giải mã. Hãy suy luận Từ khóa bí mật gồm đúng 10 chữ cái!
-        </p>
-      </div>
+    card.style.padding = '18px 14px';
 
-      <!-- LƯỚI 10 HÀNG Ô CHỮ (CUỘN NGANG RIÊNG) -->
-      <div class="crossword-container">
-        <div class="crossword-grid" id="crossword-grid">
-          ${questions.map((q, idx) => {
-            const letters = (q.normalizedAnswer || '').split('');
-            return `
-              <div class="crossword-row">
-                <div class="crossword-row-num">${idx + 1}</div>
-                ${letters.map(letter => `
-                  <div class="crossword-cell">${letter}</div>
-                `).join('')}
+    const renderFullBoard = () => {
+      const openedCount = questions.filter(q => q.isAnswered).length;
+      const allAnswered = questions.every(q => q.isAnswered);
+
+      card.innerHTML = `
+        <!-- HEADER VÒNG CHUNG KẾT -->
+        <div style="text-align: center; margin-bottom: 14px;">
+          <span style="font-size: 12px; font-weight: 800; background: rgba(242, 113, 37, 0.15); color: var(--primary-color); padding: 3px 10px; border-radius: 12px; text-transform: uppercase;">
+            👑 VÒNG 4: CHUNG KẾT • ĐẤU TRƯỜNG Ô CHỮ
+          </span>
+          <h2 style="font-size: 21px; font-weight: 800; color: #FFF; margin: 6px 0 2px;">
+            ${ck.crosswordTitle || 'Ô CHỮ TỪ KHÓA BÍ MẬT'}
+          </h2>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">
+            Chọn hàng ngang để trả lời câu hỏi và suy luận Cột Dọc Bí Mật (màu vàng).
+          </p>
+
+          <!-- THANH THỐNG KÊ & NÚT ĐOÁN TỪ KHÓA BÍ MẬT -->
+          <div style="display:flex; justify-content:space-between; align-items:center; background:#0E1520; border:1px solid var(--border-color); border-radius:var(--radius-md); padding:10px 14px; margin-bottom:14px; flex-wrap:wrap; gap:8px;">
+            <div>
+              <span style="font-size:12.5px; color:var(--text-muted);">Đã giải mã: </span>
+              <strong style="font-size:14px; color:#FFF;">${openedCount} / ${questions.length} hàng</strong>
+            </div>
+            <div>
+              <span style="font-size:12.5px; color:var(--text-muted);">Điểm vòng 4: </span>
+              <strong style="font-size:14px; color:var(--success-color);">+${ck.score}đ</strong>
+            </div>
+            <button id="btn-trigger-guess-kw" class="btn" style="width:auto; min-height:36px; padding:4px 14px; font-size:13px; font-weight:800; background:linear-gradient(135deg, #FFE600, #FFB800); color:#000; border:none; box-shadow:0 0 10px rgba(255, 230, 0, 0.4); ${isKeywordGuessed || isCompleted ? 'opacity:0.6; cursor:not-allowed;' : ''}">
+              ${isKeywordCorrect ? '🌟 ĐÃ GIẢI ĐƯỢC TỪ KHÓA (+100Đ)' : (isKeywordGuessed ? '❌ ĐÃ HẾT LƯỢT ĐOÁN TỪ KHÓA' : '🎯 ĐOÁN TỪ KHÓA (+100Đ)')}
+            </button>
+          </div>
+        </div>
+
+        <!-- BÀN CỜ Ô CHỮ (VISUAL GIỐNG HÌNH ẢNH 100%) -->
+        <div class="crossword-board-wrapper">
+          <div class="crossword-paper-grid">
+            <div class="cw-table-grid" id="cw-table-grid">
+              ${questions.map((q, idx) => {
+                const layout = rowsLayout[idx] || { startCol: 0, length: 7, targetColOffset: 0 };
+                const startCol = layout.startCol !== undefined ? layout.startCol : (centerCol - (q.charIndex || 0));
+                const targetColOffset = layout.targetColOffset !== undefined ? layout.targetColOffset : (q.charIndex || 0);
+                const wordLength = layout.length || 7;
+                const emptyBoxes = Array(Math.max(0, startCol)).fill(0);
+                const isAnswered = Boolean(q.isAnswered || isCompleted || isKeywordCorrect);
+                const revealedChars = isAnswered && q.normalizedAnswer ? q.normalizedAnswer.split('') : Array(wordLength).fill('');
+
+                return `
+                  <div class="cw-row" data-qidx="${idx}" title="${isAnswered ? 'Đã giải mã hàng này' : `Bấm để trả lời hàng ngang số ${idx + 1}`}">
+                    <!-- Ô trống đệm để cột vàng thẳng đứng như hình ảnh -->
+                    ${emptyBoxes.map(() => `<div class="cw-cell empty"></div>`).join('')}
+
+                    <!-- Các ô chữ cái của hàng ngang -->
+                    ${revealedChars.map((char, cIdx) => {
+                      const isYellowCol = (cIdx === targetColOffset);
+                      if (isAnswered) {
+                        return `
+                          <div class="cw-cell letter ${isYellowCol ? 'yellow-target' : ''} ${isKeywordCorrect && isYellowCol ? 'pulse-glow' : ''}">
+                            ${char}
+                          </div>
+                        `;
+                      } else {
+                        return `
+                          <div class="cw-cell unopened ${isYellowCol ? 'yellow-target' : ''}">
+                            ${isYellowCol ? '?' : ''}
+                          </div>
+                        `;
+                      }
+                    }).join('')}
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+
+          <!-- DANH SÁCH CÂU HỎI ĐÁNH SỐ 1..N BÊN DƯỚI LƯỚI NHƯ TRONG HÌNH -->
+          <div class="crossword-questions-list">
+            ${questions.map((q, idx) => {
+              const layout = rowsLayout[idx] || { length: 7 };
+              const isAnswered = Boolean(q.isAnswered || isCompleted || isKeywordCorrect);
+
+              return `
+                <div class="cw-question-item" data-qidx="${idx}">
+                  <div class="cw-q-num">${idx + 1}</div>
+                  <div class="cw-q-text">
+                    <span style="font-weight: 600; color: #111;">${q.question}</span>
+                    ${isAnswered ? `
+                      <span style="display:inline-block; margin-left:6px; font-weight:800; color:#0969DA;">
+                        → ${q.horizontalAnswer || q.normalizedAnswer}
+                      </span>
+                    ` : `
+                      <span style="display:inline-block; margin-left:6px; font-size:12px; color:#6E7781;">
+                        (${layout.length} chữ cái)
+                      </span>
+                    `}
+                  </div>
+                  <div>
+                    <span class="cw-q-status ${isAnswered ? 'solved' : 'open'}">
+                      ${isAnswered ? '✓ Đã mở' : '▶ Trả lời'}
+                    </span>
+                  </div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+
+        <!-- KHU VỰC THAO TÁC / TRẢ LỜI CÂU HỎI HÀNG NGANG ĐƯỢC CHỌN -->
+        <div id="cw-active-area"></div>
+
+        <!-- KHU VỰC KẾT THÚC / XEM TỔNG KẾT -->
+        ${(allAnswered || isCompleted || isKeywordCorrect) ? `
+          <div style="margin-top: 18px; text-align: center;">
+            <button id="btn-finish-arena" class="btn btn-primary" style="font-size: 16px; font-weight: 800;">
+              XEM TỔNG KẾT TOÀN TRẬN & BẢNG XẾP HẠNG 🏆
+            </button>
+          </div>
+        ` : ''}
+      `;
+
+      attachEventHandlers();
+    };
+
+    const attachEventHandlers = () => {
+      // 1. Click vào hàng ngang hoặc câu hỏi để trả lời
+      const activeArea = card.querySelector('#cw-active-area');
+
+      const handleSelectRow = async (idx) => {
+        sound.playClick();
+        const q = questions[idx];
+        const layout = rowsLayout[idx] || { length: 7 };
+
+        if (q.isAnswered || isCompleted) {
+          this.showToast(`Hàng số ${idx + 1} đã giải mã: ${q.horizontalAnswer || q.normalizedAnswer}`);
+          return;
+        }
+
+        try {
+          activeArea.innerHTML = `<div class="skeleton" style="height: 120px;"></div>`;
+          activeArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+          const startRes = await api.startQuestion(this.attempt.attemptId, 'chung_ket', idx);
+          const deadlineAt = startRes.deadlineAt;
+          const clientTimeOffset = Date.now() - startRes.serverTime;
+          const timeLimitSeconds = startRes.timeLimitSeconds || 15;
+          let submitted = false;
+
+          activeArea.innerHTML = `
+            <div class="cw-answer-modal-card">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px;">
+                <span style="font-size: 12px; font-weight: 800; color: var(--primary-color);">
+                  HÀNG NGANG SỐ ${idx + 1} • GỒM ${layout.length} CHỮ CÁI
+                </span>
+                <button id="btn-close-active-q" style="background:transparent; border:none; color:var(--text-muted); cursor:pointer; font-size:16px;">✕</button>
               </div>
-            `;
-          }).join('')}
-        </div>
-      </div>
 
-      <!-- KHU VỰC SẴN SÀNG ĐOÁN -->
-      <div id="guess-ready-area" style="margin-top: 18px;">
-        <div style="background: #0E1520; border-radius: var(--radius-md); padding: 14px; margin-bottom: 16px; font-size: 14px; color: var(--text-muted); text-align: left;">
-          💡 <strong>Quy tắc đoán:</strong> Đúng 10 giây để gõ và gửi đáp án. Trả lời đúng nhận ngay <strong>+100 điểm thưởng</strong>!
-        </div>
-        <button id="btn-start-guess" class="btn btn-primary" style="font-size: 17px;">
-          BẮT ĐẦU ĐOÁN TỪ KHÓA (10s) 🎯
-        </button>
-      </div>
+              <!-- ĐỒNG HỒ ĐẾM NGƯỢC -->
+              <div class="timer-container" style="margin-bottom: 12px;">
+                <div id="row-timer-num" class="timer-number">${timeLimitSeconds}</div>
+                <div class="timer-bar-bg">
+                  <div id="row-timer-bar" class="timer-bar-fill"></div>
+                </div>
+              </div>
 
-      <!-- KHU VỰC NHẬP TỪ KHÓA (KHI ĐẾM NGƯỢC CHẠY) -->
-      <div id="guess-active-area" style="display: none; margin-top: 18px;">
-        <div class="timer-container">
-          <div id="kw-timer-num" class="timer-number">10</div>
-          <div class="timer-bar-bg">
-            <div id="kw-timer-bar" class="timer-bar-fill"></div>
-          </div>
-        </div>
+              <!-- NỘI DUNG CÂU HỎI -->
+              <h3 style="font-size: 16px; font-weight: 700; color: #FFF; margin-bottom: 14px; line-height: 1.5;">
+                ${q.question}
+              </h3>
 
-        <form id="form-guess-kw">
-          <div class="form-group">
-            <label class="form-label">Nhập từ khóa 10 chữ cái (có hoặc không dấu):</label>
-            <input type="text" id="input-kw" class="form-input" placeholder="Ví dụ: ĐẤT NƯỚC TÔI" required maxlength="30" style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px;" autocomplete="off">
-          </div>
-          <button type="submit" class="btn btn-primary">XÁC NHẬN GỬI 🚀</button>
-        </form>
-      </div>
+              <!-- FORM GÕ ĐÁP ÁN (TỰ ĐỘNG CHUẨN HÓA TIẾNG VIỆT) -->
+              <form id="form-submit-row-answer">
+                <div class="form-group" style="margin-bottom: 12px;">
+                  <label class="form-label" style="font-size: 12px;">Nhập câu trả lời (có hoặc không dấu):</label>
+                  <input type="text" id="input-row-answer" class="form-input" placeholder="Ví dụ: ${layout.length} chữ cái" required autocomplete="off" style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                </div>
 
-      <!-- KẾT QUẢ SAU KHI ĐOÁN -->
-      <div id="guess-result-area" style="display: none; margin-top: 18px;"></div>
-    `;
+                <!-- NÚT GỢI Ý 4 ĐÁP ÁN TRẮC NGHIỆM -->
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px; flex-wrap:wrap; gap:8px;">
+                  <button type="button" id="btn-toggle-options" class="btn btn-secondary" style="min-height:32px; padding:2px 10px; font-size:12px; width:auto;">
+                    💡 Xem gợi ý trắc nghiệm (A, B, C, D)
+                  </button>
+                  <button type="submit" class="btn btn-primary" style="width:auto; min-height:36px; padding:0 20px; font-size:14px; font-weight:800;">
+                    🚀 Gửi Đáp Án
+                  </button>
+                </div>
 
-    container.appendChild(card);
+                <!-- KHU VỰC 4 PHƯƠNG ÁN TRẮC NGHIỆM (NẾU BẬT GỢI Ý) -->
+                <div id="row-options-box" style="display:none; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px;">
+                  ${(q.options || []).map(opt => `
+                    <button type="button" class="btn-opt-choice btn btn-secondary" data-id="${opt.id}" data-text="${opt.text}" style="min-height:40px; padding:6px 10px; font-size:13px; text-align:left; justify-content:flex-start;">
+                      <strong style="color:var(--primary-color); margin-right:6px;">${opt.id}.</strong> ${opt.text}
+                    </button>
+                  `).join('')}
+                </div>
+              </form>
+            </div>
+          `;
 
-    const readyArea = card.querySelector('#guess-ready-area');
-    const activeArea = card.querySelector('#guess-active-area');
-    const resultArea = card.querySelector('#guess-result-area');
-    const btnStartGuess = card.querySelector('#btn-start-guess');
-    const formGuess = card.querySelector('#form-guess-kw');
-    const kwInput = card.querySelector('#input-kw');
-    const kwTimerNum = card.querySelector('#kw-timer-num');
-    const kwTimerBar = card.querySelector('#kw-timer-bar');
+          const formSubmit = activeArea.querySelector('#form-submit-row-answer');
+          const rowInput = activeArea.querySelector('#input-row-answer');
+          const btnToggle = activeArea.querySelector('#btn-toggle-options');
+          const optionsBox = activeArea.querySelector('#row-options-box');
+          const btnClose = activeArea.querySelector('#btn-close-active-q');
+          const timerNum = activeArea.querySelector('#row-timer-num');
+          const timerBar = activeArea.querySelector('#row-timer-bar');
 
-    btnStartGuess.onclick = async () => {
+          rowInput.focus();
+
+          // Bật tắt xem phương án gợi ý
+          btnToggle.onclick = () => {
+            sound.playClick();
+            const isOpen = (optionsBox.style.display === 'grid');
+            optionsBox.style.display = isOpen ? 'none' : 'grid';
+            btnToggle.textContent = isOpen ? '💡 Xem gợi ý trắc nghiệm (A, B, C, D)' : 'Ẩn gợi ý trắc nghiệm';
+          };
+
+          // Chọn nhanh từ gợi ý
+          optionsBox.querySelectorAll('.btn-opt-choice').forEach(b => {
+            b.onclick = () => {
+              sound.playClick();
+              rowInput.value = b.dataset.text;
+              onSubmitRow(b.dataset.id, b.dataset.text);
+            };
+          });
+
+          // Đóng card câu hỏi
+          btnClose.onclick = () => {
+            this.clearIntervals();
+            activeArea.innerHTML = '';
+          };
+
+          // Xử lý nộp câu trả lời hàng ngang
+          const onSubmitRow = async (selectedOptId, textAns) => {
+            if (submitted) return;
+            submitted = true;
+            this.clearIntervals();
+
+            try {
+              const res = await api.submitAnswer(this.attempt.attemptId, 'chung_ket', idx, selectedOptId, textAns);
+
+              // Cập nhật trạng thái câu
+              q.isAnswered = true;
+              q.horizontalAnswer = res.horizontalAnswer;
+              q.normalizedAnswer = res.normalizedAnswer;
+              q.isCorrect = res.isCorrect;
+              ck.score = res.roundScore;
+              this.attempt.scores.total = res.totalScore;
+
+              if (res.isCorrect) {
+                sound.playCorrect();
+                this.showToast(`Chính xác! Đã mở hàng ngang số ${idx + 1} (+${ck.pointPerQuestion}đ)`, 'success');
+              } else {
+                sound.playWrong();
+                this.showToast(`Chưa chính xác hàng số ${idx + 1}!`);
+              }
+
+              // Làm mới lại bàn cờ để chữ cái lật mở rực rỡ
+              renderFullBoard();
+
+              // Nếu tất cả các hàng đã mở mà chưa đoán từ khóa -> gợi ý đoán từ khóa
+              const stillUnanswered = questions.some(item => !item.isAnswered);
+              if (!stillUnanswered && !isKeywordGuessed && !isCompleted) {
+                setTimeout(() => openKeywordGuessModal(), 800);
+              }
+
+            } catch (err) {
+              this.showToast(err.message);
+            }
+          };
+
+          formSubmit.onsubmit = (e) => {
+            e.preventDefault();
+            sound.playClick();
+            onSubmitRow(null, rowInput.value.trim());
+          };
+
+          // Đếm ngược câu hỏi
+          const totalDurationMs = timeLimitSeconds * 1000;
+          this.timerInterval = setInterval(() => {
+            const now = Date.now() - clientTimeOffset;
+            const leftMs = Math.max(0, deadlineAt - now);
+            const secs = Math.ceil(leftMs / 1000);
+            const percent = Math.min(100, Math.max(0, (leftMs / totalDurationMs) * 100));
+
+            timerNum.textContent = secs;
+            timerBar.style.width = `${percent}%`;
+
+            if (secs <= 3 && secs > 0) {
+              timerNum.classList.add('warning');
+              timerBar.classList.add('warning');
+              sound.playWarningTick();
+            }
+
+            if (leftMs <= 0) {
+              this.clearIntervals();
+              timerNum.textContent = '0';
+              timerBar.style.width = '0%';
+              if (!submitted) {
+                onSubmitRow(null, rowInput.value.trim() || ''); // Hết giờ
+              }
+            }
+          }, 100);
+
+        } catch (err) {
+          this.showToast(err.message);
+        }
+      };
+
+      card.querySelectorAll('.cw-row').forEach(rowEl => {
+        rowEl.onclick = () => handleSelectRow(Number(rowEl.dataset.qidx));
+      });
+
+      card.querySelectorAll('.cw-question-item').forEach(itemEl => {
+        itemEl.onclick = () => handleSelectRow(Number(itemEl.dataset.qidx));
+      });
+
+      // 2. Nút đoán từ khóa bí mật
+      const btnGuessKw = card.querySelector('#btn-trigger-guess-kw');
+      if (btnGuessKw && !isKeywordGuessed && !isCompleted) {
+        btnGuessKw.onclick = () => openKeywordGuessModal();
+      }
+
+      // 3. Nút xem tổng kết toàn trận
+      const btnFinish = card.querySelector('#btn-finish-arena');
+      if (btnFinish) {
+        btnFinish.onclick = () => {
+          sound.playClick();
+          this.navigate('game_summary');
+        };
+      }
+    };
+
+    // Hàm mở popup / modal đoán từ khóa bí mật
+    const openKeywordGuessModal = async () => {
       sound.playClick();
-      readyArea.style.display = 'none';
-      activeArea.style.display = 'block';
-      kwInput.focus();
+      this.clearIntervals();
 
       try {
-        const res = await api.startKeyword(this.attempt.attemptId);
-        const deadlineAt = res.deadlineAt;
-        const clientTimeOffset = Date.now() - res.serverTime;
+        const activeArea = card.querySelector('#cw-active-area');
+        activeArea.innerHTML = `<div class="skeleton" style="height: 140px;"></div>`;
+        activeArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+        const guessData = await api.startKeyword(this.attempt.attemptId);
+        const deadlineAt = guessData.deadlineAt;
+        const clientTimeOffset = Date.now() - guessData.serverTime;
+        const guessTimeSeconds = guessData.timeLimitSeconds || 15;
         let submitted = false;
 
-        const handleKeywordSubmit = async (guessWord) => {
+        activeArea.innerHTML = `
+          <div class="cw-answer-modal-card" style="border-color: #FFE600; box-shadow: 0 0 16px rgba(255, 230, 0, 0.35);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 8px;">
+              <span style="font-size: 13px; font-weight: 800; color: #FFE600; text-transform:uppercase; letter-spacing:1px;">
+                🎯 GIẢI MÃ TỪ KHÓA CỘT DỌC BÍ MẬT (+100 ĐIỂM)
+              </span>
+              <button id="btn-close-guess-kw" style="background:transparent; border:none; color:var(--text-muted); cursor:pointer; font-size:16px;">✕</button>
+            </div>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">
+              Từ khóa cột dọc gồm đúng <strong>${ck.keywordLength || questions.length} chữ cái</strong>. Đoán đúng nhận ngay +100 điểm và mở bừng sáng toàn bộ ô chữ!
+            </p>
+
+            <!-- ĐỒNG HỒ ĐẾM NGƯỢC ĐOÁN TỪ KHÓA -->
+            <div class="timer-container" style="margin-bottom: 12px;">
+              <div id="kw-timer-num" class="timer-number">${guessTimeSeconds}</div>
+              <div class="timer-bar-bg">
+                <div id="kw-timer-bar" class="timer-bar-fill"></div>
+              </div>
+            </div>
+
+            <form id="form-submit-secret-kw">
+              <div class="form-group" style="margin-bottom: 12px;">
+                <input type="text" id="input-secret-kw" class="form-input" placeholder="Ví dụ: TRI THỨC" required autocomplete="off" style="font-size: 17px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; text-align: center; border-color: #FFE600;">
+              </div>
+              <button type="submit" class="btn btn-primary" style="font-size: 16px; font-weight: 800; background: linear-gradient(135deg, #FFE600, #FFB800); color: #000; border: none;">
+                XÁC NHẬN TỪ KHÓA 🚀
+              </button>
+            </form>
+          </div>
+        `;
+
+        const formKw = activeArea.querySelector('#form-submit-secret-kw');
+        const inputKw = activeArea.querySelector('#input-secret-kw');
+        const btnClose = activeArea.querySelector('#btn-close-guess-kw');
+        const timerNum = activeArea.querySelector('#kw-timer-num');
+        const timerBar = activeArea.querySelector('#kw-timer-bar');
+
+        inputKw.focus();
+
+        btnClose.onclick = () => {
+          this.clearIntervals();
+          activeArea.innerHTML = '';
+        };
+
+        const onKeywordSubmit = async (guessWord) => {
           if (submitted) return;
           submitted = true;
           this.clearIntervals();
 
           try {
             const finishRes = await api.submitKeyword(this.attempt.attemptId, guessWord);
-            activeArea.style.display = 'none';
-            resultArea.style.display = 'block';
-
-            // Cập nhật điểm tổng kết
+            isKeywordGuessed = true;
+            isKeywordCorrect = Boolean(finishRes.keywordGuess?.isCorrect);
             this.attempt.scores.total = finishRes.scores.total;
 
-            // BẬT SÁNG CỘT DỌC Ô CHỮ VỚI HIỆU ỨNG RỰC RỠ!
-            if (Array.isArray(finishRes.crosswordSolution)) {
-              const rows = card.querySelectorAll('.crossword-row');
-              finishRes.crosswordSolution.forEach((sol, rIdx) => {
-                const rowEl = rows[rIdx];
-                if (rowEl) {
-                  const cells = rowEl.querySelectorAll('.crossword-cell');
-                  if (cells[sol.charIndex]) {
-                    cells[sol.charIndex].classList.add('target-column');
-                  }
-                }
-              });
-            }
-
-            if (finishRes.keywordGuess.isCorrect) {
+            if (isKeywordCorrect) {
               sound.playVictory();
+              this.showToast('XUẤT SẮC! BẠN ĐÃ GIẢI ĐƯỢC TỪ KHÓA BÍ MẬT (+100Đ)!', 'success');
             } else {
               sound.playWrong();
+              this.showToast(`Chưa chính xác! Bạn đã mất quyền đoán từ khóa bí mật.`);
             }
 
-            resultArea.innerHTML = `
-              <div style="background: #0E1520; border-radius: var(--radius-md); padding: 16px; margin-bottom: 16px; text-align: center;">
-                <div style="font-size: 32px; margin-bottom: 6px;">${finishRes.keywordGuess.isCorrect ? '🌟' : '💡'}</div>
-                <h3 style="font-size: 18px; font-weight: 800; color: ${finishRes.keywordGuess.isCorrect ? 'var(--success-color)' : 'var(--danger-color)'}; margin-bottom: 6px;">
-                  ${finishRes.keywordGuess.isCorrect ? 'ĐOÁN ĐÚNG HOÀN TOÀN (+100Đ)' : 'CHƯA CHÍNH XÁC (0Đ)'}
+            renderFullBoard();
+
+            // Hiển thị thông báo kết quả
+            activeArea.innerHTML = `
+              <div class="cw-answer-modal-card" style="text-align:center; padding: 24px;">
+                <div style="font-size: 40px; margin-bottom: 8px;">${isKeywordCorrect ? '🌟' : '💡'}</div>
+                <h3 style="font-size: 20px; font-weight: 800; color: ${isKeywordCorrect ? 'var(--success-color)' : 'var(--danger-color)'}; margin-bottom: 8px;">
+                  ${isKeywordCorrect ? 'ĐOÁN ĐÚNG HOÀN TOÀN (+100 ĐIỂM)' : 'CHƯA CHÍNH XÁC (0 ĐIỂM)'}
                 </h3>
-                <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 10px;">
+                <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 8px;">
                   Từ khóa bí mật chính thức là:
                 </p>
-                <div style="font-size: 22px; font-weight: 800; color: var(--primary-color); letter-spacing: 2px;">
-                  ${finishRes.keywordGuess.officialKeyword}
+                <div style="font-size: 24px; font-weight: 900; color: #FFE600; letter-spacing: 3px; margin-bottom: 16px;">
+                  ${finishRes.keywordGuess?.officialKeyword || ck.keyword || ck.normalizedKeyword}
                 </div>
+                <button id="btn-goto-summary" class="btn btn-primary" style="font-size: 16px; font-weight:800;">
+                  XEM TỔNG KẾT TOÀN TRẬN 🏆
+                </button>
               </div>
-
-              <button id="btn-view-summary" class="btn btn-primary" style="font-size: 17px;">
-                XEM TỔNG KẾT TOÀN TRẬN 🏆
-              </button>
             `;
 
-            resultArea.querySelector('#btn-view-summary').onclick = () => {
+            activeArea.querySelector('#btn-goto-summary').onclick = () => {
               sound.playClick();
               this.navigate('game_summary', { finishRes });
             };
@@ -1033,38 +1349,35 @@ class App {
           }
         };
 
-        formGuess.onsubmit = (e) => {
+        formKw.onsubmit = (e) => {
           e.preventDefault();
           sound.playClick();
-          handleKeywordSubmit(kwInput.value.trim());
+          onKeywordSubmit(inputKw.value.trim());
         };
 
         // Đếm ngược đoán từ khóa
-        const totalDurationMs = (guessData.timeLimitSeconds ? guessData.timeLimitSeconds * 1000 : (deadlineAt - (guessData.startedAt || (deadlineAt - 10000)))) || 10000;
-        const initialSeconds = Math.ceil(totalDurationMs / 1000);
-        kwTimerNum.textContent = initialSeconds;
-
+        const totalDurationMs = guessTimeSeconds * 1000;
         this.timerInterval = setInterval(() => {
           const now = Date.now() - clientTimeOffset;
           const leftMs = Math.max(0, deadlineAt - now);
           const secs = Math.ceil(leftMs / 1000);
           const percent = Math.min(100, Math.max(0, (leftMs / totalDurationMs) * 100));
 
-          kwTimerNum.textContent = secs;
-          kwTimerBar.style.width = `${percent}%`;
+          timerNum.textContent = secs;
+          timerBar.style.width = `${percent}%`;
 
           if (secs <= 3 && secs > 0) {
-            kwTimerNum.classList.add('warning');
-            kwTimerBar.classList.add('warning');
+            timerNum.classList.add('warning');
+            timerBar.classList.add('warning');
             sound.playWarningTick();
           }
 
           if (leftMs <= 0) {
             this.clearIntervals();
-            kwTimerNum.textContent = '0';
-            kwTimerBar.style.width = '0%';
+            timerNum.textContent = '0';
+            timerBar.style.width = '0%';
             if (!submitted) {
-              handleKeywordSubmit(kwInput.value.trim() || ''); // Hết giờ
+              onKeywordSubmit(inputKw.value.trim() || ''); // Hết giờ
             }
           }
         }, 100);
@@ -1073,6 +1386,9 @@ class App {
         this.showToast(err.message);
       }
     };
+
+    container.appendChild(card);
+    renderFullBoard();
   }
 
   // 8. MÀN HÌNH TỔNG KẾT TOÀN TRẬN

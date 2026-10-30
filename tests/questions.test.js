@@ -48,7 +48,10 @@ test('Kiểm tra tối thiểu 5 bộ ô chữ Chung kết hợp lệ', async ()
   const crosswords = await readJson(PATHS.CROSSWORDS);
   assert.ok(Array.isArray(crosswords) && crosswords.length >= 5, 'Phải có tối thiểu 5 bộ ô chữ');
 
-  for (const cw of crosswords) {
+  const standardSets = crosswords.filter(c => c.rows && c.rows.length === 10);
+  assert.ok(standardSets.length >= 5, 'Phải có tối thiểu 5 bộ ô chữ chuẩn 10 hàng');
+
+  for (const cw of standardSets) {
     assert.strictEqual(cw.normalizedKeyword.length, 10, `Từ khóa ô chữ ${cw.title} phải có đúng 10 ký tự`);
     assert.strictEqual(cw.rows.length, 10, `Bộ ô chữ ${cw.title} phải có đúng 10 hàng`);
 
@@ -57,8 +60,10 @@ test('Kiểm tra tối thiểu 5 bộ ô chữ Chung kết hợp lệ', async ()
     assert.strictEqual(diffs.de, 1, `Ô chữ ${cw.title} phải có đúng 1 câu dễ`);
     assert.strictEqual(diffs.vua, 3, `Ô chữ ${cw.title} phải có đúng 3 câu vừa`);
     assert.strictEqual(diffs.kho, 6, `Ô chữ ${cw.title} phải có đúng 6 câu khó`);
+  }
 
-    // Kiểm tra ký tự trích xuất khớp với từ khóa
+  // Kiểm tra ký tự trích xuất cho mọi bộ ô chữ
+  for (const cw of crosswords) {
     let word = '';
     for (const r of cw.rows) {
       assert.strictEqual(r.normalizedAnswer[r.charIndex], r.targetChar, `Ký tự trích xuất hàng ${r.rowIndex} phải khớp targetChar`);

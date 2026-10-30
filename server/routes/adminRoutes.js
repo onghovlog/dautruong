@@ -16,7 +16,13 @@ import {
   getAuditLogs,
   updateActiveSeasonTimer
 } from '../services/adminService.js';
-import { getAllCrosswords, generateCrosswordSet, saveCrosswordSet, deleteCrosswordSet } from '../services/crosswordService.js';
+import {
+  getAllCrosswords,
+  generateCrosswordSet,
+  saveCrosswordSet,
+  deleteCrosswordSet,
+  rerollCrosswordRow
+} from '../services/crosswordService.js';
 import { getLeaderboard } from '../services/leaderboardService.js';
 import { getActiveSeason } from '../services/gameService.js';
 
@@ -145,6 +151,16 @@ router.post('/crosswords/save', async (req, res) => {
   try {
     const saved = await saveCrosswordSet(req.body);
     res.json({ success: true, crossword: saved });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
+router.post('/crosswords/reroll-row', async (req, res) => {
+  try {
+    const { crosswordId, rowIndex } = req.body;
+    const updated = await rerollCrosswordRow(crosswordId, Number(rowIndex));
+    res.json({ success: true, crossword: updated });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }

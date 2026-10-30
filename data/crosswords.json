@@ -493,5 +493,248 @@
         "charIndex": 4
       }
     ]
+  },
+  {
+    "id": "cw_trithuc",
+    "title": "Tri Thức - FPT Polytechnic",
+    "keyword": "TRI THỨC",
+    "normalizedKeyword": "TRITHUC",
+    "isApproved": true,
+    "centerCol": 5,
+    "totalCols": 12,
+    "rows": [
+      {
+        "questionId": "LEX_TT_0",
+        "question": "Điền từ còn thiếu trong thông điệp: “Thầy cô truyền cảm hứng, sinh viên ... tương lai”.",
+        "horizontalAnswer": "KIẾN TẠO",
+        "normalizedAnswer": "KIENTAO",
+        "targetChar": "T",
+        "charIndex": 4,
+        "difficulty": "vua",
+        "options": [
+          {
+            "id": "A",
+            "text": "Kiến tạo"
+          },
+          {
+            "id": "B",
+            "text": "Xây đắp"
+          },
+          {
+            "id": "C",
+            "text": "Chờ đợi"
+          },
+          {
+            "id": "D",
+            "text": "Mơ ước"
+          }
+        ],
+        "correctOptionId": "A",
+        "explanation": "“Thầy cô truyền cảm hứng, sinh viên kiến tạo tương lai” là thông điệp giáo dục tích cực.",
+        "source": "Thông điệp FPT Polytechnic",
+        "rowIndex": 0,
+        "alternatives": [],
+        "startCol": 1
+      },
+      {
+        "questionId": "LEX_TT_1",
+        "question": "Tình cảm biết ơn sâu sắc mà sinh viên gửi đến thầy cô nhân ngày 20/11 được gọi là gì?",
+        "horizontalAnswer": "TRI ÂN",
+        "normalizedAnswer": "TRIAN",
+        "targetChar": "R",
+        "charIndex": 1,
+        "difficulty": "de",
+        "options": [
+          {
+            "id": "A",
+            "text": "Tri ân"
+          },
+          {
+            "id": "B",
+            "text": "Thương tiếc"
+          },
+          {
+            "id": "C",
+            "text": "Chào hỏi"
+          },
+          {
+            "id": "D",
+            "text": "Hẹn ước"
+          }
+        ],
+        "correctOptionId": "A",
+        "explanation": "Tri ân thể hiện truyền thống đạo lý uống nước nhớ nguồn, tôn sư trọng đạo.",
+        "source": "Thông điệp FPT Polytechnic",
+        "rowIndex": 1,
+        "alternatives": [],
+        "startCol": 4
+      },
+      {
+        "questionId": "LEX_TT_2",
+        "question": "Tại FPT Polytechnic, người học thường được gọi bằng danh xưng nào?",
+        "horizontalAnswer": "SINH VIÊN",
+        "normalizedAnswer": "SINHVIEN",
+        "targetChar": "I",
+        "charIndex": 5,
+        "difficulty": "de",
+        "options": [
+          {
+            "id": "A",
+            "text": "Sinh viên"
+          },
+          {
+            "id": "B",
+            "text": "Học sinh"
+          },
+          {
+            "id": "C",
+            "text": "Nghiên cứu sinh"
+          },
+          {
+            "id": "D",
+            "text": "Giáo viên"
+          }
+        ],
+        "correctOptionId": "A",
+        "explanation": "Sinh viên là người đang theo học tại các trường cao đẳng, đại học.",
+        "source": "Thông điệp FPT Polytechnic",
+        "rowIndex": 2,
+        "alternatives": [],
+        "startCol": 0
+      },
+      {
+        "questionId": "LEX_TT_3",
+        "question": "Hoàn thành chương trình học và được công nhận đủ điều kiện ra trường gọi là gì?",
+        "horizontalAnswer": "TỐT NGHIỆP",
+        "normalizedAnswer": "TOTNGHIEP",
+        "targetChar": "T",
+        "charIndex": 2,
+        "difficulty": "de",
+        "options": [
+          {
+            "id": "A",
+            "text": "Tốt nghiệp"
+          },
+          {
+            "id": "B",
+            "text": "Nhập học"
+          },
+          {
+            "id": "C",
+            "text": "Thực tập"
+          },
+          {
+            "id": "D",
+            "text": "Bảo lưu"
+          }
+        ],
+        "correctOptionId": "A",
+        "explanation": "Tốt nghiệp là dấu mốc hoàn tất khóa đào tạo và nhận văn bằng chứng chỉ.",
+        "source": "Thông điệp FPT Polytechnic",
+        "rowIndex": 3,
+        "alternatives": [],
+        "startCol": 3
+      },
+      {
+        "questionId": "LEX_TT_4",
+        "question": "Người hướng dẫn, truyền đạt kiến thức và đồng hành cùng sinh viên được gọi chung là gì?",
+        "horizontalAnswer": "THẦY CÔ",
+        "normalizedAnswer": "THAYCO",
+        "targetChar": "H",
+        "charIndex": 1,
+        "difficulty": "de",
+        "options": [
+          {
+            "id": "A",
+            "text": "Thầy cô"
+          },
+          {
+            "id": "B",
+            "text": "Bạn bè"
+          },
+          {
+            "id": "C",
+            "text": "Đồng nghiệp"
+          },
+          {
+            "id": "D",
+            "text": "Thực tập sinh"
+          }
+        ],
+        "correctOptionId": "A",
+        "explanation": "Thầy cô là người lái đò thầm lặng đưa bao thế hệ sinh viên cập bến thành công.",
+        "source": "Thông điệp FPT Polytechnic",
+        "rowIndex": 4,
+        "alternatives": [],
+        "startCol": 4
+      },
+      {
+        "questionId": "LEX_TT_5",
+        "question": "Phương pháp học gắn với thao tác, làm bài tập và tạo sản phẩm thực tế gọi là gì?",
+        "horizontalAnswer": "THỰC HÀNH",
+        "normalizedAnswer": "THUCHANH",
+        "targetChar": "U",
+        "charIndex": 2,
+        "difficulty": "vua",
+        "options": [
+          {
+            "id": "A",
+            "text": "Thực hành"
+          },
+          {
+            "id": "B",
+            "text": "Học vẹt"
+          },
+          {
+            "id": "C",
+            "text": "Đoán mò"
+          },
+          {
+            "id": "D",
+            "text": "Lý thuyết suông"
+          }
+        ],
+        "correctOptionId": "A",
+        "explanation": "Triết lý đào tạo “Thực học - Thực nghiệp” lấy thực hành làm trung tâm.",
+        "source": "Thông điệp FPT Polytechnic",
+        "rowIndex": 5,
+        "alternatives": [],
+        "startCol": 3
+      },
+      {
+        "questionId": "LEX_TT_6",
+        "question": "Hoạt động tiếp thu kiến thức và rèn luyện kỹ năng mỗi ngày của sinh viên là gì?",
+        "horizontalAnswer": "HỌC TẬP",
+        "normalizedAnswer": "HOCTAP",
+        "targetChar": "C",
+        "charIndex": 2,
+        "difficulty": "de",
+        "options": [
+          {
+            "id": "A",
+            "text": "Học tập"
+          },
+          {
+            "id": "B",
+            "text": "Tranh luận"
+          },
+          {
+            "id": "C",
+            "text": "Xem phim"
+          },
+          {
+            "id": "D",
+            "text": "Mua sắm"
+          }
+        ],
+        "correctOptionId": "A",
+        "explanation": "Học tập là kim chỉ nam giúp người trẻ vươn tới đỉnh cao sự nghiệp.",
+        "source": "Thông điệp FPT Polytechnic",
+        "rowIndex": 6,
+        "alternatives": [],
+        "startCol": 3
+      }
+    ],
+    "createdAt": "2026-10-30T15:58:24.039Z"
   }
 ]

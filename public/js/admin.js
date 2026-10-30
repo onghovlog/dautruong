@@ -312,36 +312,203 @@ class AdminApp {
     await loadQuestions();
   }
 
-  // 3. TAB Ô CHỮ CHUNG KẾT
+  // 3. TAB Ô CHỮ CHUNG KẾT (TỰ ĐỘNG PHÁT TRIỂN & VISUAL BÀN CỜ NHƯ HÌNH)
   async renderCrosswords(container) {
     const card = document.createElement('div');
     card.className = 'card';
     card.style.textAlign = 'left';
     card.innerHTML = `
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 14px;">
-        <h3 style="font-size: 17px; font-weight: 800; color: #FFF;">BỘ Ô CHỮ CHUNG KẾT</h3>
+        <h3 style="font-size: 18px; font-weight: 800; color: #FFF;">👑 QUẢN LÝ Ô CHỮ CHUNG KẾT</h3>
       </div>
 
-      <!-- CÔNG CỤ TẠO Ô CHỮ TỰ ĐỘNG -->
-      <div style="background: #0E1520; border-radius: var(--radius-md); padding: 14px; margin-bottom: 16px;">
-        <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-color); margin-bottom: 6px;">Sinh Bộ Ô Chữ Bằng Thuật Toán</h4>
-        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 10px;">
-          Nhập từ khóa 10 chữ cái (hệ thống sẽ tự ghép 10 câu phù hợp đúng tỷ lệ 1 Dễ/ 3 Vừa/ 6 Khó).
+      <!-- CÔNG CỤ NHẬP TỪ KHÓA & TỰ ĐỘNG PHÁT TRIỂN CÂU HỎI -->
+      <div style="background: #0E1520; border: 1.5px solid var(--border-color); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px;">
+        <h4 style="font-size: 15px; font-weight: 800; color: var(--primary-color); margin-bottom: 6px;">
+          ⚡ Tự Động Phát Triển Câu Hỏi Từ Từ Khóa Bí Mật
+        </h4>
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.5;">
+          Admin chỉ cần nhập từ khóa (ví dụ: <strong>TRI THỨC</strong>, <strong>TIẾNG VIỆT</strong>, <strong>CÔNG NGHỆ</strong>...). Hệ thống sẽ tự động tìm kiếm và phát triển các câu hỏi có câu trả lời chứa ký tự tương ứng, đồng thời căn chỉnh cột dọc màu vàng thẳng hàng như hình ảnh.
         </p>
-        <div style="display:flex; gap: 8px;">
-          <input type="text" id="cw-keyword-input" class="form-input" placeholder="Ví dụ: ĐẤT NƯỚC TÔI" style="min-height:42px; font-size:14px; text-transform:uppercase;">
-          <button id="btn-generate-cw" class="btn btn-primary" style="width: auto; min-height:42px; padding: 6px 14px; font-size:13px; white-space:nowrap;">Tạo Ngay</button>
+
+        <div style="display: grid; grid-template-columns: 2fr 3fr auto; gap: 10px; align-items: flex-end;">
+          <div class="form-group" style="margin-bottom:0;">
+            <label class="form-label" style="font-size: 12px;">Từ khóa bí mật (cột dọc):</label>
+            <input type="text" id="cw-keyword-input" class="form-input" placeholder="Ví dụ: TRI THỨC" value="TRI THỨC" style="min-height:42px; font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:1px;">
+          </div>
+          <div class="form-group" style="margin-bottom:0;">
+            <label class="form-label" style="font-size: 12px;">Tiêu đề / Chủ đề gợi ý:</label>
+            <input type="text" id="cw-title-input" class="form-input" placeholder="Ví dụ: Chủ đề 20/11 & Tri ân Thầy Cô" value="Tri thức & Đạo làm thầy" style="min-height:42px; font-size:14px;">
+          </div>
+          <button id="btn-generate-cw" class="btn btn-primary" style="width: auto; min-height:42px; padding: 0 18px; font-size:13px; font-weight:800; white-space:nowrap;">
+            ⚡ Tự Động Tạo
+          </button>
         </div>
       </div>
 
-      <div id="cw-list"><div class="skeleton" style="height: 150px;"></div></div>
+      <!-- KHU VỰC PREVIEW BÀN CỜ Ô CHỮ (TRỰC QUAN CHUẨN 100% THEO HÌNH) -->
+      <div id="cw-preview-container" style="display: none; margin-bottom: 24px;"></div>
+
+      <!-- DANH SÁCH CÁC BỘ Ô CHỮ HIỆN CÓ -->
+      <div style="margin-top: 10px;">
+        <h4 style="font-size: 15px; font-weight: 700; color: #FFF; margin-bottom: 12px;">Các Bộ Ô Chữ Đã Có Trong Hệ Thống</h4>
+        <div id="cw-list"><div class="skeleton" style="height: 150px;"></div></div>
+      </div>
     `;
 
     container.appendChild(card);
 
     const cwList = card.querySelector('#cw-list');
     const kwInput = card.querySelector('#cw-keyword-input');
+    const titleInput = card.querySelector('#cw-title-input');
     const btnGen = card.querySelector('#btn-generate-cw');
+    const previewContainer = card.querySelector('#cw-preview-container');
+
+    let currentWorkingCrossword = null;
+
+    // Hàm render bàn cờ preview chuẩn hình ảnh
+    const renderPreviewBoard = (cw) => {
+      currentWorkingCrossword = cw;
+      previewContainer.style.display = 'block';
+
+      const centerCol = cw.centerCol !== undefined ? cw.centerCol : Math.max(...cw.rows.map(r => r.charIndex));
+
+      previewContainer.innerHTML = `
+        <div style="background: #0E1520; border: 2px solid var(--primary-color); border-radius: var(--radius-md); padding: 18px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px; flex-wrap:wrap; gap:8px;">
+            <div>
+              <span style="font-size: 11px; font-weight: 800; background: var(--primary-color); color:#FFF; padding: 2px 8px; border-radius: 10px;">BÀN CỜ Ô CHỮ TRỰC QUAN</span>
+              <h3 style="font-size: 18px; font-weight: 800; color: #FFF; margin: 4px 0 2px;">${cw.title || cw.keyword}</h3>
+              <p style="font-size: 13px; color: var(--text-muted);">
+                Từ khóa cột dọc màu vàng: <strong style="color: #FFE600; font-size: 16px; letter-spacing: 2px;">${cw.normalizedKeyword}</strong> (${cw.rows.length} hàng ngang)
+              </p>
+            </div>
+            <div style="display:flex; gap: 8px;">
+              <button id="btn-save-cw-preview" class="btn btn-primary" style="min-height:36px; padding: 4px 14px; font-size:13px; width:auto;">
+                💾 Lưu & Duyệt Bộ Này
+              </button>
+              <button id="btn-close-cw-preview" class="btn btn-secondary" style="min-height:36px; padding: 4px 12px; font-size:13px; width:auto;">
+                Đóng
+              </button>
+            </div>
+          </div>
+
+          <!-- KHUNG LƯỚI BẢNG TÍNH / TẬP KẺ LY GIỐNG HÌNH 100% -->
+          <div class="crossword-board-wrapper">
+            <div class="crossword-paper-grid">
+              <div class="cw-table-grid">
+                ${cw.rows.map((row, rIdx) => {
+                  const startCol = row.startCol !== undefined ? row.startCol : (centerCol - row.charIndex);
+                  const letters = (row.normalizedAnswer || '').split('');
+                  const emptyBoxes = Array(Math.max(0, startCol)).fill(0);
+
+                  return `
+                    <div class="cw-row" data-row="${rIdx}">
+                      <!-- Các ô trống căn lề trái để cột vàng thẳng hàng -->
+                      ${emptyBoxes.map(() => `<div class="cw-cell empty"></div>`).join('')}
+
+                      <!-- Các ô chữ cái của hàng ngang -->
+                      ${letters.map((char, cIdx) => {
+                        const isYellow = (cIdx === row.charIndex);
+                        return `
+                          <div class="cw-cell letter ${isYellow ? 'yellow-target' : ''}">
+                            ${char}
+                          </div>
+                        `;
+                      }).join('')}
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            </div>
+
+            <!-- DANH SÁCH CÂU HỎI ĐÁNH SỐ 1..N BÊN DƯỚI LƯỚI NHƯ TRONG HÌNH -->
+            <div class="crossword-questions-list">
+              ${cw.rows.map((row, rIdx) => `
+                <div class="cw-question-item" data-row="${rIdx}">
+                  <div class="cw-q-num">${rIdx + 1}</div>
+                  <div class="cw-q-text">
+                    <div style="font-weight: 700; color: #111;">${row.question}</div>
+                    <div style="font-size: 12.5px; color: #6E7781; margin-top: 2px;">
+                      Đáp án: <strong style="color: #0969DA;">${row.horizontalAnswer}</strong> 
+                      • Chữ cái cột vàng: <strong style="background: #FFE600; color: #000; padding: 1px 6px; border-radius: 4px;">${row.targetChar}</strong>
+                      ${row.explanation ? ` • <em>${row.explanation}</em>` : ''}
+                    </div>
+                  </div>
+                  <div style="display:flex; gap: 6px; align-items:center;">
+                    ${row.alternatives && row.alternatives.length > 0 ? `
+                      <button class="btn-reroll-row btn btn-secondary" data-row="${rIdx}" style="min-height:28px; padding: 2px 8px; font-size:11.5px; width:auto; color: #0969DA;">
+                        🔄 Đổi câu khác
+                      </button>
+                    ` : ''}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Nút đóng preview
+      previewContainer.querySelector('#btn-close-cw-preview').onclick = () => {
+        previewContainer.style.display = 'none';
+        currentWorkingCrossword = null;
+      };
+
+      // Nút lưu bộ ô chữ
+      previewContainer.querySelector('#btn-save-cw-preview').onclick = async () => {
+        try {
+          const btn = previewContainer.querySelector('#btn-save-cw-preview');
+          btn.disabled = true;
+          btn.textContent = 'Đang lưu...';
+
+          await fetch('/api/admin/crosswords/save', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'include',
+            body: JSON.stringify({ ...currentWorkingCrossword, isApproved: true })
+          });
+
+          this.showToast('Đã lưu và kích hoạt bộ ô chữ thành công!', 'success');
+          loadCrosswords();
+        } catch (err) {
+          this.showToast(err.message);
+        } finally {
+          const btn = previewContainer.querySelector('#btn-save-cw-preview');
+          if (btn) {
+            btn.disabled = false;
+            btn.textContent = '💾 Lưu & Duyệt Bộ Này';
+          }
+        }
+      };
+
+      // Xử lý nút đổi câu khác cho từng hàng
+      previewContainer.querySelectorAll('.btn-reroll-row').forEach(b => {
+        b.onclick = async () => {
+          const rIdx = Number(b.dataset.row);
+          try {
+            b.disabled = true;
+            b.textContent = 'Đang đổi...';
+            const res = await fetch('/api/admin/crosswords/reroll-row', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              credentials: 'include',
+              body: JSON.stringify({ crosswordId: currentWorkingCrossword.id, rowIndex: rIdx })
+            });
+            const data = await res.json();
+            if (!res.ok) throw new Error(data.error);
+
+            renderPreviewBoard(data.crossword);
+            this.showToast(`Đã đổi câu hỏi hàng số ${rIdx + 1}!`, 'success');
+          } catch (err) {
+            this.showToast(err.message);
+          }
+        };
+      });
+
+      // Cuộn mượt đến phần xem trước
+      previewContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
 
     const loadCrosswords = async () => {
       try {
@@ -351,17 +518,23 @@ class AdminApp {
         const list = data.crosswords || [];
 
         cwList.innerHTML = list.map(cw => `
-          <div style="background: #0E1520; border: 1px solid ${cw.isApproved ? 'var(--primary-color)' : 'var(--border-color)'}; border-radius: var(--radius-md); padding: 14px; margin-bottom: 12px;">
+          <div style="background: #0E1520; border: 1.5px solid ${cw.isApproved ? 'var(--primary-color)' : 'var(--border-color)'}; border-radius: var(--radius-md); padding: 14px; margin-bottom: 12px;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 6px;">
-              <strong style="font-size: 15px; color: #FFF;">${cw.title}</strong>
+              <div>
+                <strong style="font-size: 15px; color: #FFF;">${cw.title}</strong>
+                <span style="font-size: 12px; color: var(--text-muted); margin-left: 8px;">(${cw.rows.length} hàng ngang)</span>
+              </div>
               <span style="font-size: 12px; font-weight:700; color: ${cw.isApproved ? 'var(--success-color)' : 'var(--warning-color)'};">
                 ${cw.isApproved ? '✓ Đã Duyệt' : 'Chờ Duyệt'}
               </span>
             </div>
-            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 8px;">
-              Từ khóa: <strong style="color:var(--primary-color); letter-spacing: 2px;">${cw.normalizedKeyword}</strong>
+            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 10px;">
+              Từ khóa bí mật: <strong style="color: #FFE600; letter-spacing: 2px;">${cw.normalizedKeyword}</strong>
             </div>
-            <div style="display:flex; gap: 8px; justify-content:flex-end;">
+            <div style="display:flex; gap: 8px; justify-content:flex-end; flex-wrap:wrap;">
+              <button class="btn-preview-cw btn btn-primary" data-id="${cw.id}" style="min-height:32px; padding:2px 12px; font-size:12px; width:auto;">
+                👁️ Xem Bàn Cờ
+              </button>
               <button class="btn-toggle-cw btn btn-secondary" data-id="${cw.id}" data-approved="${cw.isApproved}" style="min-height:32px; padding:2px 10px; font-size:12px; width:auto;">
                 ${cw.isApproved ? 'Hủy duyệt' : 'Duyệt bộ này'}
               </button>
@@ -369,6 +542,14 @@ class AdminApp {
             </div>
           </div>
         `).join('');
+
+        // Nút xem trước bàn cờ
+        cwList.querySelectorAll('.btn-preview-cw').forEach(b => {
+          b.onclick = () => {
+            const cw = list.find(c => c.id === b.dataset.id);
+            if (cw) renderPreviewBoard(cw);
+          };
+        });
 
         // Bật/tắt duyệt
         cwList.querySelectorAll('.btn-toggle-cw').forEach(b => {
@@ -392,6 +573,9 @@ class AdminApp {
           b.onclick = async () => {
             if (confirm('Bạn có chắc muốn xóa bộ ô chữ này?')) {
               await fetch(`/api/admin/crosswords/${b.dataset.id}`, { method: 'DELETE', credentials: 'include' });
+              if (currentWorkingCrossword && currentWorkingCrossword.id === b.dataset.id) {
+                previewContainer.style.display = 'none';
+              }
               loadCrosswords();
             }
           };
@@ -404,35 +588,32 @@ class AdminApp {
 
     btnGen.onclick = async () => {
       const kw = kwInput.value.trim();
-      if (!kw) return;
+      const title = titleInput.value.trim();
+      if (!kw) {
+        this.showToast('Vui lòng nhập từ khóa bí mật!');
+        return;
+      }
+
       try {
         btnGen.disabled = true;
-        btnGen.textContent = 'Đang tìm...';
+        btnGen.textContent = '⚡ Đang tìm & ghép...';
         const res = await fetch('/api/admin/crosswords/generate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           credentials: 'include',
-          body: JSON.stringify({ keyword: kw, title: kw })
+          body: JSON.stringify({ keyword: kw, title: title || kw })
         });
         const data = await res.json();
         if (!res.ok) throw new Error(data.error);
 
-        // Lưu luôn bộ này
-        await fetch('/api/admin/crosswords/save', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          credentials: 'include',
-          body: JSON.stringify({ ...data.crossword, isApproved: true })
-        });
-
-        this.showToast('Đã tạo và duyệt thành công bộ ô chữ mới!', 'success');
-        kwInput.value = '';
-        loadCrosswords();
+        // Hiển thị ngay lên màn hình xem trước
+        renderPreviewBoard(data.crossword);
+        this.showToast(`Đã tự động phát triển thành công ${data.crossword.rows.length} câu hỏi cho từ khóa "${kw}"!`, 'success');
       } catch (err) {
         this.showToast(err.message);
       } finally {
         btnGen.disabled = false;
-        btnGen.textContent = 'Tạo Ngay';
+        btnGen.textContent = '⚡ Tự Động Tạo';
       }
     };
 
